@@ -1,6 +1,8 @@
 # Dataset
 data/realSAT/
-
+/ai_venv_yo/*
+/ai_venv_ay/*
+/ai_venv_u/*
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
