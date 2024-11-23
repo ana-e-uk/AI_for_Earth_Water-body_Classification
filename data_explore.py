@@ -37,6 +37,25 @@ warped_array = np.load(os.path.join(warped_data_dir,warped_name))
 frac_map_array = np.load(os.path.join(frac_map_data_dir,frac_map_name))
 time_series_array = np.load(os.path.join(timeseries_data_dir,time_series_name))
 
+continent_dict = {1: 'Asia',
+                  2: 'North America',
+                  3: 'Europe',
+                  4: 'Africa',
+                  5: 'South America',
+                  6: 'Oceania',
+                  7: 'Australia',
+                  8: 'Antartica'}
+
+labels_dict = {0: 'Unknown',
+               1: 'Farm',
+               2: 'Reservoir',
+               3: 'River',
+               4: 'Stable Lakes',
+               5: 'Seasonal Lakes',
+               6: 'Highly Seasonal Lakes',
+               7: 'Ephemeral Lakes',
+               8: 'Rover runoff/oxbow'}
+
 if verbose:
     print('\tPadded Array Shape:',padded_array.shape)
     print('\tWarped Array Shape:',warped_array.shape)
