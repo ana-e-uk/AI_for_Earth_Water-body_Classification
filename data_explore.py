@@ -37,7 +37,12 @@ warped_array = np.load(os.path.join(warped_data_dir,warped_name))
 frac_map_array = np.load(os.path.join(frac_map_data_dir,frac_map_name))
 time_series_array = np.load(os.path.join(timeseries_data_dir,time_series_name))
 
-continent_dict = {1: 'Asia',
+all_id_labels_realsat_name = np.load('all_IDs_labels_realsat.npy')
+print(np.unique(all_id_labels_realsat_name))
+print(len(all_id_labels_realsat_name))
+
+continent_dict = {0: 'Arctic',
+                  1: 'Asia',
                   2: 'North America',
                   3: 'Europe',
                   4: 'Africa',
@@ -88,17 +93,31 @@ def plot_label_counts(label_info, continent_info):
         labels = list(label_counts.keys())
         counts = list(label_counts.values())
 
+        labels_names = list(labels_dict[l] for l in labels)
+
         plt.figure(figsize=(8, 6))
-        plt.bar(labels, counts, color='skyblue')
-        plt.title(f"Label Counts for {continent}")
+        bars = plt.bar(labels, counts, color='skyblue')
+        plt.title(f"Label Counts for {continent_dict[continent]}")
         plt.xlabel("Labels")
         plt.ylabel("Counts")
         plt.xticks(labels)
         plt.grid(axis='y', linestyle='--', alpha=0.7)
 
+        # Annotate counts above each bar
+        for bar, count in zip(bars, counts):
+            plt.text(
+                bar.get_x() + bar.get_width() / 2,  # X-coordinate of the bar center
+                bar.get_height(),  # Y-coordinate (top of the bar)
+                str(count),  # Text to display
+                ha='center',  # Horizontal alignment
+                va='bottom',  # Vertical alignment
+                fontsize=10,  # Font size
+                color='black'  # Text color
+            )
+
         # Save plot to file with the name of the continent
         filename = f"{continent}_label_counts.png"
-        plt.savefig(filename)
+        plt.savefig(os.path.join('figures', filename))
         plt.close()  # Close the figure to free memory
         print(f"Saved plot for {continent} as {filename}")
 
