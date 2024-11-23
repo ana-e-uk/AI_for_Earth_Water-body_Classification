@@ -19,10 +19,10 @@ print('\nloading data...')
 ID_no = 657668 # enter a valid ID number
 verbose = True
 
-padded_data_dir = '../panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/350_400_stage2_padded/'
-warped_data_dir = '../panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/350_400_stage2_warped_64x64/'
-frac_map_data_dir = '../panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/350_400_stage2_warped_64x64_frac_map/'
-timeseries_data_dir = '../panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/350_400_stage2_padded_time_series/'
+padded_data_dir = '../../../../panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/350_400_stage2_padded/'
+warped_data_dir = '../../../../panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/350_400_stage2_warped_64x64/'
+frac_map_data_dir = '../../../../panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/350_400_stage2_warped_64x64_frac_map/'
+timeseries_data_dir = '../../../../panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/350_400_stage2_padded_time_series/'
 
 padded_name = 'ID_'+str(ID_no)+'_orbit_updated_padded.npy'
 warped_name = 'ID_'+str(ID_no)+'_orbit_updated_warped.npy'
@@ -37,13 +37,14 @@ warped_array = np.load(os.path.join(warped_data_dir,warped_name))
 frac_map_array = np.load(os.path.join(frac_map_data_dir,frac_map_name))
 time_series_array = np.load(os.path.join(timeseries_data_dir,time_series_name))
 
-print('\tPadded Array Shape:',padded_array.shape)
-print('\tWarped Array Shape:',warped_array.shape)
-print('\tFrac Map Array Shape:',frac_map_array.shape)
-print('\tTime series Array Shape:',time_series_array.shape)
+if verbose:
+    print('\tPadded Array Shape:',padded_array.shape)
+    print('\tWarped Array Shape:',warped_array.shape)
+    print('\tFrac Map Array Shape:',frac_map_array.shape)
+    print('\tTime series Array Shape:',time_series_array.shape)
 
-print('\tSample from Continent: ',continent_info[ID_no])
-print('\tSample has label: ',label_info[ID_no])
+    print('\tSample from Continent: ',continent_info[ID_no])
+    print('\tSample has label: ',label_info[ID_no])
 
 ''' ############################################# Get Labels #####################################################'''
 print('\ngetting labels for each continent...')
@@ -88,3 +89,5 @@ def plot_label_counts(label_info, continent_info):
             for label, count in label_counts.items():
                 print(f"  Label {label}: {count}")
 
+
+plot_label_counts(label_info=label_info, continent_info=continent_info)
