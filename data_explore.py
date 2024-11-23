@@ -127,5 +127,64 @@ def plot_label_counts(label_info, continent_info):
             for label, count in label_counts.items():
                 print(f"  Label {label}: {count}")
 
+def plot_all_continents(label_info, continent_info):
+    """
+    Plots the counts of each label for all continents in a single grouped bar chart.
+    
+    Args:
+        label_info (list or numpy array): List/array of labels corresponding to IDs.
+        continent_info (list or numpy array): List/array of continent info corresponding to IDs.
+    """
+    # Organize the label counts by continent
+    label_counts_by_continent = defaultdict(lambda: defaultdict(int))
+    for ID in range(len(label_info)):
+        label = label_info[ID]
+        continent = continent_info[ID]
+        label_counts_by_continent[continent][label] += 1
+
+    # Prepare data for plotting
+    continents = list(label_counts_by_continent.keys())
+    all_labels = sorted(set(label for counts in label_counts_by_continent.values() for label in counts))
+
+    # Create a matrix of counts for each label and continent
+    data = np.zeros((len(continents), len(all_labels)))
+    for i, continent in enumerate(continents):
+        for j, label in enumerate(all_labels):
+            data[i, j] = label_counts_by_continent[continent].get(label, 0)
+
+    # Plot grouped bar chart
+    x = np.arange(len(all_labels))  # Label positions
+    width = 0.8 / len(continents)  # Bar width for each continent
+
+    plt.figure(figsize=(10, 6))
+    for i, continent in enumerate(continents):
+        plt.bar(
+            x + i * width,  # Adjust position for each continent
+            data[i],        # Heights of bars
+            width,          # Width of bars
+            label=continent_dict[continent]
+        )
+        # # Add counts above each bar
+        # for j, count in enumerate(data[i]):
+        #     if count > 0:
+        #         plt.text(
+        #             x[j] + i * width, count + 0.1, str(int(count)),
+        #             ha='center', va='bottom', fontsize=8
+        #         )
+
+    # Add labels and legend
+    plt.title("Label Counts by Continent")
+    plt.xlabel("Labels")
+    plt.ylabel("Counts")
+    plt.xticks(x + (width * (len(continents) - 1)) / 2, all_labels)  # Adjust x-tick positions
+    plt.legend(title="Continent")
+    plt.grid(axis='y', linestyle='--', alpha=0.7)
+
+    # Save and show plot
+    plt.tight_layout()
+    plt.savefig("figures/all_continents_label_counts.png")
+    # plt.show()
+    print("Saved plot as all_continents_label_counts.png")
 
 plot_label_counts(label_info=label_info, continent_info=continent_info)
+plot_all_continents(label_info=label_info, continent_info=continent_info)
