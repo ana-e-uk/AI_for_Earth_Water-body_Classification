@@ -1,8 +1,9 @@
 '''
-Description: Compare data from different continents to choose data that is most similar to North America dataset
+Description: Explore the given dataset.
+             Compare data from different continents to choose data that is most similar to North America dataset.
 
 Author: Ana Uribe
-Date updated: Nov 20 2024
+Date updated: Nov 23 2024
 Class: CSCI 8523 AI for Earth
 '''
 # imports
@@ -16,7 +17,6 @@ from collections import defaultdict
 
 print('\nloading data...')
 
-ID_no = 657668 # enter a valid ID number
 verbose = True
 
 padded_data_dir = '../../../../panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/350_400_stage2_padded/'
@@ -24,22 +24,8 @@ warped_data_dir = '../../../../panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REAL
 frac_map_data_dir = '../../../../panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/350_400_stage2_warped_64x64_frac_map/'
 timeseries_data_dir = '../../../../panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/350_400_stage2_padded_time_series/'
 
-padded_name = 'ID_'+str(ID_no)+'_orbit_updated_padded.npy'
-warped_name = 'ID_'+str(ID_no)+'_orbit_updated_warped.npy'
-frac_map_name = 'ID_'+str(ID_no)+'_frac_map.npy'
-time_series_name = 'ID_'+str(ID_no)+'_time_series.npy'
-
 continent_info = np.load('continent_info.npy')
 label_info = np.load('all_IDs_labels_realsat.npy')
-
-padded_array = np.load(os.path.join(padded_data_dir,padded_name))
-warped_array = np.load(os.path.join(warped_data_dir,warped_name))
-frac_map_array = np.load(os.path.join(frac_map_data_dir,frac_map_name))
-time_series_array = np.load(os.path.join(timeseries_data_dir,time_series_name))
-
-all_id_labels_realsat_name = np.load('all_IDs_labels_realsat.npy')
-print(np.unique(all_id_labels_realsat_name))
-print(len(all_id_labels_realsat_name))
 
 continent_dict = {0: 'Arctic',
                   1: 'Asia',
@@ -62,32 +48,20 @@ labels_dict = {0: 'Unknown',
                8: 'Rover runoff/oxbow'}
 
 if verbose:
-    print('\tPadded Array Shape:',padded_array.shape)
-    print('\tWarped Array Shape:',warped_array.shape)
-    print('\tFrac Map Array Shape:',frac_map_array.shape)
-    print('\tTime series Array Shape:',time_series_array.shape)
-
-    print('\tSample from Continent: ',continent_info[ID_no])
-    print('\tSample has label: ',label_info[ID_no])
+    print('\tUnique continent labels:', np.unique(continent_info))
+    print('\tUnique water-body labels:', np.unique(label_info))
 
 ''' ############################################# Get Labels #####################################################'''
 print('\ngetting labels for each continent...')
 
-def plot_label_counts(label_info, continent_info):
+def plot_label_counts(label_counts_by_continent):
     """
     Plots the counts of each label for each continent and saves the plot as an image file.
     
     Args:
         label_info (list or numpy array): List/array of labels corresponding to IDs.
-        continent_info (list or numpy array): List/array of continent info corresponding to IDs.
+        continent_info (list or numpy ai8rray): List/array of continent info corresponding to IDs.
     """
-    # Organize the label counts by continent
-    label_counts_by_continent = defaultdict(lambda: defaultdict(int))
-    for ID in range(len(label_info)):
-        label = label_info[ID]
-        continent = continent_info[ID]
-        label_counts_by_continent[continent][label] += 1
-
     # Create and save plots for each continent
     for continent, label_counts in label_counts_by_continent.items():
         labels = list(label_counts.keys())
@@ -127,7 +101,7 @@ def plot_label_counts(label_info, continent_info):
             for label, count in label_counts.items():
                 print(f"  Label {label}: {count}")
 
-def plot_all_continents(label_info, continent_info):
+def plot_all_continents(label_counts_by_continent):
     """
     Plots the counts of each label for all continents in a single grouped bar chart.
     
@@ -135,12 +109,6 @@ def plot_all_continents(label_info, continent_info):
         label_info (list or numpy array): List/array of labels corresponding to IDs.
         continent_info (list or numpy array): List/array of continent info corresponding to IDs.
     """
-    # Organize the label counts by continent
-    label_counts_by_continent = defaultdict(lambda: defaultdict(int))
-    for ID in range(len(label_info)):
-        label = label_info[ID]
-        continent = continent_info[ID]
-        label_counts_by_continent[continent][label] += 1
 
     # Prepare data for plotting
     continents = list(label_counts_by_continent.keys())
@@ -186,5 +154,14 @@ def plot_all_continents(label_info, continent_info):
     # plt.show()
     print("Saved plot as all_continents_label_counts.png")
 
-plot_label_counts(label_info=label_info, continent_info=continent_info)
-plot_all_continents(label_info=label_info, continent_info=continent_info)
+
+if __name__ == 'main':
+    # Organize the label counts by continent
+    label_counts_by_continent = defaultdict(lambda: defaultdict(int))
+    for ID in range(len(label_info)):
+        label = label_info[ID]
+        continent = continent_info[ID]
+        label_counts_by_continent[continent][label] += 1
+
+    plot_label_counts(label_counts_by_continent=label_counts_by_continent)
+    plot_all_continents(label_counts_by_continent=label_counts_by_continent)
