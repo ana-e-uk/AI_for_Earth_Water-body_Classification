@@ -27,7 +27,7 @@ timeseries_data_dir = '../../../../panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/
 continent_info = np.load('continent_info.npy')
 label_info = np.load('all_IDs_labels_realsat.npy')
 
-continent_dict = {0: 'Arctic',
+continent_dict = {0: 'Unknown',
                   1: 'Asia',
                   2: 'North America',
                   3: 'Europe',
@@ -209,5 +209,5 @@ for ID in range(len(label_info)):
     label_counts_by_continent[continent][label] += 1
 
 plot_label_distribution_by_continent(label_info=label_info, label_counts_by_continent=label_counts_by_continent)
-# plot_label_counts(label_counts_by_continent=label_counts_by_continent)
-# plot_all_continents(label_counts_by_continent=label_counts_by_continent)
+plot_label_counts(label_counts_by_continent=label_counts_by_continent)
+plot_all_continents(label_counts_by_continent=label_counts_by_continent)
