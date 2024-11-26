@@ -9,15 +9,17 @@ This repository contains the code related to the UMN CSCI 8523: AI for Earth cla
 
 # File Contents
 
-* **README.md** (You are here): Overview of project, how to set it up, any usage instructions.
+* **data/**: contains dataset locally, and a README file with instructions on how the data can be obtained.
 
-* **requirements.txt** (TO ADD): Lists the code dependencies.
+* **docs/**: documentation for the project.
 
 * **src/**: contains all source code.
 
-    * **data/**: code for handling data loading, transformations, preprocessing.
+    * **code_reference/**: code used as reference for source code.
 
-    * **models/**: code for defining and training models.
+    * **load_data.py**: code for handling data loading, transformations, preprocessing.
+
+    * **model.py**: code for defining and training models.
 
     * **utils/**: utility functions such as logging, metrics calculations, etc.
 
@@ -27,10 +29,10 @@ This repository contains the code related to the UMN CSCI 8523: AI for Earth cla
 
     * **predict.py**: script for inference on new data.
 
-* **notebooks/**: jupyter notebooks for experiments, exploration, or documentation of work.
+* **explore/**: scripts for experiments, exploration, etc..
 
-* **tests/**: unit tests for various components (data loading, models, etc.). Use `pytest`.
+* **init_venv_{ay, u, yo}.sh**: shell script for everyone's virtual environments.
 
-* **data/**: contains dataset locally, and a README file with instructions on how the data can be obtained.
+* **README.md** (You are here): Overview of project, how to set it up, any usage instructions.
 
-* **docs/**: documentation for the project.
+* **requirements.txt** (TO ADD): Lists the code dependencies.
