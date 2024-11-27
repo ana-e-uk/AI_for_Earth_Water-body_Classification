@@ -20,7 +20,7 @@ class SpatialCNN(nn.Module):
         self.conv5 = nn.Conv2d(in_channels=128, out_channels=256, kernel_size=3, stride=1, padding=1) # 128 -> 256 channels
 
         # Fully connected layer
-        self.fc1 = nn.Linear(256 * (config.patch_size // 2**5)**2, 256)  # Considering pooling reduces size by 2^5
+        self.fc1 = nn.Linear(256 * (config.patch_size // 2**5)**2, 256)  # Considering pooling reduces size by 2^5 (1024)
         self.fc2 = nn.Linear(256, config.num_classes)  # 4 for original num classes, 5 when including reservoir
 
         # Pooling layer
@@ -102,32 +102,31 @@ class SpatialDecoder(nn.Module):
         self.latent_dim = config.latent_dim
 
         # Fully connected layer to reshape latent vector to start of deconvolution
-        self.fc = nn.Linear(self.latent_dim, 128 * (output_size // 16) * (output_size // 16))  # Adjust based on architecture
+        self.fc = nn.Linear(self.latent_dim, 64 * (config.output_size // 16) * (config.output_size // 16))  # 256, 2048
 
         # Deconvolution layers (up-sampling layers)
         self.deconv_layers = nn.Sequential(
-            nn.ConvTranspose2d(128, 64, kernel_size=4, stride=2, padding=1),  # Upsample to (output_size // 8)
+            nn.ConvTranspose2d(64, 64, kernel_size=4, stride=2, padding=1),  # Upsample 
             nn.ReLU(),
-            nn.ConvTranspose2d(64, 32, kernel_size=4, stride=2, padding=1),  # Upsample to (output_size // 4)
+            nn.ConvTranspose2d(64, 32, kernel_size=4, stride=2, padding=1),  # Upsample 
             nn.ReLU(),
-            nn.ConvTranspose2d(32, 16, kernel_size=4, stride=2, padding=1),  # Upsample to (output_size // 2)
+            nn.ConvTranspose2d(32, 16, kernel_size=4, stride=2, padding=1),  # Upsample
             nn.ReLU(),
-            nn.ConvTranspose2d(16, output_channels, kernel_size=4, stride=2, padding=1),  # Upsample to (output_size)
-            nn.Sigmoid()  # Normalize to [0, 1]
+            nn.ConvTranspose2d(16, config.output_channels, kernel_size=4, stride=2, padding=1),  # Upsample to (output_size)
         )
 
     def forward(self, latent_vector):
         """
         Args:
-            latent_vector: Tensor of shape [batch_size, latent_dim]
+            latent_vector: Output of encoder. Tensor of shape [batch_size, latent_dim]
         Returns:
             reconstructed_x: Reconstructed input tensor of shape [batch_size, output_channels, output_size, output_size]
         """
         # Fully connected layer to reshape latent vector
-        x = self.fc(latent_vector)  # [batch_size, 128 * (output_size // 16) * (output_size // 16)]
-        x = x.view(-1, 128, output_size // 16, output_size // 16)  # Reshape for deconvolution
+        x = self.fc(latent_vector)
 
         # Pass through deconvolution layers
         reconstructed_x = self.deconv_layers(x)
+        reconstructed_x = reconstructed_x.view(-1, config.output_channels, config.output_size, config.output_size)
         return reconstructed_x
 '''####################################################### M_2, M_2_r #######################################################''' 
