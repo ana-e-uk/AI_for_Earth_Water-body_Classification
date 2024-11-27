@@ -11,7 +11,7 @@ from collections import Counter
 import torch
 import glob
 from torch.utils.data.dataset import Dataset
-from osgeo import gdal, gdalconst, osr
+# from osgeo import gdal, gdalconst, osr
 
 def create_patches_time_series(path,label_array):
     

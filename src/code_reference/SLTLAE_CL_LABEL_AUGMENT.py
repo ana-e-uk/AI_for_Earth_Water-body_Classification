@@ -75,7 +75,7 @@ paths_label_list = []
 conti_path_list = []
 
 if(config.sub_conti == 1):
-    continent_info = np.load('/home/kumarv/pravirat/Realsat_labelling/continent_info.npy')
+    continent_info = np.load('/panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/continent_info.npy')
     for path in paths_list:
         ID = path.split('/')[-1].split('_')[-4]
         if(continent_info[int(ID)] == config.continent_no):
@@ -93,7 +93,7 @@ for i,path in enumerate(paths_list):
     ID_count_array[int(ID)] += 1
     path_dict[ID] = path
 
-all_label_array = np.load('/home/kumarv/pravirat/Realsat_labelling/all_IDs_labels.npy')
+all_label_array = np.load('/panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/all_IDs_labels.npy')
 print('Updated All label array  Shape:',all_label_array.shape, ' Count:',np.bincount(all_label_array)) 
 print(len(paths_list))
 
@@ -316,7 +316,7 @@ paths_list = glob.glob(os.path.join(config.WARP_DIR,config.WARP_FOLDER, '*.npy')
 conti_path_list = []
 
 if(config.sub_conti == 1):
-    continent_info = np.load('/home/kumarv/pravirat/Realsat_labelling/continent_info.npy')
+    continent_info = np.load('/panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/continent_info.npy')
     for path in paths_list:
         ID = path.split('/')[-1].split('_')[-4]
         if(continent_info[int(ID)] == config.continent_no):
@@ -337,7 +337,7 @@ for i,path in enumerate(paths_list):
     ID_count_array[int(ID)] += 1
     path_dict[ID] = path
 
-all_label_array = np.load('/home/kumarv/pravirat/Realsat_labelling/all_IDs_labels.npy')
+all_label_array = np.load('/panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/all_IDs_labels.npy')
 print('Updated All label array  Shape:',all_label_array.shape, ' Count:',np.bincount(all_label_array))   
 
 print('UPDATED DATASET LENGTH:', len(sup_train_ID_list))
@@ -555,7 +555,7 @@ paths_list = glob.glob(os.path.join(config.WARP_DIR,config.WARP_FOLDER, '*.npy')
 conti_path_list = []
 
 if(config.sub_conti == 1):
-    continent_info = np.load('/home/kumarv/pravirat/Realsat_labelling/continent_info.npy')
+    continent_info = np.load('/panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/continent_info.npy')
     for path in paths_list:
         ID = path.split('/')[-1].split('_')[-4]
         if(continent_info[int(ID)] == config.continent_no):
@@ -576,7 +576,7 @@ for i,path in enumerate(paths_list):
     ID_count_array[int(ID)] += 1
     path_dict[ID] = path
 
-all_label_array = np.load('/home/kumarv/pravirat/Realsat_labelling/all_IDs_labels.npy')
+all_label_array = np.load('/panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/all_IDs_labels.npy')
 print('Updated All label array  Shape:',all_label_array.shape, ' Count:',np.bincount(all_label_array))   
 
 print('UPDATED DATASET LENGTH:', len(sup_train_ID_list))

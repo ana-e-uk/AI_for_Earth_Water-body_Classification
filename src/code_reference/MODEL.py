@@ -10,7 +10,7 @@ import torch
 
 from torchvision import models
 
-torch.set_default_tensor_type('torch.cuda.FloatTensor')
+# torch.set_default_tensor_type('torch.cuda.FloatTensor')
     
 class SpatialAutoencoder(torch.nn.Module):
     def __init__(self, in_channels, out_channels):

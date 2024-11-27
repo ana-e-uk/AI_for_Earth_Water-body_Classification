@@ -14,8 +14,8 @@ import time
 import glob
 from sklearn.cluster import KMeans
 import MODEL
-import DATA_CODE.DATA_LOADER as DATA_LOADER
-
+import DATA_LOADER as DATA_LOADER
+print("hello world")
 if not os.path.exists(os.path.join(config.MODEL_DIR)):
     os.makedirs(os.path.join(config.MODEL_DIR))
 print(config.MODEL_DIR)
@@ -61,7 +61,7 @@ def cl_criterion(reps,no_max_reps):
 
         
 model = MODEL.SpatialtemporalAutoencoder(in_channels_spatial=config.channels, out_channels_spatial=config.channels,in_channels_temp= config.channels,out_channels_temp = config.channels)
-model= model.to('cuda')
+model= model.to(config.device)
 # model.load_state_dict(torch.load(os.path.join(config.ae_model_dir, config.ae_MODEL_NAME+".pt")),strict = False)
 # model.eval()
 
@@ -71,8 +71,11 @@ image_patches_temp_list = []
 label_patches_temp_list = []
 label_IDs_list = []
 IDs_list = []
+# OLD PATH
+# all_label_array = np.load('/home/kumarv/pravirat/Realsat_labelling/all_IDs_labels.npy')
+# NEW PATH
+all_label_array = np.load('/panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/all_IDs_labels_realsat.npy')
 
-all_label_array = np.load('/home/kumarv/pravirat/Realsat_labelling/all_IDs_labels.npy')
 print('Updated All label array  Shape:',all_label_array.shape, ' Count:',np.bincount(all_label_array))   
 
 train_dataset = np.load(os.path.join(config.DATASET_DIR,config.DATASET_NAME_TRAIN))
@@ -139,10 +142,10 @@ for epoch in range(1,config.n_epochs+1):
     for batch, [image_patch_s, label_patch_s,image_patch_t, label_patch_t, label_batch, ID_batch] in enumerate(data_loader):
         
         optimizer.zero_grad()
-        code_vec, out_s, out_t = model(image_patch_s.to('cuda').float(), image_patch_t.to('cuda').float())
+        code_vec, out_s, out_t = model(image_patch_s.to(config.device).float(), image_patch_t.to(config.device).float())
     
-        label_patch_s = label_patch_s.to('cuda').float()
-        label_patch_t = label_patch_t.to('cuda').float()
+        label_patch_s = label_patch_s.to(config.device).float()
+        label_patch_t = label_patch_t.to(config.device).float()
 
         code_vec_farm = code_vec[label_batch == 1]
         code_vec_river = code_vec[label_batch == 3]

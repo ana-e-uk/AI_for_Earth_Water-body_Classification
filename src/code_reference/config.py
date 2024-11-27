@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import os
-import torch
+# import torch
 
 # experiment details
 
@@ -20,7 +20,7 @@ same_sample_no = 10
 # load_experiment_id = 'SLTLAE_CL'
 # load_MODEL_NAME = 'SLTLAE_CL_epoch_2000'
 
-load_MODEL_DIR = "../../MODELS/" + str(load_experiment_id)
+load_MODEL_DIR = "../../MODELS/" + str(experiment_id)
 
 #####################
 
@@ -43,7 +43,7 @@ test_batch_size = 256
 ignore_index = 0
 code_dim = 256
 no_classes = 10
-device = 'cuda'
+device = 'cpu'
 percent_to_include = 0.25
 
 labels_for_cl = [1,3,4,5]
