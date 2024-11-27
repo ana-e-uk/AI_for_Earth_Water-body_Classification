@@ -97,20 +97,12 @@ class EmbeddingSpace(nn.Module):
         return embeddings 
 
 class SpatialDecoder(nn.Module):
-    def __init__(self, latent_dim, output_channels, output_size):
-        """
-        Decoder for the spatial autoencoder.
-        
-        Args:
-            latent_dim: Size of the latent space (input to the decoder).
-            output_channels: Number of channels in the output (e.g., 1 for grayscale images).
-            output_size: Size of the reconstructed spatial output (e.g., 64 for 64x64 images).
-        """
+    def __init__(self, config):
         super(SpatialDecoder, self).__init__()
-        self.latent_dim = latent_dim
+        self.latent_dim = config.latent_dim
 
         # Fully connected layer to reshape latent vector to start of deconvolution
-        self.fc = nn.Linear(latent_dim, 128 * (output_size // 16) * (output_size // 16))  # Adjust based on architecture
+        self.fc = nn.Linear(self.latent_dim, 128 * (output_size // 16) * (output_size // 16))  # Adjust based on architecture
 
         # Deconvolution layers (up-sampling layers)
         self.deconv_layers = nn.Sequential(
