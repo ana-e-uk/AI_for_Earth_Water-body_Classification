@@ -58,7 +58,7 @@ The number of pairs is the minimum number of labels of all the classes present m
 We use the final parameters listed in the implementation details of the paper for our model:
 
 * batch size = 256
-* $\lambda$ = 0.001
+* $\lambda$ = 0.01
 * $\gamma$ = 1
 * number of epochs = 2000
 * include the constrained loss from epoch 1000

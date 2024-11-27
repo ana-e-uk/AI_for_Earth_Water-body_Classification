@@ -10,7 +10,7 @@ import torch.nn.functional as F
 import config
 '''####################################################### SLTLAE_CL #######################################################''' 
 class SpatialCNN(nn.Module):
-    def __init__(self, config):
+    def __init__(self):
         super(SpatialCNN, self).__init__()
         # First convolutional layer
         self.conv1 = nn.Conv2d(in_channels=config.channels, out_channels=16, kernel_size=3, stride=1, padding=1) # 1 -> 16 channels
@@ -97,7 +97,7 @@ class EmbeddingSpace(nn.Module):
         return embeddings 
 
 class SpatialDecoder(nn.Module):
-    def __init__(self, config):
+    def __init__(self):
         super(SpatialDecoder, self).__init__()
         self.latent_dim = config.latent_dim
 

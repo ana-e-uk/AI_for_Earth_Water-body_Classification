@@ -6,6 +6,8 @@ Script to run the training loop
 import numpy as np
 import torch
 
+from model import SpatialCNN, TemporalLSTM, EmbeddingSpace, SpatialDecoder
+import config
 '''####################################################### Functions #######################################################''' 
 
 def spatial_mse_loss(orignial_images, reconstructed_images, num_images, image_dim):
@@ -80,4 +82,10 @@ def constrained_loss(embeddings, labels):
 
     return avg_loss
 
+'''####################################################### Element Definitions #######################################################''' 
+model = SpatialCNN()
+
+optimizer = torch.optim.Adam()
+
+all_labels_array = np.load()
 '''####################################################### Training Loop #######################################################''' 
