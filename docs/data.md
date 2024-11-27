@@ -24,12 +24,18 @@ However, the data received did not have labels other than reservoirs for other c
 
 This will let us explore how  M_2_r (and therefore SLTLAE_CL_*enc_upd*) performs in different continents when trained on one continent.
 
+## Spatial Data
+The spatial data has been preprocessed and given as a 64 x 64 x 1  fraction map with padding that allows all water body images to be square.
+
+## Temporal Data
+The temporal data has been preprocessed and given as a 442 x 1 time series.
+
 ## Data Needed
 
 **North America Data:**
 1. Training autoencoder-decoder for M_2 encoder weights:
     * All labels save for the ones needed for 2 and 3 (?)
-    * 70 split (?)
+    * 70 split (?) **(50 split of data)**
     * Divide into batch size of 256
     * For each batch, get 2*min*\{batch labeled data\} pairs of labeled data for constrained loss
 2. Training model M_2 (supervised classifier):
