@@ -6,10 +6,15 @@ Constants for AI for earth
 
 
 '''####################################################### Data #######################################################''' 
+# spatial CNN
 channels = 1
 patch_size = 64
 
+# temporal bi-directional LSTM
 time_steps = 442
+
+# other
+num_classes = 4 # 5 when doing reservoir
 
 '''####################################################### Model Params #######################################################''' 
 
