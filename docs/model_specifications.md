@@ -8,7 +8,7 @@ Then, we will train the SLTLAE_CL model up to the SLTLAE_CL_*enc_upd* model agai
 Finally, we will test the M_2_r  with reservoir data from different continents. This will let us compare how the model does with classifying the same water-body type in different locations.
 
 ## Model Description
-Below is a description of the SLTLAE_CL model from [Ravirathinam et al.](https://www.researchgate.net/publication/364516705_Spatiotemporal_Classification_with_limited_labels_using_Constrained_Clustering_for_large_datasets). 
+Below is a description of the SLTLAE_CL model from [Ravirathinam et al.](https://www.researchgate.net/publication/364516705_Spatiotemporal_Classification_with_limited_labels_using_Constrained_Clustering_for_large_datasets).
 
 ### Multi-modal Autoencoder
 This model's encoder $\mathcal{E}$ has a spatial and temporal component.
@@ -52,8 +52,8 @@ The number of pairs is the minimum number of labels of all the classes present m
 We use the final parameters listed in the implementation details of the paper for our model:
 
 * batch size = 256
-* $\lamda = 0.001$
-* $\gamma = 1$
+* $\lambda$ = 0.001
+* $\gamma$ = 1
 * number of epochs = 2000
 * include the constrained loss from epoch 1000
 * optimizer: Adam
