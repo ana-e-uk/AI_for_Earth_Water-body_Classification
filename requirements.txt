@@ -107,3 +107,4 @@ multipledispatch==0.6.0
 munkres==1.1.4
 nbclassic
 nbclient
+torch

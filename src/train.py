@@ -87,5 +87,7 @@ model = SpatialCNN()
 
 optimizer = torch.optim.Adam()
 
-all_labels_array = np.load()
+label_info_array = np.load(config.label_info_filepath)
+
+train_dataset = np.load(config.data_train_baseline)
 '''####################################################### Training Loop #######################################################''' 
