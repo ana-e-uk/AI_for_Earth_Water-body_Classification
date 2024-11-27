@@ -61,6 +61,19 @@ We use the final parameters listed in the implementation details of the paper fo
 
 ### Supervised Classifier
 
-Once the Autoencoder-Decoder are trained, we will use the encoder weights to train the supervised classifier SLTLAE_CL_*enc_upd* by following the steps of the paper in section 4.2 and 4.3.
+Once the Autoencoder-Decoder is trained, we will use the encoder weights to train the supervised classifier SLTLAE_CL_*enc_upd* by following the steps of the paper in section 4.2 and 4.3..
+1. Choose 10 labels from each class, so 40 labels total for M_2 and 50 for M_2_r.
+2. Use 40 labels by creating pairs and applying constraints, the rest of the data are unlabeled.
+3. Add 2 fully connected layers at the end.
+
+With the following parameters:
+
+* batch size = 256 ?
+* number of epochs = 50
+* Cross entropy loss
+* optimizer: Adam ?
+* learning rate = 0.001 ?
+
+
 
 
