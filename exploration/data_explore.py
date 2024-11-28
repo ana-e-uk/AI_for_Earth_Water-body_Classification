@@ -211,3 +211,6 @@ for ID in range(len(label_info)):
 plot_label_distribution_by_continent(label_info=label_info, label_counts_by_continent=label_counts_by_continent)
 plot_label_counts(label_counts_by_continent=label_counts_by_continent)
 plot_all_continents(label_counts_by_continent=label_counts_by_continent)
+
+# /panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/shape_files
+# ReaLSAT_351_400_only.shp

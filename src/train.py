@@ -6,6 +6,7 @@ Script to run the training loop
 '''####################################################### Imports #######################################################''' 
 import numpy as np
 import torch
+import time
 
 from model import SpatialCNN, TemporalLSTM, EmbeddingSpace, SpatialDecoder
 import config
@@ -91,9 +92,31 @@ optimizer = torch.optim.Adam()
 label_info_array = np.load(config.label_info_filepath)
 
 train_dataset = np.load(config.data_train_baseline)
+
+for waterbody_id in train_dataset:
+
+    image
 '''####################################################### Training Loop #######################################################''' 
 =======
 import torch
 print(torch.__version__)  # Displays the PyTorch version
 print(torch.cuda.is_available())  # Should return False
 >>>>>>> bf31550 (Fixing some errors with Praveen)
+
+train_loss = []
+
+for epoch in range(1, config.num_epochs+1):
+    print("\nEpoch {}".format(epoch))
+    model.train()
+
+    train_timer = time.time()
+    e_loss = 0
+    e_loss_s = 0
+    e_loss_t = 0
+    e_loss_cl = 0
+    e_loss_farm_log = 0
+    e_loss_river_log = 0
+    e_loss_stable_log = 0
+    e_loss_seasonal_log = 0
+
+    for batch, [image]
