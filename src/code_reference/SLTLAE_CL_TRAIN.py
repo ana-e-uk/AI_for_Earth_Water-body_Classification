@@ -183,6 +183,8 @@ for epoch in range(1,config.n_epochs+1):
         
         batch_loss_s = torch.mean(torch.sum(mse_loss(input_image = out_s, target = label_patch_s,ignored_index = config.ignore_index,reduction = 'None')))
         batch_loss_t = torch.mean(torch.sum(criterion(out_t, label_patch_t),dim=[1]))
+
+        print(batch_loss_s)
         
         if epoch < 1000 :
             batch_loss = batch_loss_s * 0.01 + batch_loss_t

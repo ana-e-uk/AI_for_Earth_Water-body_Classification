@@ -54,28 +54,29 @@ num_clusters_model = 50
 num_clusters_only_labelled = 20
 num_clusters_only_labelled_dataset = 20
 
-DATA_DIR = "../../../REALSAT/"+str(lower_limit) + "_" + str(upper_limit) +"_stage2"
-PAD_DIR = "../../PADDED_DATA"
+DATA_DIR = "/panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/"+str(lower_limit) + "_" + str(upper_limit) +"_stage2"
+PAD_DIR = "/panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/"
 PAD_FOLDER = str(lower_limit) + "_" + str(upper_limit) +"_stage2_padded"
-WARP_DIR = "../../WARPED_DATA"
+WARP_DIR = "/panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/"
 WARP_FOLDER = str(lower_limit) + "_" + str(upper_limit) +"_stage2_warped_" + str(warp_size) +"x" +str(warp_size)
-FRAC_MAP_DIR = "../../FRAC_MAPS_DATA"
+FRAC_MAP_DIR = "/panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/"
 FRAC_MAP_FOLDER = str(lower_limit) + "_" + str(upper_limit) +"_stage2_warped_" + str(warp_size) +"x" +str(warp_size) + "_frac_map"
-TIME_SERIES_DIR = "../../TIME_SERIES_DATA"
+TIME_SERIES_DIR = "/panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/"
 TIME_SERIES_FOLDER = str(lower_limit) + "_" + str(upper_limit) +"_stage2_padded_time_series"
-DATASET_DIR = "../../DATASET_ARRAYS"
-DATASET_NAME_TRAIN = "train_split.npy"
-DATASET_NAME_TEST = "test_split.npy"
+# DATASET_DIR = "../../DATASET_ARRAYS"
+DATASET_DIR = "/panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/DATASET_ARRAYS"
+DATASET_NAME_TRAIN = "train_350_400_labels_427_78_317_143_288_52_255_12_50percentsplit.npy"
+DATASET_NAME_TEST = "test_350_400_labels_427_78_317_143_288_52_255_12_50percentsplit.npy"
 
 
-MODEL_DIR = "../MODELS/" + str(experiment_id)
+MODEL_DIR = "/panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/MODELS/" + str(experiment_id)
 
 
-RESULTS_DIR = "../RESULT_DATA"
+RESULTS_DIR = "/panfs/jay/groups/32/kumarv/pravirat/AI4EARTH/REALSAT/RESULT_DATA"
 RESULT_FOLDER = str(experiment_id) 
 
-VISUALISATION_DIR = "../../new_lakes_visualisation"
+# VISUALISATION_DIR = "../../new_lakes_visualisation"
 
-farm_label_array_path = '../farm_labels.npy'
-continent_info_array_path = '../continent_info.npy'
-all_label_array_path = '../all_IDs_labels.npy'
+# farm_label_array_path = '../farm_labels.npy'
+# continent_info_array_path = '../continent_info.npy'
+# all_label_array_path = '../all_IDs_labels.npy'
