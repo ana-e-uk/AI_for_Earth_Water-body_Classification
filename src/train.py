@@ -1,7 +1,6 @@
 '''
 Script to run the training loop
 '''
-<<<<<<< HEAD
 
 '''####################################################### Imports #######################################################''' 
 import numpy as np
@@ -93,15 +92,10 @@ label_info_array = np.load(config.label_info_filepath)
 
 train_dataset = np.load(config.data_train_baseline)
 
-for waterbody_id in train_dataset:
-
-    image
 '''####################################################### Training Loop #######################################################''' 
-=======
 import torch
 print(torch.__version__)  # Displays the PyTorch version
 print(torch.cuda.is_available())  # Should return False
->>>>>>> bf31550 (Fixing some errors with Praveen)
 
 train_loss = []
 
