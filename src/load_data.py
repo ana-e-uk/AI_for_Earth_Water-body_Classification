@@ -8,7 +8,11 @@ Code for handling data loading, transformations, preprocessing
 
 '''####################################################### Read in Data #######################################################''' 
 # Data already padded and patched
-
+def get_train_test_arrays(train_file, test_file):
+    """
+    Args:
+        train_file: File path to save npy array with file
+    """
 
 
 
