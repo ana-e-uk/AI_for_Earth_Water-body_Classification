@@ -7,6 +7,7 @@
 #SBATCH --mail-user=husse408@umn.edu 
 
 # module load python3/3.8.3_anaconda2020.07_mamba 
-cd /users/5/husse408/AI_EARTH/AI_for_Earth_Water-body_Classification
-source ~/AI_EARTH/AI_for_Earth_Water-body_Classification/ai_venv_yo/bin/activate
-python src/code_reference/SLTLAE_CL_TRAIN.py
+# cd /users/5/husse408/AI_EARTH/AI_for_Earth_Water-body_Classification  # Youssef
+cd /users/6/uribe055/AI_for_Earth_Water-body_Classification    # Ana
+source ~/AI_EARTH/AI_for_Earth_Water-body_Classification/ai_venv_u/bin/activate
+python src/train.py
