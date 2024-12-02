@@ -18,7 +18,7 @@ timeseries_data_dir = os.path.join(data_dir, "350_400_stage2_padded_time_series"
 continent_info_filepath = os.path.join(data_dir, "continent_info.npy")
 label_info_filepath = os.path.join(data_dir, "all_IDs_labels_realsat.npy")
 
-model_dir = '/../../../AI_for_Earth_Water-body_Classification/src/supervised_training_out'
+model_dir = '/users/6/uribe055/AI_for_Earth_Water-body_Classification/src/supervised_training_out'
 
 split_data_dir = "../data"
 
@@ -44,8 +44,9 @@ time_steps = 442
 
 # general
 num_classes = 4 # 5 when doing reservoir
-device = 'cpu'
+device = 'cuda'
 ignore_index = 0
+experiment_id = 'SLTLAE_CL'
 
 # training params
 batch_size = 256

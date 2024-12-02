@@ -133,14 +133,14 @@ for epoch in range(1, config.num_epochs+1):
     model.train()
 
     train_timer = time.time()
-    e_loss = 0
-    e_loss_s = 0
-    e_loss_t = 0
-    e_loss_cl = 0
-    e_loss_farm_log = 0
-    e_loss_river_log = 0
-    e_loss_stable_log = 0
-    e_loss_seasonal_log = 0
+    epoch_loss = 0
+    epoch_loss_s = 0
+    epoch_loss_t = 0
+    epoch_loss_cl = 0
+    epoch_loss_farm_log = 0
+    epoch_loss_river_log = 0
+    epoch_loss_stable_log = 0
+    epoch_loss_seasonal_log = 0
 
     for batch, [image_patch_s, label_patch_s,image_patch_t, label_patch_t, label_batch, ID_batch] in enumerate(data_loader):
         if(batch % 10 == 0):
@@ -202,16 +202,16 @@ for epoch in range(1, config.num_epochs+1):
         epoch_loss_t += batch_loss_t.item()
         epoch_loss_farm_log += farm_batch_loss_log.item()
         epoch_loss_river_log += river_batch_loss_log.item()
-        epoch_loss_stable_lakes_log += stable_lakes_batch_loss_log.item()
-        epoch_loss_mod_seas_lakes_log += mod_seas_lakes_batch_loss_log.item()
+        epoch_loss_stable_log += stable_lakes_batch_loss_log.item()
+        epoch_loss_seasonal_log += mod_seas_lakes_batch_loss_log.item()
 
     epoch_loss = epoch_loss/(batch+1)
     epoch_loss_s = epoch_loss_s/(batch+1)
     epoch_loss_t = epoch_loss_t/(batch+1)
     epoch_loss_farm_log = epoch_loss_farm_log/(batch+1)
     epoch_loss_river_log = epoch_loss_river_log/(batch+1)
-    epoch_loss_stable_lakes_log = epoch_loss_stable_lakes_log/(batch+1)
-    epoch_loss_mod_seas_lakes_log = epoch_loss_mod_seas_lakes_log/(batch+1)
+    epoch_loss_stable_log = epoch_loss_stable_log/(batch+1)
+    epoch_loss_seasonal_log = epoch_loss_seasonal_log/(batch+1)
 
     print(epoch_loss)
 #     print(epoch_loss,epoch_loss_s,epoch_loss_t,epoch_loss_farm_log,epoch_loss_river_log,epoch_loss_stable_lakes_log,epoch_loss_mod_seas_lakes_log,epoch_loss_eph_lakes_log)

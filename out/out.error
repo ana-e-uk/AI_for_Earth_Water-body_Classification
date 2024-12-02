@@ -1,0 +1,15 @@
+/users/6/uribe055/AI_for_Earth_Water-body_Classification/src/train.py:80: DeprecationWarning: Calling nonzero on 0d arrays is deprecated, as it behaves surprisingly. Use `atleast_1d(cond).nonzero()` if the old behavior was intended. If the context of this warning is of the form `arr[nonzero(cond)]`, just use `arr[cond]`.
+  class_indices = np.where(labels == c)[0]
+Traceback (most recent call last):
+  File "/users/6/uribe055/AI_for_Earth_Water-body_Classification/src/train.py", line 221, in <module>
+    torch.save(model.state_dict(), os.path.join(config.model_dir, str(config.experiment_id) + "_epoch_" + str(epoch) + ".pt"))
+  File "/users/6/uribe055/AI_for_Earth_Water-body_Classification/ai_venv_u/lib64/python3.11/site-packages/torch/serialization.py", line 849, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users/6/uribe055/AI_for_Earth_Water-body_Classification/ai_venv_u/lib64/python3.11/site-packages/torch/serialization.py", line 716, in _open_zipfile_writer
+    return container(name_or_buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users/6/uribe055/AI_for_Earth_Water-body_Classification/ai_venv_u/lib64/python3.11/site-packages/torch/serialization.py", line 687, in __init__
+    super().__init__(torch._C.PyTorchFileWriter(self.name))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Parent directory /../../../AI_for_Earth_Water-body_Classification/src/supervised_training_out does not exist.

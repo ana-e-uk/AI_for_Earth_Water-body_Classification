@@ -1,0 +1,71 @@
+2.5.1+cu124
+True
+Created Model
+Sent model to device
+Created optimizer
+Uploaded label array
+	filtered water body labels
+	created regions
+	Making lists
+0
+710
+LABEL COUNT: [  0 214   0 185  90 221]
+Getting training dataset
+Call data loader
+
+Epoch 1
+	Batch 0
+	starting forward training
+	spatiaal encoder
+	temporal encoder
+	temporal decoder
+	spatial decoder
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	Starting spatial loss
+	Ended spatial loss
+	Started time loss
+	Ended time loss
+	Batch loss: 28648.59765625
+	starting forward training
+	spatiaal encoder
+	temporal encoder
+	temporal decoder
+	spatial decoder
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	Starting spatial loss
+	Ended spatial loss
+	Started time loss
+	Ended time loss
+	Batch loss: 20682.783203125
+	starting forward training
+	spatiaal encoder
+	temporal encoder
+	temporal decoder
+	spatial decoder
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	Starting spatial loss
+	Ended spatial loss
+	Started time loss
+	Ended time loss
+	Batch loss: 12414.44140625
+350.3734385172526
+
+
