@@ -11,7 +11,7 @@ Uploaded label array
 710
 LABEL COUNT: [  0 214   0 185  90 221]
 Getting training dataset
-Call data loader
+Call data loaders
 
 Epoch 1
 	Batch 0
@@ -31,7 +31,7 @@ Epoch 1
 	Ended spatial loss
 	Started time loss
 	Ended time loss
-	Batch loss: 28648.59765625
+	Batch loss: 18264.083984375
 	starting forward training
 	spatiaal encoder
 	temporal encoder
@@ -48,7 +48,7 @@ Epoch 1
 	Ended spatial loss
 	Started time loss
 	Ended time loss
-	Batch loss: 20682.783203125
+	Batch loss: 16366.5302734375
 	starting forward training
 	spatiaal encoder
 	temporal encoder
@@ -65,7 +65,126 @@ Epoch 1
 	Ended spatial loss
 	Started time loss
 	Ended time loss
-	Batch loss: 12414.44140625
-350.3734385172526
+	Batch loss: 3445.936767578125
+245.23583984375
 
 
+
+Epoch 2
+	Batch 0
+	starting forward training
+	spatiaal encoder
+	temporal encoder
+	temporal decoder
+	spatial decoder
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	Starting spatial loss
+	Ended spatial loss
+	Started time loss
+	Ended time loss
+	Batch loss: 15010.16015625
+	starting forward training
+	spatiaal encoder
+	temporal encoder
+	temporal decoder
+	spatial decoder
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	Starting spatial loss
+	Ended spatial loss
+	Started time loss
+	Ended time loss
+	Batch loss: 14955.41796875
+	starting forward training
+	spatiaal encoder
+	temporal encoder
+	temporal decoder
+	spatial decoder
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	Starting spatial loss
+	Ended spatial loss
+	Started time loss
+	Ended time loss
+	Batch loss: 3202.586181640625
+179.3482411702474
+
+
+
+Epoch 3
+	Batch 0
+	starting forward training
+	spatiaal encoder
+	temporal encoder
+	temporal decoder
+	spatial decoder
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	Starting spatial loss
+	Ended spatial loss
+	Started time loss
+	Ended time loss
+	Batch loss: 15262.201171875
+	starting forward training
+	spatiaal encoder
+	temporal encoder
+	temporal decoder
+	spatial decoder
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	Starting spatial loss
+	Ended spatial loss
+	Started time loss
+	Ended time loss
+	Batch loss: 14685.158203125
+	starting forward training
+	spatiaal encoder
+	temporal encoder
+	temporal decoder
+	spatial decoder
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	Starting spatial loss
+	Ended spatial loss
+	Started time loss
+	Ended time loss
+	Batch loss: 3566.337158203125
+nan
+
+
+	starting forward training
+	spatiaal encoder
+	temporal encoder
+	temporal decoder
+	spatial decoder

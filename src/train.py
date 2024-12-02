@@ -10,6 +10,9 @@ import os
 import torch
 print(torch.__version__)  # Displays the PyTorch version
 print(torch.cuda.is_available())  # Should return False
+from torch.utils.data import random_split
+
+from sklearn.metrics import confusion_matrix, f1_score, accuracy_score, classification_report, precision_score, recall_score
 
 from model import SpatialtemporalAutoencoder, SpatialCNN, TemporalLSTM, EmbeddingSpace, SpatialDecoder
 from load_data import get_training_dataset, SEGMENTATION_SLTL_PRED
@@ -117,8 +120,21 @@ image_patches_spatial_list, label_patches_spatial_list, image_patches_temp_list,
 print('Getting training dataset')
 
 data = SEGMENTATION_SLTL_PRED(image_patches_spatial_list,label_patches_spatial_list,image_patches_temp_list,label_patches_temp_list,label_IDs_list,IDs_list)
-data_loader = torch.utils.data.DataLoader(dataset=data, batch_size=config.batch_size, shuffle=True, num_workers=0)
-print('Call data loader')
+
+# Determine split sizes
+dataset_size = len(data)
+train_size = int(0.8 * dataset_size)  # 80% for training
+test_size = dataset_size - train_size
+
+# Split the dataset
+train_dataset, test_dataset = random_split(data, [train_size, test_size])
+
+print('Call data loaders')
+train_loader = torch.utils.data.DataLoader(dataset=train_dataset, batch_size=config.batch_size, shuffle=True, num_workers=0)
+test_loader = torch.utils.data.DataLoader(dataset=test_dataset, batch_size=config.batch_size, shuffle=False, num_workers=0)
+
+# data loader for all the data
+# data_loader = torch.utils.data.DataLoader(dataset=data, batch_size=config.batch_size, shuffle=True, num_workers=0)
 
 all_reps = []
 valid_paths = []
@@ -142,7 +158,7 @@ for epoch in range(1, config.num_epochs+1):
     epoch_loss_stable_log = 0
     epoch_loss_seasonal_log = 0
 
-    for batch, [image_patch_s, label_patch_s,image_patch_t, label_patch_t, label_batch, ID_batch] in enumerate(data_loader):
+    for batch, [image_patch_s, label_patch_s,image_patch_t, label_patch_t, label_batch, ID_batch] in enumerate(train_loader):
         if(batch % 10 == 0):
             print(f'\tBatch {batch}')
 
@@ -218,4 +234,71 @@ for epoch in range(1, config.num_epochs+1):
     print('\n')
 
     model.eval()
-    torch.save(model.state_dict(), os.path.join(config.model_dir, str(config.experiment_id) + "_epoch_" + str(epoch) + ".pt"))
+    model_weights = os.path.join(config.model_dir, str(config.experiment_id) + "_epoch_" + str(epoch) + ".pt")
+    torch.save(model.state_dict(), model_weights)
+
+# '''####################################################### Testing Loop #######################################################''' 
+
+# # Load the saved model
+# model_path = model_weights
+# model.load_state_dict(torch.load(model_path))
+# model.eval()  # Set the model to evaluation mode
+
+# loss = 0
+# preds = []
+# labels = []
+# IDs_all = []
+
+# for batch, [image_patch_s, label_patch_s, image_patch_t, label_patch_t, label_batch, ID_batch] in enumerate(test_loader):
+    
+#     optimizer.zero_grad()
+
+#     code_vec, out = model(image_patch_s.to(config.device).float(), image_patch_t.to(config.device).float())
+
+#     label_batch = label_batch.type(torch.long).to(config.device)
+#     batch_loss = criterion(out, label_batch)
+#     loss += batch_loss.item()
+
+#     out_label_batch = torch.argmax(torch.nn.functional.softmax(out, dim=1), dim=1)
+#     out_label_batch_cpu = out_label_batch.detach().cpu().numpy()
+#     label_batch_cpu = label_batch.detach().cpu().numpy()
+        
+#     preds.append(out_label_batch_cpu)
+#     labels.append(label_batch_cpu)
+
+#     del out
+#     del code_vec
+
+# loss = loss/(batch+1)
+# print('Test Loss:{} '.format(loss), end="\n")
+# print("\n")
+
+# pred_array = np.concatenate(preds, axis=0)
+# label_array = np.concatenate(labels, axis=0)
+
+# print(pred_array.shape)
+# print(label_array.shape)
+
+# # print(classification_report(label_array, pred_array, digits=4))
+# # print(f1_score(y_true=label_array, y_pred=pred_array, average='macro'))
+
+# print(classification_report(label_array, pred_array, digits=4))
+# print("\nCONFUSION MATRIX:")
+# confusion_matrix_set = confusion_matrix(label_array,pred_array)
+# print(confusion_matrix_set)
+# f1_score_array = f1_score(label_array, pred_array, average = None)
+# precision_score_array = precision_score(label_array, pred_array, average = None)
+# recall_score_array = recall_score(label_array, pred_array, average = None)
+# # f1_score_array = f1_score(label_array, pred_array, labels = config.labels_for_cl, average = None)
+# # precision_score_array = precision_score(label_array, pred_array, labels = config.labels_for_cl, average = None)
+# # recall_score_array = recall_score(label_array, pred_array, labels = config.labels_for_cl, average = None)
+# for r in range(f1_score_array.shape[0]):
+#     print(f1_score_array[r],end = ' ')
+# print('')
+# for r in range(precision_score_array.shape[0]):
+#     print(precision_score_array[r],end = ' ')
+# print('')
+# for r in range(recall_score_array.shape[0]):
+#     print(recall_score_array[r],end = ' ')
+# print('')
+

@@ -1,10 +1,9 @@
 #!/bin/bash -l   
 #SBATCH -o /users/6/uribe055/AI_for_Earth_Water-body_Classification/out/out.output
 #SBATCH -e /users/6/uribe055/AI_for_Earth_Water-body_Classification/out/out.error    
-#SBATCH --time=1:00:00
-#SBATCH --ntasks=1
+#SBATCH --time=24:00:00
 #SBATCH -p msigpu
-#SBATCH --ntasks=24
+#SBATCH --ntasks=64
 #SBATCH --mem=16g
 #SBATCH --tmp=16g
 #SBATCH --mail-type=ALL  

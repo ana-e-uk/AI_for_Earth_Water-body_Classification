@@ -1,15 +1,9 @@
-/users/6/uribe055/AI_for_Earth_Water-body_Classification/src/train.py:80: DeprecationWarning: Calling nonzero on 0d arrays is deprecated, as it behaves surprisingly. Use `atleast_1d(cond).nonzero()` if the old behavior was intended. If the context of this warning is of the form `arr[nonzero(cond)]`, just use `arr[cond]`.
+/users/6/uribe055/AI_for_Earth_Water-body_Classification/src/train.py:83: DeprecationWarning: Calling nonzero on 0d arrays is deprecated, as it behaves surprisingly. Use `atleast_1d(cond).nonzero()` if the old behavior was intended. If the context of this warning is of the form `arr[nonzero(cond)]`, just use `arr[cond]`.
   class_indices = np.where(labels == c)[0]
+/users/6/uribe055/AI_for_Earth_Water-body_Classification/src/train.py:244: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(model_path))
 Traceback (most recent call last):
-  File "/users/6/uribe055/AI_for_Earth_Water-body_Classification/src/train.py", line 221, in <module>
-    torch.save(model.state_dict(), os.path.join(config.model_dir, str(config.experiment_id) + "_epoch_" + str(epoch) + ".pt"))
-  File "/users/6/uribe055/AI_for_Earth_Water-body_Classification/ai_venv_u/lib64/python3.11/site-packages/torch/serialization.py", line 849, in save
-    with _open_zipfile_writer(f) as opened_zipfile:
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/users/6/uribe055/AI_for_Earth_Water-body_Classification/ai_venv_u/lib64/python3.11/site-packages/torch/serialization.py", line 716, in _open_zipfile_writer
-    return container(name_or_buffer)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/users/6/uribe055/AI_for_Earth_Water-body_Classification/ai_venv_u/lib64/python3.11/site-packages/torch/serialization.py", line 687, in __init__
-    super().__init__(torch._C.PyTorchFileWriter(self.name))
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-RuntimeError: Parent directory /../../../AI_for_Earth_Water-body_Classification/src/supervised_training_out does not exist.
+  File "/users/6/uribe055/AI_for_Earth_Water-body_Classification/src/train.py", line 256, in <module>
+    code_vec, out = model(image_patch_s.to(config.device).float(), image_patch_t.to(config.device).float())
+    ^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
