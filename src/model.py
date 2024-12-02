@@ -124,7 +124,7 @@ class SpatialDecoder(nn.Module):
         """
         # Fully connected layer to reshape latent vector
         x = self.fc(latent_vector)
-
+        print('\treconstructing x')
         # Pass through deconvolution layers
         reconstructed_x = self.deconv_layers(x)
         reconstructed_x = reconstructed_x.view(-1, config.output_channels, config.output_size, config.output_size)
@@ -175,41 +175,68 @@ class SpatialtemporalAutoencoder(torch.nn.Module):
                 torch.nn.init.xavier_uniform_(m.weight)
         
     def forward(self,x_s,x_t):
-
+        print('\tstarting forward training')
         x_s = x_s.view(-1, config.channels, config.patch_size, config.patch_size)
-        conv1 = self.maxpool(self.relu(self.conv1_2(self.relu(self.conv1_1(x_s)))))
-        conv2 = self.maxpool(self.relu(self.conv2_2(self.relu(self.conv2_1(conv1)))))
-        conv3 = self.maxpool(self.relu(self.conv3_2(self.relu(self.conv3_1(conv2)))))
-        enc_s = self.relu(self.fc(conv3.view(-1,4096)))
-        
+        # Convolutional layer
+        x_s = self.relu(self.conv1_1(x_s))
+        x_s = self.relu(self.conv1_2(x_s))
+        x_s = self.maxpool(x_s)
+        # Convolutional layer
+        x_s = self.relu(self.conv2_1(x_s))
+        x_s = self.relu(self.conv2_2(x_s))
+        x_s = self.maxpool(x_s)
+        # Convolutional layer
+        x_s = self.relu(self.conv3_1(x_s))
+        x_s = self.relu(self.conv3_2(x_s))
+        x_s = self.maxpool(x_s)
+
+        # Spatial encoder
+        print('\tspatiaal encoder')
+        enc_s = self.relu(self.fc(x_s.view(-1,4096)))
         enc_s = self.relu(self.fc_s(enc_s))
         
         enc_s_norm = torch.nn.functional.normalize(enc_s, p=2.0, dim=1, eps=1e-12)
         
         batch, window, _ = x_t.shape
-#         print(x_t.shape)
-        x_encoder = self.instance_encoder(x_t) # ENCODE
-        _, x_encoder = self.temporal_encoder(x_encoder) # ENCODE
-        enc_t = x_encoder[0].squeeze() # ENCODE
-        
+
+        x_encoder = self.instance_encoder(x_t)
+        _, x_encoder = self.temporal_encoder(x_encoder)
+
+        # Temporal encoder
+        print('\ttemporal encoder')
+        enc_t = x_encoder[0].squeeze()
         enc_t = self.relu(self.fc_t(enc_t))
-
         enc_t_norm = torch.nn.functional.normalize(enc_t, p=2.0, dim=1, eps=1e-12)
-
-        code_vec = (enc_s_norm + enc_t_norm)
         
-        out_t = torch.zeros(batch, window, self.in_channels_temp).to(self.device) # DECODE
-        input = torch.unsqueeze(torch.zeros_like(code_vec), dim=1) # DECODE
-        h = x_encoder # DECODE
-        for step in range(window): # DECODE
-            input, h = self.temporal_decoder(input, h) # DECODE
-            out_t[:,step] = self.instance_decoder(input.squeeze()) # DECODE
+        # Combined embeddings
+        combined_emb = (enc_s_norm + enc_t_norm)
+        
+        out_t = torch.zeros(batch, window, self.in_channels_temp).to(self.device)
 
-        upfc = self.relu(self.upfc(code_vec))
-        upconv3 = self.relu(self.upconv3_2(self.relu(self.upconv3_1(self.unpool3(upfc.view(-1,64,8,8))))))
-        upconv2 = self.relu(self.upconv2_2(self.relu(self.upconv2_1(self.unpool2(upconv3)))))
-        out_s = self.upconv1_2(self.relu(self.upconv1_1(self.unpool1(upconv2))))
-        out_s = out_s.view(-1, config.channels, config.patch_size, config.patch_size)
+        # Decoders
+        print('\ttemporal decoder')
+        input = torch.unsqueeze(torch.zeros_like(combined_emb), dim=1)
+        h = x_encoder
+        for step in range(window):
+            input, h = self.temporal_decoder(input, h)
+            out_t[:,step] = self.instance_decoder(input.squeeze())
+
+        print('\tspatial decoder')
+        up = self.relu(self.upfc(combined_emb))
+        # Up-pooling to recover spatial vector
+        up = self.unpool3(up.view(-1,64,8,8))
+        up = self.relu(self.upconv3_1(up))
+        up = self.relu(self.upconv3_2(up))
+        # Up-pooling to recover spatial vector
+        up = self.unpool2(up)
+        up =self.relu(self.upconv2_1(up))
+        up = self.relu(self.upconv2_2(up))
+        # Up-pooling to recover spatial vector
+        up = self.unpool1(up)
+        up = self.relu(self.upconv1_1(up))
+        up = self.upconv1_2(up)
+
+        out_s = up.view(-1, config.channels, config.patch_size, config.patch_size)
             
-        return code_vec, out_s, out_t
+        return combined_emb, out_s, out_t
 '''####################################################### #######################################################''' 
