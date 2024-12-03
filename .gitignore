@@ -9,6 +9,7 @@ __pycache__/
 *$py.class
 
 src/supervised_training_out/*
+out/*
 
 # C extensions
 *.so

@@ -175,7 +175,7 @@ class SpatialtemporalAutoencoder(torch.nn.Module):
                 torch.nn.init.xavier_uniform_(m.weight)
         
     def forward(self,x_s,x_t):
-        print('\tstarting forward training')
+        # print('\tstarting forward training')
         x_s = x_s.view(-1, config.channels, config.patch_size, config.patch_size)
         # Convolutional layer
         x_s = self.relu(self.conv1_1(x_s))
@@ -191,7 +191,7 @@ class SpatialtemporalAutoencoder(torch.nn.Module):
         x_s = self.maxpool(x_s)
 
         # Spatial encoder
-        print('\tspatiaal encoder')
+        # print('\tspatiaal encoder')
         enc_s = self.relu(self.fc(x_s.view(-1,4096)))
         enc_s = self.relu(self.fc_s(enc_s))
         
@@ -203,7 +203,7 @@ class SpatialtemporalAutoencoder(torch.nn.Module):
         _, x_encoder = self.temporal_encoder(x_encoder)
 
         # Temporal encoder
-        print('\ttemporal encoder')
+        # print('\ttemporal encoder')
         enc_t = x_encoder[0].squeeze()
         enc_t = self.relu(self.fc_t(enc_t))
         enc_t_norm = torch.nn.functional.normalize(enc_t, p=2.0, dim=1, eps=1e-12)
@@ -214,14 +214,14 @@ class SpatialtemporalAutoencoder(torch.nn.Module):
         out_t = torch.zeros(batch, window, self.in_channels_temp).to(self.device)
 
         # Decoders
-        print('\ttemporal decoder')
+        # print('\ttemporal decoder')
         input = torch.unsqueeze(torch.zeros_like(combined_emb), dim=1)
         h = x_encoder
         for step in range(window):
             input, h = self.temporal_decoder(input, h)
             out_t[:,step] = self.instance_decoder(input.squeeze())
 
-        print('\tspatial decoder')
+        # print('\tspatial decoder')
         up = self.relu(self.upfc(combined_emb))
         # Up-pooling to recover spatial vector
         up = self.unpool3(up.view(-1,64,8,8))
