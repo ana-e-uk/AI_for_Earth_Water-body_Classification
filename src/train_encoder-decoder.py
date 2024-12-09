@@ -74,6 +74,7 @@ def constrained_loss(embeddings, labels):
         embeddings: Embeddings from spatial and temporal encoders.
         labels: Class labels for each embedding.
     """
+    # TODO: check if there are at least 2 labels per class
     unique_classes  = np.unique(labels)
     total_loss = 0.0
     count = 0
@@ -94,7 +95,7 @@ def constrained_loss(embeddings, labels):
 
                 # Compute log of the cosine similarity
                 if cos > 0:
-                    total_loss += torch.log(cos)
+                    total_loss += torch.log(cos)    # TODO: check for when torch.log is nan
             count += count
 
     avg_loss = torch.div(total_loss, count)
@@ -205,10 +206,11 @@ for epoch in range(1, config.num_epochs+1):
         # print(f'\tBatch loss: {batch_loss_s}')
         
         if epoch < config.num_epochs :
-            batch_loss = batch_loss_s * 0.01 + batch_loss_t
+            batch_loss = batch_loss_s * 0.01 + batch_loss_t     # TODO: check they are of the same scale after epoch 10, change multiplier as needed
         else:
             batch_loss = batch_loss_s * 0.01 + batch_loss_t + (river_batch_loss_log + farm_batch_loss_log + stable_lakes_batch_loss_log + mod_seas_lakes_batch_loss_log) * 0.25
-
+        # TODO: why epoch 2000 nan
+        # TODO: use else as batch loss after 1000 epochs (like paper pg 491) <-- play with number [500,1000,15000 etc.]
 
         batch_loss.backward()
         optimizer.step()

@@ -142,6 +142,11 @@ valid_outs_s = []
 valid_outs_t = []
 '''####################################################### Encoder-CNN Training Loop #######################################################''' 
 
+
+# TODO: load weights from encoder-decoder model (final weights)
+# TODO: make sure the layer names in the encoder-decoder model and encoder-CNN model are the same
+
+
 train_loss = []
 
 for epoch in range(1, config.num_epochs+1):
