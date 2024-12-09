@@ -1,5 +1,5 @@
 '''
-Script to run the training loop
+Script to run the training loop for the encoder-decoder
 '''
 
 '''####################################################### Imports #######################################################''' 
@@ -14,7 +14,7 @@ from torch.utils.data import random_split
 
 from sklearn.metrics import confusion_matrix, f1_score, accuracy_score, classification_report, precision_score, recall_score
 
-from model import SpatialtemporalAutoencoder, SpatialCNN, TemporalLSTM, EmbeddingSpace, SpatialDecoder
+from model import EncoderDecoder, SpatialCNN, TemporalLSTM, EmbeddingSpace, SpatialDecoder
 from load_data import get_training_dataset, SEGMENTATION_SLTL_PRED
 import config
 '''####################################################### Functions #######################################################''' 
@@ -104,7 +104,7 @@ def constrained_loss(embeddings, labels):
 criterion = torch.nn.MSELoss(reduction = 'none')
 
 '''####################################################### Element Definitions #######################################################''' 
-model = SpatialtemporalAutoencoder(in_channels_spatial=config.channels, out_channels_spatial=config.channels,in_channels_temp= config.channels,out_channels_temp = config.channels)
+model = EncoderDecoder(in_channels_spatial=config.channels, out_channels_spatial=config.channels,in_channels_temp= config.channels,out_channels_temp = config.channels)
 print('Created Model')
 
 model = model.to(config.device)
@@ -140,7 +140,7 @@ all_reps = []
 valid_paths = []
 valid_outs_s = []
 valid_outs_t = []
-'''####################################################### Training Loop #######################################################''' 
+'''####################################################### Encoder-Decoder Training Loop #######################################################''' 
 
 train_loss = []
 
@@ -238,68 +238,5 @@ for epoch in range(1, config.num_epochs+1):
         model_weights = os.path.join(config.model_dir, str(config.experiment_id) + "_epoch_" + str(epoch) + ".pt")
         torch.save(model.state_dict(), model_weights)
 
-# '''####################################################### Testing Loop #######################################################''' 
-
-# # Load the saved model
-# model_path = model_weights
-# model.load_state_dict(torch.load(model_path))
-# model.eval()  # Set the model to evaluation mode
-
-# loss = 0
-# preds = []
-# labels = []
-# IDs_all = []
-
-# for batch, [image_patch_s, label_patch_s, image_patch_t, label_patch_t, label_batch, ID_batch] in enumerate(test_loader):
-    
-#     optimizer.zero_grad()
-
-#     code_vec, out = model(image_patch_s.to(config.device).float(), image_patch_t.to(config.device).float())
-
-#     label_batch = label_batch.type(torch.long).to(config.device)
-#     batch_loss = criterion(out, label_batch)
-#     loss += batch_loss.item()
-
-#     out_label_batch = torch.argmax(torch.nn.functional.softmax(out, dim=1), dim=1)
-#     out_label_batch_cpu = out_label_batch.detach().cpu().numpy()
-#     label_batch_cpu = label_batch.detach().cpu().numpy()
-        
-#     preds.append(out_label_batch_cpu)
-#     labels.append(label_batch_cpu)
-
-#     del out
-#     del code_vec
-
-# loss = loss/(batch+1)
-# print('Test Loss:{} '.format(loss), end="\n")
-# print("\n")
-
-# pred_array = np.concatenate(preds, axis=0)
-# label_array = np.concatenate(labels, axis=0)
-
-# print(pred_array.shape)
-# print(label_array.shape)
-
-# # print(classification_report(label_array, pred_array, digits=4))
-# # print(f1_score(y_true=label_array, y_pred=pred_array, average='macro'))
-
-# print(classification_report(label_array, pred_array, digits=4))
-# print("\nCONFUSION MATRIX:")
-# confusion_matrix_set = confusion_matrix(label_array,pred_array)
-# print(confusion_matrix_set)
-# f1_score_array = f1_score(label_array, pred_array, average = None)
-# precision_score_array = precision_score(label_array, pred_array, average = None)
-# recall_score_array = recall_score(label_array, pred_array, average = None)
-# # f1_score_array = f1_score(label_array, pred_array, labels = config.labels_for_cl, average = None)
-# # precision_score_array = precision_score(label_array, pred_array, labels = config.labels_for_cl, average = None)
-# # recall_score_array = recall_score(label_array, pred_array, labels = config.labels_for_cl, average = None)
-# for r in range(f1_score_array.shape[0]):
-#     print(f1_score_array[r],end = ' ')
-# print('')
-# for r in range(precision_score_array.shape[0]):
-#     print(precision_score_array[r],end = ' ')
-# print('')
-# for r in range(recall_score_array.shape[0]):
-#     print(recall_score_array[r],end = ' ')
-# print('')
-
+# TODO: if run again - save epoch loss to file
+# TODO: if run again - save and print several true and reconstructed time series and image patches

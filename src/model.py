@@ -130,9 +130,9 @@ class SpatialDecoder(nn.Module):
         reconstructed_x = reconstructed_x.view(-1, config.output_channels, config.output_size, config.output_size)
         return reconstructed_x
     
-class SpatialtemporalAutoencoder(torch.nn.Module):
+class EncoderDecoder(torch.nn.Module):
     def __init__(self, in_channels_spatial, out_channels_spatial, in_channels_temp, out_channels_temp):
-        super(SpatialtemporalAutoencoder, self).__init__()
+        super(EncoderDecoder, self).__init__()
         
         self.code_dim = config.batch_size
         self.device = config.device
@@ -239,4 +239,74 @@ class SpatialtemporalAutoencoder(torch.nn.Module):
         out_s = up.view(-1, config.channels, config.patch_size, config.patch_size)
             
         return combined_emb, out_s, out_t
+    
+class EncoderCNN(torch.nn.Module):
+    def __init__(self, in_channels_spatial, in_channels_temp):
+        super(EncoderCNN, self).__init__()
+        
+        self.code_dim = config.batch_size
+        self.device = config.device
+        self.in_channels_temp = in_channels_temp
+        
+        self.conv1_1 = torch.nn.Conv2d(in_channels_spatial, 16, 3, padding=1)
+        self.conv1_2 = torch.nn.Conv2d(16, 16, 3, padding=1)
+        self.conv2_1 = torch.nn.Conv2d(16, 32, 3, padding=1)
+        self.conv2_2 = torch.nn.Conv2d(32, 32, 3, padding=1)
+        self.conv3_1 = torch.nn.Conv2d(32, 64, 3, padding=1)
+        self.conv3_2 = torch.nn.Conv2d(64, 64, 3, padding=1)
+        self.fc = torch.nn.Linear(4096, self.code_dim)
+        self.fc_s = torch.nn.Linear(self.code_dim, self.code_dim)
+        self.fc_t = torch.nn.Linear(self.code_dim, self.code_dim)
+
+        self.out_1 = torch.nn.Linear(256,256)
+        self.out_2 = torch.nn.Linear(256,4)
+             
+        self.instance_encoder = torch.nn.Linear(in_features=in_channels_temp, out_features=self.code_dim)
+        self.temporal_encoder = torch.nn.LSTM(input_size=self.code_dim, hidden_size=self.code_dim, batch_first=True)
+      
+        self.maxpool = torch.nn.MaxPool2d(2)
+        self.upsample = torch.nn.Upsample(scale_factor=2, mode='bilinear', align_corners=True)
+        self.sigmoid = torch.nn.Sigmoid()
+        self.relu = torch.nn.ReLU(inplace=True)
+        self.dropout = torch.nn.Dropout(p=0.1)
+        for m in self.modules():
+            if isinstance(m, torch.nn.Conv2d) or isinstance(m, torch.nn.Linear):
+                torch.nn.init.xavier_uniform_(m.weight)
+        
+    def forward(self,x_s,x_t):
+        # print('\tstarting forward training')
+        x_s = x_s.view(-1, config.channels, config.patch_size, config.patch_size)
+        # Convolutional layer
+        x_s = self.relu(self.conv1_1(x_s))
+        x_s = self.relu(self.conv1_2(x_s))
+        x_s = self.maxpool(x_s)
+        # Convolutional layer
+        x_s = self.relu(self.conv2_1(x_s))
+        x_s = self.relu(self.conv2_2(x_s))
+        x_s = self.maxpool(x_s)
+        # Convolutional layer
+        x_s = self.relu(self.conv3_1(x_s))
+        x_s = self.relu(self.conv3_2(x_s))
+        x_s = self.maxpool(x_s)
+
+        # Spatial encoder
+        # print('\tspatial encoder')
+        enc_s = self.relu(self.fc_s(enc_s))
+        enc_s_norm = torch.nn.functional.normalize(enc_s, p=2.0, dim=1, eps=1e-12)
+        
+        # Temporal encoder
+        # print('\ttemporal encoder')
+        x_encoder = self.instance_encoder(x_t)
+        _, x_encoder = self.temporal_encoder(x_encoder)
+        enc_t = x_encoder[0].squeeze()
+        enc_t = self.relu(self.fc_t(enc_t))
+        enc_t_norm = torch.nn.functional.normalize(enc_t, p=2.0, dim=1, eps=1e-12)
+        
+        # Combined embeddings
+        combined_emb = (enc_s_norm + enc_t_norm)
+        
+        out_labels_1 = self.relu((self.out1(combined_emb.view(-1,256))))
+        out_labels_2 = self.out_2(out_labels_1.view(-1,256))
+
+        return combined_emb, out_labels_2
 '''####################################################### #######################################################''' 

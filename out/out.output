@@ -15,176 +15,12000 @@ Call data loaders
 
 Epoch 1
 	Batch 0
-	starting forward training
-	spatiaal encoder
-	temporal encoder
-	temporal decoder
-	spatial decoder
-	1
-	2
-	3
-	4
-	5
-	6
-	7
-	Starting spatial loss
-	Ended spatial loss
-	Started time loss
-	Ended time loss
-	Batch loss: 18264.083984375
-	starting forward training
-	spatiaal encoder
-	temporal encoder
-	temporal decoder
-	spatial decoder
-	1
-	2
-	3
-	4
-	5
-	6
-	7
-	Starting spatial loss
-	Ended spatial loss
-	Started time loss
-	Ended time loss
-	Batch loss: 16366.5302734375
-	starting forward training
-	spatiaal encoder
-	temporal encoder
-	temporal decoder
-	spatial decoder
-	1
-	2
-	3
-	4
-	5
-	6
-	7
-	Starting spatial loss
-	Ended spatial loss
-	Started time loss
-	Ended time loss
-	Batch loss: 3445.936767578125
-245.23583984375
+epoch loss: 297.0885009765625
 
 
 
 Epoch 2
 	Batch 0
-	starting forward training
-	spatiaal encoder
-	temporal encoder
-	temporal decoder
-	spatial decoder
-	1
-	2
-	3
-	4
-	5
-	6
-	7
-	Starting spatial loss
-	Ended spatial loss
-	Started time loss
-	Ended time loss
-	Batch loss: 15010.16015625
-	starting forward training
-	spatiaal encoder
-	temporal encoder
-	temporal decoder
-	spatial decoder
-	1
-	2
-	3
-	4
-	5
-	6
-	7
-	Starting spatial loss
-	Ended spatial loss
-	Started time loss
-	Ended time loss
-	Batch loss: 14955.41796875
-	starting forward training
-	spatiaal encoder
-	temporal encoder
-	temporal decoder
-	spatial decoder
-	1
-	2
-	3
-	4
-	5
-	6
-	7
-	Starting spatial loss
-	Ended spatial loss
-	Started time loss
-	Ended time loss
-	Batch loss: 3202.586181640625
-179.3482411702474
+epoch loss: 197.25658671061197
 
 
 
 Epoch 3
 	Batch 0
-	starting forward training
-	spatiaal encoder
-	temporal encoder
-	temporal decoder
-	spatial decoder
-	1
-	2
-	3
-	4
-	5
-	6
-	7
-	Starting spatial loss
-	Ended spatial loss
-	Started time loss
-	Ended time loss
-	Batch loss: 15262.201171875
-	starting forward training
-	spatiaal encoder
-	temporal encoder
-	temporal decoder
-	spatial decoder
-	1
-	2
-	3
-	4
-	5
-	6
-	7
-	Starting spatial loss
-	Ended spatial loss
-	Started time loss
-	Ended time loss
-	Batch loss: 14685.158203125
-	starting forward training
-	spatiaal encoder
-	temporal encoder
-	temporal decoder
-	spatial decoder
-	1
-	2
-	3
-	4
-	5
-	6
-	7
-	Starting spatial loss
-	Ended spatial loss
-	Started time loss
-	Ended time loss
-	Batch loss: 3566.337158203125
-nan
+epoch loss: 184.76704915364584
 
 
-	starting forward training
-	spatiaal encoder
-	temporal encoder
-	temporal decoder
-	spatial decoder
+
+Epoch 4
+	Batch 0
+epoch loss: 184.82901763916016
+
+
+
+Epoch 5
+	Batch 0
+epoch loss: 183.73242696126303
+
+
+
+Epoch 6
+	Batch 0
+epoch loss: 171.33187866210938
+
+
+
+Epoch 7
+	Batch 0
+epoch loss: 169.4788614908854
+
+
+
+Epoch 8
+	Batch 0
+epoch loss: 170.1872100830078
+
+
+
+Epoch 9
+	Batch 0
+epoch loss: 164.76316833496094
+
+
+
+Epoch 10
+	Batch 0
+epoch loss: 157.61421966552734
+
+
+
+Epoch 11
+	Batch 0
+epoch loss: 149.32618967692056
+
+
+
+Epoch 12
+	Batch 0
+epoch loss: 142.86417643229166
+
+
+
+Epoch 13
+	Batch 0
+epoch loss: 140.374267578125
+
+
+
+Epoch 14
+	Batch 0
+epoch loss: 139.49832153320312
+
+
+
+Epoch 15
+	Batch 0
+epoch loss: 136.85166931152344
+
+
+
+Epoch 16
+	Batch 0
+epoch loss: 138.87017822265625
+
+
+
+Epoch 17
+	Batch 0
+epoch loss: 136.60679372151694
+
+
+
+Epoch 18
+	Batch 0
+epoch loss: 137.056760152181
+
+
+
+Epoch 19
+	Batch 0
+epoch loss: 135.63617451985678
+
+
+
+Epoch 20
+	Batch 0
+epoch loss: 134.8332061767578
+
+
+
+Epoch 21
+	Batch 0
+epoch loss: 131.03897603352866
+
+
+
+Epoch 22
+	Batch 0
+epoch loss: 128.24433135986328
+
+
+
+Epoch 23
+	Batch 0
+epoch loss: 128.07332865397134
+
+
+
+Epoch 24
+	Batch 0
+epoch loss: 122.27201843261719
+
+
+
+Epoch 25
+	Batch 0
+epoch loss: 121.52083587646484
+
+
+
+Epoch 26
+	Batch 0
+epoch loss: 124.37596384684245
+
+
+
+Epoch 27
+	Batch 0
+epoch loss: 127.02288818359375
+
+
+
+Epoch 28
+	Batch 0
+epoch loss: 121.88966623942058
+
+
+
+Epoch 29
+	Batch 0
+epoch loss: 121.35912577311198
+
+
+
+Epoch 30
+	Batch 0
+epoch loss: 119.69391377766927
+
+
+
+Epoch 31
+	Batch 0
+epoch loss: 119.68922932942708
+
+
+
+Epoch 32
+	Batch 0
+epoch loss: 116.26761372884114
+
+
+
+Epoch 33
+	Batch 0
+epoch loss: 121.06217447916667
+
+
+
+Epoch 34
+	Batch 0
+epoch loss: 119.93116251627605
+
+
+
+Epoch 35
+	Batch 0
+epoch loss: 119.47100575764973
+
+
+
+Epoch 36
+	Batch 0
+epoch loss: 118.35537211100261
+
+
+
+Epoch 37
+	Batch 0
+epoch loss: 118.3349100748698
+
+
+
+Epoch 38
+	Batch 0
+epoch loss: 116.69694010416667
+
+
+
+Epoch 39
+	Batch 0
+epoch loss: 118.57295735677083
+
+
+
+Epoch 40
+	Batch 0
+epoch loss: 118.65747578938802
+
+
+
+Epoch 41
+	Batch 0
+epoch loss: 119.34111785888672
+
+
+
+Epoch 42
+	Batch 0
+epoch loss: 117.07826741536458
+
+
+
+Epoch 43
+	Batch 0
+epoch loss: 116.08583577473958
+
+
+
+Epoch 44
+	Batch 0
+epoch loss: 117.18802897135417
+
+
+
+Epoch 45
+	Batch 0
+epoch loss: 115.12919616699219
+
+
+
+Epoch 46
+	Batch 0
+epoch loss: 113.64789581298828
+
+
+
+Epoch 47
+	Batch 0
+epoch loss: 114.59027608235677
+
+
+
+Epoch 48
+	Batch 0
+epoch loss: 117.41574096679688
+
+
+
+Epoch 49
+	Batch 0
+epoch loss: 137.29945373535156
+
+
+
+Epoch 50
+	Batch 0
+epoch loss: 155.1070556640625
+
+
+
+Epoch 51
+	Batch 0
+epoch loss: 157.21519978841147
+
+
+
+Epoch 52
+	Batch 0
+epoch loss: 143.73185221354166
+
+
+
+Epoch 53
+	Batch 0
+epoch loss: 126.31334431966145
+
+
+
+Epoch 54
+	Batch 0
+epoch loss: 130.35753122965494
+
+
+
+Epoch 55
+	Batch 0
+epoch loss: 122.68310546875
+
+
+
+Epoch 56
+	Batch 0
+epoch loss: 121.82626342773438
+
+
+
+Epoch 57
+	Batch 0
+epoch loss: 113.72144571940105
+
+
+
+Epoch 58
+	Batch 0
+epoch loss: 113.3202616373698
+
+
+
+Epoch 59
+	Batch 0
+epoch loss: 161.74942270914713
+
+
+
+Epoch 60
+	Batch 0
+epoch loss: 137.23515828450522
+
+
+
+Epoch 61
+	Batch 0
+epoch loss: 141.0241266886393
+
+
+
+Epoch 62
+	Batch 0
+epoch loss: 124.52221171061198
+
+
+
+Epoch 63
+	Batch 0
+epoch loss: 112.35242970784505
+
+
+
+Epoch 64
+	Batch 0
+epoch loss: 111.8617655436198
+
+
+
+Epoch 65
+	Batch 0
+epoch loss: 109.70878601074219
+
+
+
+Epoch 66
+	Batch 0
+epoch loss: 107.46629587809245
+
+
+
+Epoch 67
+	Batch 0
+epoch loss: 107.91257222493489
+
+
+
+Epoch 68
+	Batch 0
+epoch loss: 105.46950785319011
+
+
+
+Epoch 69
+	Batch 0
+epoch loss: 104.16669209798177
+
+
+
+Epoch 70
+	Batch 0
+epoch loss: 114.33941904703777
+
+
+
+Epoch 71
+	Batch 0
+epoch loss: 109.56197357177734
+
+
+
+Epoch 72
+	Batch 0
+epoch loss: 109.9642105102539
+
+
+
+Epoch 73
+	Batch 0
+epoch loss: 103.78354899088542
+
+
+
+Epoch 74
+	Batch 0
+epoch loss: 105.42504628499348
+
+
+
+Epoch 75
+	Batch 0
+epoch loss: 104.37187194824219
+
+
+
+Epoch 76
+	Batch 0
+epoch loss: 103.9845708211263
+
+
+
+Epoch 77
+	Batch 0
+epoch loss: 106.05322774251302
+
+
+
+Epoch 78
+	Batch 0
+epoch loss: 104.64670817057292
+
+
+
+Epoch 79
+	Batch 0
+epoch loss: 101.93814086914062
+
+
+
+Epoch 80
+	Batch 0
+epoch loss: 99.8816426595052
+
+
+
+Epoch 81
+	Batch 0
+epoch loss: 104.36731211344402
+
+
+
+Epoch 82
+	Batch 0
+epoch loss: 99.42627716064453
+
+
+
+Epoch 83
+	Batch 0
+epoch loss: 98.57345072428386
+
+
+
+Epoch 84
+	Batch 0
+epoch loss: 97.89819844563802
+
+
+
+Epoch 85
+	Batch 0
+epoch loss: 87.61346054077148
+
+
+
+Epoch 86
+	Batch 0
+epoch loss: 87.3268330891927
+
+
+
+Epoch 87
+	Batch 0
+epoch loss: 105.88852945963542
+
+
+
+Epoch 88
+	Batch 0
+epoch loss: 82.65500259399414
+
+
+
+Epoch 89
+	Batch 0
+epoch loss: 106.28766377766927
+
+
+
+Epoch 90
+	Batch 0
+epoch loss: 107.34723409016927
+
+
+
+Epoch 91
+	Batch 0
+epoch loss: 116.25490824381511
+
+
+
+Epoch 92
+	Batch 0
+epoch loss: 108.1811014811198
+
+
+
+Epoch 93
+	Batch 0
+epoch loss: 102.25627009073894
+
+
+
+Epoch 94
+	Batch 0
+epoch loss: 103.00476582845052
+
+
+
+Epoch 95
+	Batch 0
+epoch loss: 101.01143900553386
+
+
+
+Epoch 96
+	Batch 0
+epoch loss: 96.5099589029948
+
+
+
+Epoch 97
+	Batch 0
+epoch loss: 96.75000254313152
+
+
+
+Epoch 98
+	Batch 0
+epoch loss: 97.98634338378906
+
+
+
+Epoch 99
+	Batch 0
+epoch loss: 98.2550760904948
+
+
+
+Epoch 100
+	Batch 0
+epoch loss: 98.13401540120442
+
+
+
+Epoch 101
+	Batch 0
+epoch loss: 94.61988830566406
+
+
+
+Epoch 102
+	Batch 0
+epoch loss: 98.64184824625652
+
+
+
+Epoch 103
+	Batch 0
+epoch loss: 94.03609975179036
+
+
+
+Epoch 104
+	Batch 0
+epoch loss: 91.1883773803711
+
+
+
+Epoch 105
+	Batch 0
+epoch loss: 90.95210520426433
+
+
+
+Epoch 106
+	Batch 0
+epoch loss: 90.01274108886719
+
+
+
+Epoch 107
+	Batch 0
+epoch loss: 89.4610087076823
+
+
+
+Epoch 108
+	Batch 0
+epoch loss: 105.76510874430339
+
+
+
+Epoch 109
+	Batch 0
+epoch loss: 89.83773930867513
+
+
+
+Epoch 110
+	Batch 0
+epoch loss: 90.01976521809895
+
+
+
+Epoch 111
+	Batch 0
+epoch loss: 81.84601084391277
+
+
+
+Epoch 112
+	Batch 0
+epoch loss: 72.99133555094402
+
+
+
+Epoch 113
+	Batch 0
+epoch loss: 74.78862762451172
+
+
+
+Epoch 114
+	Batch 0
+epoch loss: 69.17908350626628
+
+
+
+Epoch 115
+	Batch 0
+epoch loss: 72.59099197387695
+
+
+
+Epoch 116
+	Batch 0
+epoch loss: 79.99924214680989
+
+
+
+Epoch 117
+	Batch 0
+epoch loss: 75.42421213785808
+
+
+
+Epoch 118
+	Batch 0
+epoch loss: 74.6839116414388
+
+
+
+Epoch 119
+	Batch 0
+epoch loss: 72.32237879435222
+
+
+
+Epoch 120
+	Batch 0
+epoch loss: 71.1333236694336
+
+
+
+Epoch 121
+	Batch 0
+epoch loss: 72.04877471923828
+
+
+
+Epoch 122
+	Batch 0
+epoch loss: 71.81242370605469
+
+
+
+Epoch 123
+	Batch 0
+epoch loss: 89.89292653401692
+
+
+
+Epoch 124
+	Batch 0
+epoch loss: 96.14720662434895
+
+
+
+Epoch 125
+	Batch 0
+epoch loss: 93.2087885538737
+
+
+
+Epoch 126
+	Batch 0
+epoch loss: 97.03468577067058
+
+
+
+Epoch 127
+	Batch 0
+epoch loss: 95.87416585286458
+
+
+
+Epoch 128
+	Batch 0
+epoch loss: 93.82869720458984
+
+
+
+Epoch 129
+	Batch 0
+epoch loss: 95.84470876057942
+
+
+
+Epoch 130
+	Batch 0
+epoch loss: 96.41895294189453
+
+
+
+Epoch 131
+	Batch 0
+epoch loss: 93.92289479573567
+
+
+
+Epoch 132
+	Batch 0
+epoch loss: 93.9852066040039
+
+
+
+Epoch 133
+	Batch 0
+epoch loss: 95.95468139648438
+
+
+
+Epoch 134
+	Batch 0
+epoch loss: 93.65434265136719
+
+
+
+Epoch 135
+	Batch 0
+epoch loss: 93.62047831217448
+
+
+
+Epoch 136
+	Batch 0
+epoch loss: 95.76407114664714
+
+
+
+Epoch 137
+	Batch 0
+epoch loss: 91.83950551350911
+
+
+
+Epoch 138
+	Batch 0
+epoch loss: 87.01649856567383
+
+
+
+Epoch 139
+	Batch 0
+epoch loss: 74.66412099202473
+
+
+
+Epoch 140
+	Batch 0
+epoch loss: 73.28485616048177
+
+
+
+Epoch 141
+	Batch 0
+epoch loss: 67.49284489949544
+
+
+
+Epoch 142
+	Batch 0
+epoch loss: 67.46149571736653
+
+
+
+Epoch 143
+	Batch 0
+epoch loss: 66.32540893554688
+
+
+
+Epoch 144
+	Batch 0
+epoch loss: 66.59807586669922
+
+
+
+Epoch 145
+	Batch 0
+epoch loss: 68.6419677734375
+
+
+
+Epoch 146
+	Batch 0
+epoch loss: 64.73082860310872
+
+
+
+Epoch 147
+	Batch 0
+epoch loss: 63.20730336507162
+
+
+
+Epoch 148
+	Batch 0
+epoch loss: 64.0487454732259
+
+
+
+Epoch 149
+	Batch 0
+epoch loss: 64.39378992716472
+
+
+
+Epoch 150
+	Batch 0
+epoch loss: 63.72694396972656
+
+
+
+Epoch 151
+	Batch 0
+epoch loss: 62.79866282145182
+
+
+
+Epoch 152
+	Batch 0
+epoch loss: 68.36710357666016
+
+
+
+Epoch 153
+	Batch 0
+epoch loss: 69.97911834716797
+
+
+
+Epoch 154
+	Batch 0
+epoch loss: 67.31117121378581
+
+
+
+Epoch 155
+	Batch 0
+epoch loss: 66.24862925211589
+
+
+
+Epoch 156
+	Batch 0
+epoch loss: 67.86176935831706
+
+
+
+Epoch 157
+	Batch 0
+epoch loss: 67.11635462443034
+
+
+
+Epoch 158
+	Batch 0
+epoch loss: 67.35900624593098
+
+
+
+Epoch 159
+	Batch 0
+epoch loss: 64.9967778523763
+
+
+
+Epoch 160
+	Batch 0
+epoch loss: 66.68422571818034
+
+
+
+Epoch 161
+	Batch 0
+epoch loss: 67.21158599853516
+
+
+
+Epoch 162
+	Batch 0
+epoch loss: 65.6453742980957
+
+
+
+Epoch 163
+	Batch 0
+epoch loss: 63.62952168782552
+
+
+
+Epoch 164
+	Batch 0
+epoch loss: 63.07001495361328
+
+
+
+Epoch 165
+	Batch 0
+epoch loss: 64.40735626220703
+
+
+
+Epoch 166
+	Batch 0
+epoch loss: 63.15952936808268
+
+
+
+Epoch 167
+	Batch 0
+epoch loss: 62.07882563273112
+
+
+
+Epoch 168
+	Batch 0
+epoch loss: 62.52777989705404
+
+
+
+Epoch 169
+	Batch 0
+epoch loss: 62.768253326416016
+
+
+
+Epoch 170
+	Batch 0
+epoch loss: 61.94873555501302
+
+
+
+Epoch 171
+	Batch 0
+epoch loss: 64.28188959757487
+
+
+
+Epoch 172
+	Batch 0
+epoch loss: 61.977909088134766
+
+
+
+Epoch 173
+	Batch 0
+epoch loss: 63.48210652669271
+
+
+
+Epoch 174
+	Batch 0
+epoch loss: 63.871437072753906
+
+
+
+Epoch 175
+	Batch 0
+epoch loss: 63.97722371419271
+
+
+
+Epoch 176
+	Batch 0
+epoch loss: 65.13200378417969
+
+
+
+Epoch 177
+	Batch 0
+epoch loss: 62.61144765218099
+
+
+
+Epoch 178
+	Batch 0
+epoch loss: 65.0478146870931
+
+
+
+Epoch 179
+	Batch 0
+epoch loss: 63.950487772623696
+
+
+
+Epoch 180
+	Batch 0
+epoch loss: 64.5118522644043
+
+
+
+Epoch 181
+	Batch 0
+epoch loss: 63.669864654541016
+
+
+
+Epoch 182
+	Batch 0
+epoch loss: 63.799939473470054
+
+
+
+Epoch 183
+	Batch 0
+epoch loss: 65.60290273030598
+
+
+
+Epoch 184
+	Batch 0
+epoch loss: 64.55684153238933
+
+
+
+Epoch 185
+	Batch 0
+epoch loss: 62.65597788492838
+
+
+
+Epoch 186
+	Batch 0
+epoch loss: 63.11536153157552
+
+
+
+Epoch 187
+	Batch 0
+epoch loss: 62.063376108805336
+
+
+
+Epoch 188
+	Batch 0
+epoch loss: 61.18299102783203
+
+
+
+Epoch 189
+	Batch 0
+epoch loss: 63.24211120605469
+
+
+
+Epoch 190
+	Batch 0
+epoch loss: 61.15200169881185
+
+
+
+Epoch 191
+	Batch 0
+epoch loss: 61.64387130737305
+
+
+
+Epoch 192
+	Batch 0
+epoch loss: 62.308362325032554
+
+
+
+Epoch 193
+	Batch 0
+epoch loss: 60.61115646362305
+
+
+
+Epoch 194
+	Batch 0
+epoch loss: 61.40609486897787
+
+
+
+Epoch 195
+	Batch 0
+epoch loss: 59.601495107014976
+
+
+
+Epoch 196
+	Batch 0
+epoch loss: 60.71175003051758
+
+
+
+Epoch 197
+	Batch 0
+epoch loss: 61.74541346232096
+
+
+
+Epoch 198
+	Batch 0
+epoch loss: 63.51655705769857
+
+
+
+Epoch 199
+	Batch 0
+epoch loss: 63.41159439086914
+
+
+
+Epoch 200
+	Batch 0
+epoch loss: 62.77400588989258
+
+
+
+Epoch 201
+	Batch 0
+epoch loss: 62.669549306233726
+
+
+
+Epoch 202
+	Batch 0
+epoch loss: 62.3474235534668
+
+
+
+Epoch 203
+	Batch 0
+epoch loss: 63.48400624593099
+
+
+
+Epoch 204
+	Batch 0
+epoch loss: 63.51877085367838
+
+
+
+Epoch 205
+	Batch 0
+epoch loss: 64.13843536376953
+
+
+
+Epoch 206
+	Batch 0
+epoch loss: 61.35027313232422
+
+
+
+Epoch 207
+	Batch 0
+epoch loss: 59.18292236328125
+
+
+
+Epoch 208
+	Batch 0
+epoch loss: 58.91077423095703
+
+
+
+Epoch 209
+	Batch 0
+epoch loss: 58.46080780029297
+
+
+
+Epoch 210
+	Batch 0
+epoch loss: 60.03025690714518
+
+
+
+Epoch 211
+	Batch 0
+epoch loss: 59.069803873697914
+
+
+
+Epoch 212
+	Batch 0
+epoch loss: 58.21311060587565
+
+
+
+Epoch 213
+	Batch 0
+epoch loss: 57.80505116780599
+
+
+
+Epoch 214
+	Batch 0
+epoch loss: 58.164015452067055
+
+
+
+Epoch 215
+	Batch 0
+epoch loss: 59.761138916015625
+
+
+
+Epoch 216
+	Batch 0
+epoch loss: 58.624560038248696
+
+
+
+Epoch 217
+	Batch 0
+epoch loss: 57.59566116333008
+
+
+
+Epoch 218
+	Batch 0
+epoch loss: 59.59482192993164
+
+
+
+Epoch 219
+	Batch 0
+epoch loss: 59.48210779825846
+
+
+
+Epoch 220
+	Batch 0
+epoch loss: 61.008252461751304
+
+
+
+Epoch 221
+	Batch 0
+epoch loss: 58.20171864827474
+
+
+
+Epoch 222
+	Batch 0
+epoch loss: 57.309654235839844
+
+
+
+Epoch 223
+	Batch 0
+epoch loss: 56.5683339436849
+
+
+
+Epoch 224
+	Batch 0
+epoch loss: 57.55271530151367
+
+
+
+Epoch 225
+	Batch 0
+epoch loss: 57.033348083496094
+
+
+
+Epoch 226
+	Batch 0
+epoch loss: 55.78609975179037
+
+
+
+Epoch 227
+	Batch 0
+epoch loss: 55.664191563924156
+
+
+
+Epoch 228
+	Batch 0
+epoch loss: 56.00784556070963
+
+
+
+Epoch 229
+	Batch 0
+epoch loss: 57.412027994791664
+
+
+
+Epoch 230
+	Batch 0
+epoch loss: 58.53604634602865
+
+
+
+Epoch 231
+	Batch 0
+epoch loss: 57.45803578694662
+
+
+
+Epoch 232
+	Batch 0
+epoch loss: 56.672122955322266
+
+
+
+Epoch 233
+	Batch 0
+epoch loss: 55.425855000813804
+
+
+
+Epoch 234
+	Batch 0
+epoch loss: 54.436676025390625
+
+
+
+Epoch 235
+	Batch 0
+epoch loss: 53.69712257385254
+
+
+
+Epoch 236
+	Batch 0
+epoch loss: 53.824509938557945
+
+
+
+Epoch 237
+	Batch 0
+epoch loss: 53.06048838297526
+
+
+
+Epoch 238
+	Batch 0
+epoch loss: 53.174120585123696
+
+
+
+Epoch 239
+	Batch 0
+epoch loss: 53.90286763509115
+
+
+
+Epoch 240
+	Batch 0
+epoch loss: 53.270242055257164
+
+
+
+Epoch 241
+	Batch 0
+epoch loss: 54.96737798055013
+
+
+
+Epoch 242
+	Batch 0
+epoch loss: 55.86344782511393
+
+
+
+Epoch 243
+	Batch 0
+epoch loss: 55.38124211629232
+
+
+
+Epoch 244
+	Batch 0
+epoch loss: 55.718448638916016
+
+
+
+Epoch 245
+	Batch 0
+epoch loss: 54.64648183186849
+
+
+
+Epoch 246
+	Batch 0
+epoch loss: 56.71437199910482
+
+
+
+Epoch 247
+	Batch 0
+epoch loss: 56.049357096354164
+
+
+
+Epoch 248
+	Batch 0
+epoch loss: 53.05144119262695
+
+
+
+Epoch 249
+	Batch 0
+epoch loss: 51.27300198872884
+
+
+
+Epoch 250
+	Batch 0
+epoch loss: 51.30494054158529
+
+
+
+Epoch 251
+	Batch 0
+epoch loss: 52.692325592041016
+
+
+
+Epoch 252
+	Batch 0
+epoch loss: 50.43500200907389
+
+
+
+Epoch 253
+	Batch 0
+epoch loss: 52.026589711507164
+
+
+
+Epoch 254
+	Batch 0
+epoch loss: 50.98594284057617
+
+
+
+Epoch 255
+	Batch 0
+epoch loss: 52.31991831461588
+
+
+
+Epoch 256
+	Batch 0
+epoch loss: 51.16071701049805
+
+
+
+Epoch 257
+	Batch 0
+epoch loss: 52.77963383992513
+
+
+
+Epoch 258
+	Batch 0
+epoch loss: 51.98932393391927
+
+
+
+Epoch 259
+	Batch 0
+epoch loss: 53.13717142740885
+
+
+
+Epoch 260
+	Batch 0
+epoch loss: 53.33938852945963
+
+
+
+Epoch 261
+	Batch 0
+epoch loss: 52.63931147257487
+
+
+
+Epoch 262
+	Batch 0
+epoch loss: 52.041924794514976
+
+
+
+Epoch 263
+	Batch 0
+epoch loss: 52.05523808797201
+
+
+
+Epoch 264
+	Batch 0
+epoch loss: 52.63538487752279
+
+
+
+Epoch 265
+	Batch 0
+epoch loss: 52.27738507588705
+
+
+
+Epoch 266
+	Batch 0
+epoch loss: 50.36161422729492
+
+
+
+Epoch 267
+	Batch 0
+epoch loss: 50.60883458455404
+
+
+
+Epoch 268
+	Batch 0
+epoch loss: 51.001241048177086
+
+
+
+Epoch 269
+	Batch 0
+epoch loss: 49.87653668721517
+
+
+
+Epoch 270
+	Batch 0
+epoch loss: 49.947940826416016
+
+
+
+Epoch 271
+	Batch 0
+epoch loss: 51.107032775878906
+
+
+
+Epoch 272
+	Batch 0
+epoch loss: 51.518595377604164
+
+
+
+Epoch 273
+	Batch 0
+epoch loss: 52.75931040445963
+
+
+
+Epoch 274
+	Batch 0
+epoch loss: 52.09945805867513
+
+
+
+Epoch 275
+	Batch 0
+epoch loss: 53.395337422688804
+
+
+
+Epoch 276
+	Batch 0
+epoch loss: 52.20901997884115
+
+
+
+Epoch 277
+	Batch 0
+epoch loss: 50.71403249104818
+
+
+
+Epoch 278
+	Batch 0
+epoch loss: 50.49766985575358
+
+
+
+Epoch 279
+	Batch 0
+epoch loss: 51.69311269124349
+
+
+
+Epoch 280
+	Batch 0
+epoch loss: 50.991366704305015
+
+
+
+Epoch 281
+	Batch 0
+epoch loss: 51.22175153096517
+
+
+
+Epoch 282
+	Batch 0
+epoch loss: 49.83293533325195
+
+
+
+Epoch 283
+	Batch 0
+epoch loss: 50.20040702819824
+
+
+
+Epoch 284
+	Batch 0
+epoch loss: 48.5815060933431
+
+
+
+Epoch 285
+	Batch 0
+epoch loss: 50.12976582845052
+
+
+
+Epoch 286
+	Batch 0
+epoch loss: 50.29375330607096
+
+
+
+Epoch 287
+	Batch 0
+epoch loss: 50.42907587687174
+
+
+
+Epoch 288
+	Batch 0
+epoch loss: 50.59193229675293
+
+
+
+Epoch 289
+	Batch 0
+epoch loss: 53.02691777547201
+
+
+
+Epoch 290
+	Batch 0
+epoch loss: 51.22488911946615
+
+
+
+Epoch 291
+	Batch 0
+epoch loss: 52.19150034586588
+
+
+
+Epoch 292
+	Batch 0
+epoch loss: 51.28125826517741
+
+
+
+Epoch 293
+	Batch 0
+epoch loss: 48.22275924682617
+
+
+
+Epoch 294
+	Batch 0
+epoch loss: 48.8157590230306
+
+
+
+Epoch 295
+	Batch 0
+epoch loss: 48.45993423461914
+
+
+
+Epoch 296
+	Batch 0
+epoch loss: 49.38036092122396
+
+
+
+Epoch 297
+	Batch 0
+epoch loss: 49.22872797648112
+
+
+
+Epoch 298
+	Batch 0
+epoch loss: 48.80908711751302
+
+
+
+Epoch 299
+	Batch 0
+epoch loss: 49.59028116861979
+
+
+
+Epoch 300
+	Batch 0
+epoch loss: 47.67326736450195
+
+
+
+Epoch 301
+	Batch 0
+epoch loss: 47.70076688130697
+
+
+
+Epoch 302
+	Batch 0
+epoch loss: 49.98659896850586
+
+
+
+Epoch 303
+	Batch 0
+epoch loss: 48.61993916829427
+
+
+
+Epoch 304
+	Batch 0
+epoch loss: 47.77743148803711
+
+
+
+Epoch 305
+	Batch 0
+epoch loss: 46.99923769632975
+
+
+
+Epoch 306
+	Batch 0
+epoch loss: 48.161916732788086
+
+
+
+Epoch 307
+	Batch 0
+epoch loss: 47.84904925028483
+
+
+
+Epoch 308
+	Batch 0
+epoch loss: 48.53153292338053
+
+
+
+Epoch 309
+	Batch 0
+epoch loss: 48.60250345865885
+
+
+
+Epoch 310
+	Batch 0
+epoch loss: 48.44987042744955
+
+
+
+Epoch 311
+	Batch 0
+epoch loss: 48.900912602742515
+
+
+
+Epoch 312
+	Batch 0
+epoch loss: 48.382123947143555
+
+
+
+Epoch 313
+	Batch 0
+epoch loss: 49.589911142985024
+
+
+
+Epoch 314
+	Batch 0
+epoch loss: 49.57620493570963
+
+
+
+Epoch 315
+	Batch 0
+epoch loss: 49.129278818766274
+
+
+
+Epoch 316
+	Batch 0
+epoch loss: 48.77811813354492
+
+
+
+Epoch 317
+	Batch 0
+epoch loss: 48.18268330891927
+
+
+
+Epoch 318
+	Batch 0
+epoch loss: 49.08824793497721
+
+
+
+Epoch 319
+	Batch 0
+epoch loss: 48.87994257609049
+
+
+
+Epoch 320
+	Batch 0
+epoch loss: 48.904608408610024
+
+
+
+Epoch 321
+	Batch 0
+epoch loss: 49.76415506998698
+
+
+
+Epoch 322
+	Batch 0
+epoch loss: 50.99175135294596
+
+
+
+Epoch 323
+	Batch 0
+epoch loss: 51.17070770263672
+
+
+
+Epoch 324
+	Batch 0
+epoch loss: 52.34391212463379
+
+
+
+Epoch 325
+	Batch 0
+epoch loss: 51.01589775085449
+
+
+
+Epoch 326
+	Batch 0
+epoch loss: 50.63492774963379
+
+
+
+Epoch 327
+	Batch 0
+epoch loss: 49.24488385518392
+
+
+
+Epoch 328
+	Batch 0
+epoch loss: 48.90547307332357
+
+
+
+Epoch 329
+	Batch 0
+epoch loss: 48.752431869506836
+
+
+
+Epoch 330
+	Batch 0
+epoch loss: 47.07527542114258
+
+
+
+Epoch 331
+	Batch 0
+epoch loss: 46.81669489542643
+
+
+
+Epoch 332
+	Batch 0
+epoch loss: 49.079786936442055
+
+
+
+Epoch 333
+	Batch 0
+epoch loss: 47.13119252522787
+
+
+
+Epoch 334
+	Batch 0
+epoch loss: 46.9136848449707
+
+
+
+Epoch 335
+	Batch 0
+epoch loss: 47.63512293497721
+
+
+
+Epoch 336
+	Batch 0
+epoch loss: 47.85185114542643
+
+
+
+Epoch 337
+	Batch 0
+epoch loss: 48.41462834676107
+
+
+
+Epoch 338
+	Batch 0
+epoch loss: 46.74127705891927
+
+
+
+Epoch 339
+	Batch 0
+epoch loss: 46.794012705485024
+
+
+
+Epoch 340
+	Batch 0
+epoch loss: 47.31184387207031
+
+
+
+Epoch 341
+	Batch 0
+epoch loss: 47.27851359049479
+
+
+
+Epoch 342
+	Batch 0
+epoch loss: 48.56102498372396
+
+
+
+Epoch 343
+	Batch 0
+epoch loss: 47.83893648783366
+
+
+
+Epoch 344
+	Batch 0
+epoch loss: 48.353251139322914
+
+
+
+Epoch 345
+	Batch 0
+epoch loss: 48.49315897623698
+
+
+
+Epoch 346
+	Batch 0
+epoch loss: 47.07291158040365
+
+
+
+Epoch 347
+	Batch 0
+epoch loss: 47.60436503092448
+
+
+
+Epoch 348
+	Batch 0
+epoch loss: 47.86331748962402
+
+
+
+Epoch 349
+	Batch 0
+epoch loss: 48.03494517008463
+
+
+
+Epoch 350
+	Batch 0
+epoch loss: 48.25264358520508
+
+
+
+Epoch 351
+	Batch 0
+epoch loss: 47.9359327952067
+
+
+
+Epoch 352
+	Batch 0
+epoch loss: 48.379461924235024
+
+
+
+Epoch 353
+	Batch 0
+epoch loss: 47.94012196858724
+
+
+
+Epoch 354
+	Batch 0
+epoch loss: 46.3628355662028
+
+
+
+Epoch 355
+	Batch 0
+epoch loss: 45.77959442138672
+
+
+
+Epoch 356
+	Batch 0
+epoch loss: 45.92878087361654
+
+
+
+Epoch 357
+	Batch 0
+epoch loss: 45.972572326660156
+
+
+
+Epoch 358
+	Batch 0
+epoch loss: 46.5765126546224
+
+
+
+Epoch 359
+	Batch 0
+epoch loss: 47.481642405192055
+
+
+
+Epoch 360
+	Batch 0
+epoch loss: 47.59112548828125
+
+
+
+Epoch 361
+	Batch 0
+epoch loss: 48.0959358215332
+
+
+
+Epoch 362
+	Batch 0
+epoch loss: 47.990851084391274
+
+
+
+Epoch 363
+	Batch 0
+epoch loss: 48.67386563618978
+
+
+
+Epoch 364
+	Batch 0
+epoch loss: 50.66460100809733
+
+
+
+Epoch 365
+	Batch 0
+epoch loss: 50.0046501159668
+
+
+
+Epoch 366
+	Batch 0
+epoch loss: 49.71505928039551
+
+
+
+Epoch 367
+	Batch 0
+epoch loss: 47.62961006164551
+
+
+
+Epoch 368
+	Batch 0
+epoch loss: 45.49537022908529
+
+
+
+Epoch 369
+	Batch 0
+epoch loss: 49.37448374430338
+
+
+
+Epoch 370
+	Batch 0
+epoch loss: 47.56794548034668
+
+
+
+Epoch 371
+	Batch 0
+epoch loss: 48.06861241658529
+
+
+
+Epoch 372
+	Batch 0
+epoch loss: 47.29580942789713
+
+
+
+Epoch 373
+	Batch 0
+epoch loss: 45.58065541585287
+
+
+
+Epoch 374
+	Batch 0
+epoch loss: 44.70781707763672
+
+
+
+Epoch 375
+	Batch 0
+epoch loss: 46.64016087849935
+
+
+
+Epoch 376
+	Batch 0
+epoch loss: 45.09095446268717
+
+
+
+Epoch 377
+	Batch 0
+epoch loss: 46.49164326985677
+
+
+
+Epoch 378
+	Batch 0
+epoch loss: 45.87464904785156
+
+
+
+Epoch 379
+	Batch 0
+epoch loss: 46.20540873209635
+
+
+
+Epoch 380
+	Batch 0
+epoch loss: 46.62219492594401
+
+
+
+Epoch 381
+	Batch 0
+epoch loss: 45.2330436706543
+
+
+
+Epoch 382
+	Batch 0
+epoch loss: 45.235940297444664
+
+
+
+Epoch 383
+	Batch 0
+epoch loss: 47.06895510355631
+
+
+
+Epoch 384
+	Batch 0
+epoch loss: 46.79358355204264
+
+
+
+Epoch 385
+	Batch 0
+epoch loss: 47.080945332845054
+
+
+
+Epoch 386
+	Batch 0
+epoch loss: 46.47066688537598
+
+
+
+Epoch 387
+	Batch 0
+epoch loss: 46.301692962646484
+
+
+
+Epoch 388
+	Batch 0
+epoch loss: 45.886393229166664
+
+
+
+Epoch 389
+	Batch 0
+epoch loss: 45.9437058766683
+
+
+
+Epoch 390
+	Batch 0
+epoch loss: 45.372008641560875
+
+
+
+Epoch 391
+	Batch 0
+epoch loss: 47.00090026855469
+
+
+
+Epoch 392
+	Batch 0
+epoch loss: 46.21916707356771
+
+
+
+Epoch 393
+	Batch 0
+epoch loss: 48.61156209309896
+
+
+
+Epoch 394
+	Batch 0
+epoch loss: 48.138238271077476
+
+
+
+Epoch 395
+	Batch 0
+epoch loss: 47.880425771077476
+
+
+
+Epoch 396
+	Batch 0
+epoch loss: 45.50456619262695
+
+
+
+Epoch 397
+	Batch 0
+epoch loss: 45.404187520345054
+
+
+
+Epoch 398
+	Batch 0
+epoch loss: 45.45758310953776
+
+
+
+Epoch 399
+	Batch 0
+epoch loss: 46.21090952555338
+
+
+
+Epoch 400
+	Batch 0
+epoch loss: 46.88144175211588
+
+
+
+Epoch 401
+	Batch 0
+epoch loss: 46.40732065836588
+
+
+
+Epoch 402
+	Batch 0
+epoch loss: 46.05603345235189
+
+
+
+Epoch 403
+	Batch 0
+epoch loss: 46.06382624308268
+
+
+
+Epoch 404
+	Batch 0
+epoch loss: 44.5782356262207
+
+
+
+Epoch 405
+	Batch 0
+epoch loss: 44.27622731526693
+
+
+
+Epoch 406
+	Batch 0
+epoch loss: 44.1123956044515
+
+
+
+Epoch 407
+	Batch 0
+epoch loss: 44.0308469136556
+
+
+
+Epoch 408
+	Batch 0
+epoch loss: 44.564683278401695
+
+
+
+Epoch 409
+	Batch 0
+epoch loss: 44.1475944519043
+
+
+
+Epoch 410
+	Batch 0
+epoch loss: 44.37152671813965
+
+
+
+Epoch 411
+	Batch 0
+epoch loss: 44.79205576578776
+
+
+
+Epoch 412
+	Batch 0
+epoch loss: 44.91292508443197
+
+
+
+Epoch 413
+	Batch 0
+epoch loss: 44.957420349121094
+
+
+
+Epoch 414
+	Batch 0
+epoch loss: 43.75522549947103
+
+
+
+Epoch 415
+	Batch 0
+epoch loss: 45.53300348917643
+
+
+
+Epoch 416
+	Batch 0
+epoch loss: 45.041720708211265
+
+
+
+Epoch 417
+	Batch 0
+epoch loss: 47.705092112223305
+
+
+
+Epoch 418
+	Batch 0
+epoch loss: 45.85637283325195
+
+
+
+Epoch 419
+	Batch 0
+epoch loss: 46.210140228271484
+
+
+
+Epoch 420
+	Batch 0
+epoch loss: 43.992804209391274
+
+
+
+Epoch 421
+	Batch 0
+epoch loss: 44.18935902913412
+
+
+
+Epoch 422
+	Batch 0
+epoch loss: 44.215476989746094
+
+
+
+Epoch 423
+	Batch 0
+epoch loss: 44.04563967386881
+
+
+
+Epoch 424
+	Batch 0
+epoch loss: 44.172786712646484
+
+
+
+Epoch 425
+	Batch 0
+epoch loss: 43.73364384969076
+
+
+
+Epoch 426
+	Batch 0
+epoch loss: 43.86452992757162
+
+
+
+Epoch 427
+	Batch 0
+epoch loss: 44.01819864908854
+
+
+
+Epoch 428
+	Batch 0
+epoch loss: 43.388984044392906
+
+
+
+Epoch 429
+	Batch 0
+epoch loss: 43.09086990356445
+
+
+
+Epoch 430
+	Batch 0
+epoch loss: 41.8831532796224
+
+
+
+Epoch 431
+	Batch 0
+epoch loss: 43.14233207702637
+
+
+
+Epoch 432
+	Batch 0
+epoch loss: 43.56655629475912
+
+
+
+Epoch 433
+	Batch 0
+epoch loss: 42.99860382080078
+
+
+
+Epoch 434
+	Batch 0
+epoch loss: 44.61996205647787
+
+
+
+Epoch 435
+	Batch 0
+epoch loss: 43.16533660888672
+
+
+
+Epoch 436
+	Batch 0
+epoch loss: 43.11734708150228
+
+
+
+Epoch 437
+	Batch 0
+epoch loss: 44.44281450907389
+
+
+
+Epoch 438
+	Batch 0
+epoch loss: 44.05952707926432
+
+
+
+Epoch 439
+	Batch 0
+epoch loss: 43.048692067464195
+
+
+
+Epoch 440
+	Batch 0
+epoch loss: 42.70685068766276
+
+
+
+Epoch 441
+	Batch 0
+epoch loss: 41.647833506266274
+
+
+
+Epoch 442
+	Batch 0
+epoch loss: 42.32715606689453
+
+
+
+Epoch 443
+	Batch 0
+epoch loss: 42.36449178059896
+
+
+
+Epoch 444
+	Batch 0
+epoch loss: 43.01699002583822
+
+
+
+Epoch 445
+	Batch 0
+epoch loss: 42.41439310709635
+
+
+
+Epoch 446
+	Batch 0
+epoch loss: 43.03598594665527
+
+
+
+Epoch 447
+	Batch 0
+epoch loss: 42.652261098225914
+
+
+
+Epoch 448
+	Batch 0
+epoch loss: 44.19627825419108
+
+
+
+Epoch 449
+	Batch 0
+epoch loss: 43.60994656880697
+
+
+
+Epoch 450
+	Batch 0
+epoch loss: 44.111985524495445
+
+
+
+Epoch 451
+	Batch 0
+epoch loss: 43.90058898925781
+
+
+
+Epoch 452
+	Batch 0
+epoch loss: 42.533302307128906
+
+
+
+Epoch 453
+	Batch 0
+epoch loss: 42.25377909342448
+
+
+
+Epoch 454
+	Batch 0
+epoch loss: 42.56124496459961
+
+
+
+Epoch 455
+	Batch 0
+epoch loss: 41.829610188802086
+
+
+
+Epoch 456
+	Batch 0
+epoch loss: 42.76306660970052
+
+
+
+Epoch 457
+	Batch 0
+epoch loss: 42.67712529500326
+
+
+
+Epoch 458
+	Batch 0
+epoch loss: 41.487419764200844
+
+
+
+Epoch 459
+	Batch 0
+epoch loss: 41.81547546386719
+
+
+
+Epoch 460
+	Batch 0
+epoch loss: 41.91286595662435
+
+
+
+Epoch 461
+	Batch 0
+epoch loss: 41.927117029825844
+
+
+
+Epoch 462
+	Batch 0
+epoch loss: 41.53035990397135
+
+
+
+Epoch 463
+	Batch 0
+epoch loss: 42.744171778361
+
+
+
+Epoch 464
+	Batch 0
+epoch loss: 43.87699317932129
+
+
+
+Epoch 465
+	Batch 0
+epoch loss: 44.74003473917643
+
+
+
+Epoch 466
+	Batch 0
+epoch loss: 45.930731455485024
+
+
+
+Epoch 467
+	Batch 0
+epoch loss: 46.30043284098307
+
+
+
+Epoch 468
+	Batch 0
+epoch loss: 47.564369201660156
+
+
+
+Epoch 469
+	Batch 0
+epoch loss: 46.76860427856445
+
+
+
+Epoch 470
+	Batch 0
+epoch loss: 45.71370506286621
+
+
+
+Epoch 471
+	Batch 0
+epoch loss: 44.28465334574381
+
+
+
+Epoch 472
+	Batch 0
+epoch loss: 43.08524131774902
+
+
+
+Epoch 473
+	Batch 0
+epoch loss: 42.4552001953125
+
+
+
+Epoch 474
+	Batch 0
+epoch loss: 41.90654627482096
+
+
+
+Epoch 475
+	Batch 0
+epoch loss: 41.84671274820963
+
+
+
+Epoch 476
+	Batch 0
+epoch loss: 42.779327392578125
+
+
+
+Epoch 477
+	Batch 0
+epoch loss: 42.60922495524088
+
+
+
+Epoch 478
+	Batch 0
+epoch loss: 42.804918924967446
+
+
+
+Epoch 479
+	Batch 0
+epoch loss: 40.91069666544596
+
+
+
+Epoch 480
+	Batch 0
+epoch loss: 42.15915616353353
+
+
+
+Epoch 481
+	Batch 0
+epoch loss: 41.840932846069336
+
+
+
+Epoch 482
+	Batch 0
+epoch loss: 42.48146375020345
+
+
+
+Epoch 483
+	Batch 0
+epoch loss: 40.25733439127604
+
+
+
+Epoch 484
+	Batch 0
+epoch loss: 43.33013025919596
+
+
+
+Epoch 485
+	Batch 0
+epoch loss: 41.62557856241862
+
+
+
+Epoch 486
+	Batch 0
+epoch loss: 41.82761319478353
+
+
+
+Epoch 487
+	Batch 0
+epoch loss: 42.504956563313804
+
+
+
+Epoch 488
+	Batch 0
+epoch loss: 43.00622685750326
+
+
+
+Epoch 489
+	Batch 0
+epoch loss: 44.23789278666178
+
+
+
+Epoch 490
+	Batch 0
+epoch loss: 44.42250188191732
+
+
+
+Epoch 491
+	Batch 0
+epoch loss: 43.69927088419596
+
+
+
+Epoch 492
+	Batch 0
+epoch loss: 42.88258488972982
+
+
+
+Epoch 493
+	Batch 0
+epoch loss: 42.59446144104004
+
+
+
+Epoch 494
+	Batch 0
+epoch loss: 43.002601623535156
+
+
+
+Epoch 495
+	Batch 0
+epoch loss: 43.85237503051758
+
+
+
+Epoch 496
+	Batch 0
+epoch loss: 43.87196604410807
+
+
+
+Epoch 497
+	Batch 0
+epoch loss: 43.26150894165039
+
+
+
+Epoch 498
+	Batch 0
+epoch loss: 43.12648137410482
+
+
+
+Epoch 499
+	Batch 0
+epoch loss: 42.601022720336914
+
+
+
+Epoch 500
+	Batch 0
+epoch loss: 42.268988291422524
+
+
+
+Epoch 501
+	Batch 0
+epoch loss: 41.497179667154946
+
+
+
+Epoch 502
+	Batch 0
+epoch loss: 40.9052734375
+
+
+
+Epoch 503
+	Batch 0
+epoch loss: 40.216766357421875
+
+
+
+Epoch 504
+	Batch 0
+epoch loss: 41.23992029825846
+
+
+
+Epoch 505
+	Batch 0
+epoch loss: 41.907850901285805
+
+
+
+Epoch 506
+	Batch 0
+epoch loss: 42.146497090657554
+
+
+
+Epoch 507
+	Batch 0
+epoch loss: 42.748905181884766
+
+
+
+Epoch 508
+	Batch 0
+epoch loss: 44.45019404093424
+
+
+
+Epoch 509
+	Batch 0
+epoch loss: 43.33898162841797
+
+
+
+Epoch 510
+	Batch 0
+epoch loss: 44.27701314290365
+
+
+
+Epoch 511
+	Batch 0
+epoch loss: 43.63025792439779
+
+
+
+Epoch 512
+	Batch 0
+epoch loss: 45.005422592163086
+
+
+
+Epoch 513
+	Batch 0
+epoch loss: 43.53018442789713
+
+
+
+Epoch 514
+	Batch 0
+epoch loss: 44.2686398824056
+
+
+
+Epoch 515
+	Batch 0
+epoch loss: 41.487719217936196
+
+
+
+Epoch 516
+	Batch 0
+epoch loss: 43.48712031046549
+
+
+
+Epoch 517
+	Batch 0
+epoch loss: 42.106126149495445
+
+
+
+Epoch 518
+	Batch 0
+epoch loss: 42.624396642049156
+
+
+
+Epoch 519
+	Batch 0
+epoch loss: 42.10053380330404
+
+
+
+Epoch 520
+	Batch 0
+epoch loss: 41.35620625813802
+
+
+
+Epoch 521
+	Batch 0
+epoch loss: 41.883657455444336
+
+
+
+Epoch 522
+	Batch 0
+epoch loss: 42.38518142700195
+
+
+
+Epoch 523
+	Batch 0
+epoch loss: 43.40165774027506
+
+
+
+Epoch 524
+	Batch 0
+epoch loss: 44.21550750732422
+
+
+
+Epoch 525
+	Batch 0
+epoch loss: 42.88161977132162
+
+
+
+Epoch 526
+	Batch 0
+epoch loss: 42.58420181274414
+
+
+
+Epoch 527
+	Batch 0
+epoch loss: 40.9061393737793
+
+
+
+Epoch 528
+	Batch 0
+epoch loss: 40.53047307332357
+
+
+
+Epoch 529
+	Batch 0
+epoch loss: 40.71516354878744
+
+
+
+Epoch 530
+	Batch 0
+epoch loss: 40.84383328755697
+
+
+
+Epoch 531
+	Batch 0
+epoch loss: 39.54006830851237
+
+
+
+Epoch 532
+	Batch 0
+epoch loss: 40.11474863688151
+
+
+
+Epoch 533
+	Batch 0
+epoch loss: 39.08809343973795
+
+
+
+Epoch 534
+	Batch 0
+epoch loss: 39.333075841267906
+
+
+
+Epoch 535
+	Batch 0
+epoch loss: 39.350578943888344
+
+
+
+Epoch 536
+	Batch 0
+epoch loss: 39.73880132039388
+
+
+
+Epoch 537
+	Batch 0
+epoch loss: 40.151597340901695
+
+
+
+Epoch 538
+	Batch 0
+epoch loss: 40.4492441813151
+
+
+
+Epoch 539
+	Batch 0
+epoch loss: 40.33335876464844
+
+
+
+Epoch 540
+	Batch 0
+epoch loss: 40.33732986450195
+
+
+
+Epoch 541
+	Batch 0
+epoch loss: 40.369117736816406
+
+
+
+Epoch 542
+	Batch 0
+epoch loss: 40.71865463256836
+
+
+
+Epoch 543
+	Batch 0
+epoch loss: 41.3945058186849
+
+
+
+Epoch 544
+	Batch 0
+epoch loss: 39.46722157796224
+
+
+
+Epoch 545
+	Batch 0
+epoch loss: 39.80933125813802
+
+
+
+Epoch 546
+	Batch 0
+epoch loss: 39.25736618041992
+
+
+
+Epoch 547
+	Batch 0
+epoch loss: 39.6103146870931
+
+
+
+Epoch 548
+	Batch 0
+epoch loss: 39.999176025390625
+
+
+
+Epoch 549
+	Batch 0
+epoch loss: 39.966566721598305
+
+
+
+Epoch 550
+	Batch 0
+epoch loss: 40.19109598795573
+
+
+
+Epoch 551
+	Batch 0
+epoch loss: 41.42099126180013
+
+
+
+Epoch 552
+	Batch 0
+epoch loss: 41.063985188802086
+
+
+
+Epoch 553
+	Batch 0
+epoch loss: 40.06262715657552
+
+
+
+Epoch 554
+	Batch 0
+epoch loss: 40.84959093729655
+
+
+
+Epoch 555
+	Batch 0
+epoch loss: 40.91808001200358
+
+
+
+Epoch 556
+	Batch 0
+epoch loss: 40.97370847066244
+
+
+
+Epoch 557
+	Batch 0
+epoch loss: 40.14053853352865
+
+
+
+Epoch 558
+	Batch 0
+epoch loss: 38.34624354044596
+
+
+
+Epoch 559
+	Batch 0
+epoch loss: 39.92953745524088
+
+
+
+Epoch 560
+	Batch 0
+epoch loss: 40.024906158447266
+
+
+
+Epoch 561
+	Batch 0
+epoch loss: 38.09639104207357
+
+
+
+Epoch 562
+	Batch 0
+epoch loss: 39.13237380981445
+
+
+
+Epoch 563
+	Batch 0
+epoch loss: 38.608890533447266
+
+
+
+Epoch 564
+	Batch 0
+epoch loss: 38.390960693359375
+
+
+
+Epoch 565
+	Batch 0
+epoch loss: 38.6542542775472
+
+
+
+Epoch 566
+	Batch 0
+epoch loss: 38.756056467692055
+
+
+
+Epoch 567
+	Batch 0
+epoch loss: 37.49313418070475
+
+
+
+Epoch 568
+	Batch 0
+epoch loss: 38.77727762858073
+
+
+
+Epoch 569
+	Batch 0
+epoch loss: 38.26393127441406
+
+
+
+Epoch 570
+	Batch 0
+epoch loss: 39.24568430582682
+
+
+
+Epoch 571
+	Batch 0
+epoch loss: 38.40161577860514
+
+
+
+Epoch 572
+	Batch 0
+epoch loss: 38.8913631439209
+
+
+
+Epoch 573
+	Batch 0
+epoch loss: 39.662115732828774
+
+
+
+Epoch 574
+	Batch 0
+epoch loss: 39.272570292154946
+
+
+
+Epoch 575
+	Batch 0
+epoch loss: 41.45929209391276
+
+
+
+Epoch 576
+	Batch 0
+epoch loss: 39.4244810740153
+
+
+
+Epoch 577
+	Batch 0
+epoch loss: 40.39221318562826
+
+
+
+Epoch 578
+	Batch 0
+epoch loss: 39.1328919728597
+
+
+
+Epoch 579
+	Batch 0
+epoch loss: 39.18770853678385
+
+
+
+Epoch 580
+	Batch 0
+epoch loss: 39.4595578511556
+
+
+
+Epoch 581
+	Batch 0
+epoch loss: 39.4662717183431
+
+
+
+Epoch 582
+	Batch 0
+epoch loss: 41.302913665771484
+
+
+
+Epoch 583
+	Batch 0
+epoch loss: 40.77618281046549
+
+
+
+Epoch 584
+	Batch 0
+epoch loss: 40.39573415120443
+
+
+
+Epoch 585
+	Batch 0
+epoch loss: 39.598228454589844
+
+
+
+Epoch 586
+	Batch 0
+epoch loss: 39.08373896280924
+
+
+
+Epoch 587
+	Batch 0
+epoch loss: 38.61126263936361
+
+
+
+Epoch 588
+	Batch 0
+epoch loss: 38.543200174967446
+
+
+
+Epoch 589
+	Batch 0
+epoch loss: 39.031663258870445
+
+
+
+Epoch 590
+	Batch 0
+epoch loss: 38.52303949991862
+
+
+
+Epoch 591
+	Batch 0
+epoch loss: 37.816908518473305
+
+
+
+Epoch 592
+	Batch 0
+epoch loss: 37.80827204386393
+
+
+
+Epoch 593
+	Batch 0
+epoch loss: 37.0311279296875
+
+
+
+Epoch 594
+	Batch 0
+epoch loss: 37.14022572835287
+
+
+
+Epoch 595
+	Batch 0
+epoch loss: 37.372545878092446
+
+
+
+Epoch 596
+	Batch 0
+epoch loss: 37.46913719177246
+
+
+
+Epoch 597
+	Batch 0
+epoch loss: 37.59844652811686
+
+
+
+Epoch 598
+	Batch 0
+epoch loss: 38.21464920043945
+
+
+
+Epoch 599
+	Batch 0
+epoch loss: 38.59726142883301
+
+
+
+Epoch 600
+	Batch 0
+epoch loss: 38.71686681111654
+
+
+
+Epoch 601
+	Batch 0
+epoch loss: 40.396965662638344
+
+
+
+Epoch 602
+	Batch 0
+epoch loss: 38.176008224487305
+
+
+
+Epoch 603
+	Batch 0
+epoch loss: 38.38617197672526
+
+
+
+Epoch 604
+	Batch 0
+epoch loss: 37.99404271443685
+
+
+
+Epoch 605
+	Batch 0
+epoch loss: 38.1920960744222
+
+
+
+Epoch 606
+	Batch 0
+epoch loss: 38.73143768310547
+
+
+
+Epoch 607
+	Batch 0
+epoch loss: 36.76676559448242
+
+
+
+Epoch 608
+	Batch 0
+epoch loss: 37.716670989990234
+
+
+
+Epoch 609
+	Batch 0
+epoch loss: 38.512002309163414
+
+
+
+Epoch 610
+	Batch 0
+epoch loss: 37.294901529947914
+
+
+
+Epoch 611
+	Batch 0
+epoch loss: 37.665168126424156
+
+
+
+Epoch 612
+	Batch 0
+epoch loss: 38.18984349568685
+
+
+
+Epoch 613
+	Batch 0
+epoch loss: 37.75098673502604
+
+
+
+Epoch 614
+	Batch 0
+epoch loss: 37.4152717590332
+
+
+
+Epoch 615
+	Batch 0
+epoch loss: 37.99191538492838
+
+
+
+Epoch 616
+	Batch 0
+epoch loss: 38.136094411214195
+
+
+
+Epoch 617
+	Batch 0
+epoch loss: 37.59320894877116
+
+
+
+Epoch 618
+	Batch 0
+epoch loss: 37.44699287414551
+
+
+
+Epoch 619
+	Batch 0
+epoch loss: 38.37395095825195
+
+
+
+Epoch 620
+	Batch 0
+epoch loss: 38.02056376139323
+
+
+
+Epoch 621
+	Batch 0
+epoch loss: 37.74416732788086
+
+
+
+Epoch 622
+	Batch 0
+epoch loss: 37.2438112894694
+
+
+
+Epoch 623
+	Batch 0
+epoch loss: 38.72997538248698
+
+
+
+Epoch 624
+	Batch 0
+epoch loss: 37.23975944519043
+
+
+
+Epoch 625
+	Batch 0
+epoch loss: 36.69210116068522
+
+
+
+Epoch 626
+	Batch 0
+epoch loss: 37.098849614461265
+
+
+
+Epoch 627
+	Batch 0
+epoch loss: 36.91319274902344
+
+
+
+Epoch 628
+	Batch 0
+epoch loss: 37.5144100189209
+
+
+
+Epoch 629
+	Batch 0
+epoch loss: 36.90447107950846
+
+
+
+Epoch 630
+	Batch 0
+epoch loss: 37.76130803426107
+
+
+
+Epoch 631
+	Batch 0
+epoch loss: 37.34306208292643
+
+
+
+Epoch 632
+	Batch 0
+epoch loss: 37.643497467041016
+
+
+
+Epoch 633
+	Batch 0
+epoch loss: 37.66468620300293
+
+
+
+Epoch 634
+	Batch 0
+epoch loss: 38.61524963378906
+
+
+
+Epoch 635
+	Batch 0
+epoch loss: 39.207112630208336
+
+
+
+Epoch 636
+	Batch 0
+epoch loss: 39.065006256103516
+
+
+
+Epoch 637
+	Batch 0
+epoch loss: 40.052197774251304
+
+
+
+Epoch 638
+	Batch 0
+epoch loss: 41.533433278401695
+
+
+
+Epoch 639
+	Batch 0
+epoch loss: 39.8838316599528
+
+
+
+Epoch 640
+	Batch 0
+epoch loss: 40.37661488850912
+
+
+
+Epoch 641
+	Batch 0
+epoch loss: 38.36413828531901
+
+
+
+Epoch 642
+	Batch 0
+epoch loss: 38.25520769755045
+
+
+
+Epoch 643
+	Batch 0
+epoch loss: 38.644097646077476
+
+
+
+Epoch 644
+	Batch 0
+epoch loss: 36.420915603637695
+
+
+
+Epoch 645
+	Batch 0
+epoch loss: 36.9444777170817
+
+
+
+Epoch 646
+	Batch 0
+epoch loss: 36.85885492960612
+
+
+
+Epoch 647
+	Batch 0
+epoch loss: 37.36296081542969
+
+
+
+Epoch 648
+	Batch 0
+epoch loss: 36.65337053934733
+
+
+
+Epoch 649
+	Batch 0
+epoch loss: 36.29227956136068
+
+
+
+Epoch 650
+	Batch 0
+epoch loss: 36.904845555623375
+
+
+
+Epoch 651
+	Batch 0
+epoch loss: 36.80370330810547
+
+
+
+Epoch 652
+	Batch 0
+epoch loss: 36.80392265319824
+
+
+
+Epoch 653
+	Batch 0
+epoch loss: 36.35212643941244
+
+
+
+Epoch 654
+	Batch 0
+epoch loss: 36.30255889892578
+
+
+
+Epoch 655
+	Batch 0
+epoch loss: 35.67154184977213
+
+
+
+Epoch 656
+	Batch 0
+epoch loss: 36.37690734863281
+
+
+
+Epoch 657
+	Batch 0
+epoch loss: 36.05945142110189
+
+
+
+Epoch 658
+	Batch 0
+epoch loss: 35.459370930989586
+
+
+
+Epoch 659
+	Batch 0
+epoch loss: 36.29231389363607
+
+
+
+Epoch 660
+	Batch 0
+epoch loss: 35.59148661295573
+
+
+
+Epoch 661
+	Batch 0
+epoch loss: 35.7575798034668
+
+
+
+Epoch 662
+	Batch 0
+epoch loss: 36.16819763183594
+
+
+
+Epoch 663
+	Batch 0
+epoch loss: 35.64248530069987
+
+
+
+Epoch 664
+	Batch 0
+epoch loss: 36.39548556009928
+
+
+
+Epoch 665
+	Batch 0
+epoch loss: 36.447352727254234
+
+
+
+Epoch 666
+	Batch 0
+epoch loss: 36.06916936238607
+
+
+
+Epoch 667
+	Batch 0
+epoch loss: 36.67491086324056
+
+
+
+Epoch 668
+	Batch 0
+epoch loss: 37.02511215209961
+
+
+
+Epoch 669
+	Batch 0
+epoch loss: 36.44016075134277
+
+
+
+Epoch 670
+	Batch 0
+epoch loss: 36.78867975870768
+
+
+
+Epoch 671
+	Batch 0
+epoch loss: 36.42140197753906
+
+
+
+Epoch 672
+	Batch 0
+epoch loss: 36.826032638549805
+
+
+
+Epoch 673
+	Batch 0
+epoch loss: 35.64060974121094
+
+
+
+Epoch 674
+	Batch 0
+epoch loss: 36.36629295349121
+
+
+
+Epoch 675
+	Batch 0
+epoch loss: 35.69462331136068
+
+
+
+Epoch 676
+	Batch 0
+epoch loss: 36.38756116231283
+
+
+
+Epoch 677
+	Batch 0
+epoch loss: 36.573066075642906
+
+
+
+Epoch 678
+	Batch 0
+epoch loss: 37.01219813028971
+
+
+
+Epoch 679
+	Batch 0
+epoch loss: 36.407213846842446
+
+
+
+Epoch 680
+	Batch 0
+epoch loss: 35.70810127258301
+
+
+
+Epoch 681
+	Batch 0
+epoch loss: 36.07900365193685
+
+
+
+Epoch 682
+	Batch 0
+epoch loss: 36.74822107950846
+
+
+
+Epoch 683
+	Batch 0
+epoch loss: 36.27587000528971
+
+
+
+Epoch 684
+	Batch 0
+epoch loss: 37.456336975097656
+
+
+
+Epoch 685
+	Batch 0
+epoch loss: 37.37454605102539
+
+
+
+Epoch 686
+	Batch 0
+epoch loss: 38.08868281046549
+
+
+
+Epoch 687
+	Batch 0
+epoch loss: 37.48201052347819
+
+
+
+Epoch 688
+	Batch 0
+epoch loss: 37.22207005818685
+
+
+
+Epoch 689
+	Batch 0
+epoch loss: 36.84477678934733
+
+
+
+Epoch 690
+	Batch 0
+epoch loss: 36.48441696166992
+
+
+
+Epoch 691
+	Batch 0
+epoch loss: 35.99589157104492
+
+
+
+Epoch 692
+	Batch 0
+epoch loss: 35.863206227620445
+
+
+
+Epoch 693
+	Batch 0
+epoch loss: 35.691104888916016
+
+
+
+Epoch 694
+	Batch 0
+epoch loss: 34.86866887410482
+
+
+
+Epoch 695
+	Batch 0
+epoch loss: 34.861995697021484
+
+
+
+Epoch 696
+	Batch 0
+epoch loss: 34.50264994303385
+
+
+
+Epoch 697
+	Batch 0
+epoch loss: 34.73242060343424
+
+
+
+Epoch 698
+	Batch 0
+epoch loss: 35.22824923197428
+
+
+
+Epoch 699
+	Batch 0
+epoch loss: 34.93929545084635
+
+
+
+Epoch 700
+	Batch 0
+epoch loss: 36.029601414998375
+
+
+
+Epoch 701
+	Batch 0
+epoch loss: 34.98674392700195
+
+
+
+Epoch 702
+	Batch 0
+epoch loss: 34.39665985107422
+
+
+
+Epoch 703
+	Batch 0
+epoch loss: 35.252162297566734
+
+
+
+Epoch 704
+	Batch 0
+epoch loss: 36.1473191579183
+
+
+
+Epoch 705
+	Batch 0
+epoch loss: 36.50251770019531
+
+
+
+Epoch 706
+	Batch 0
+epoch loss: 36.0193977355957
+
+
+
+Epoch 707
+	Batch 0
+epoch loss: 36.41871770222982
+
+
+
+Epoch 708
+	Batch 0
+epoch loss: 36.71850395202637
+
+
+
+Epoch 709
+	Batch 0
+epoch loss: 38.33274459838867
+
+
+
+Epoch 710
+	Batch 0
+epoch loss: 38.18027369181315
+
+
+
+Epoch 711
+	Batch 0
+epoch loss: 37.68612734476725
+
+
+
+Epoch 712
+	Batch 0
+epoch loss: 36.96037292480469
+
+
+
+Epoch 713
+	Batch 0
+epoch loss: 36.163229624430336
+
+
+
+Epoch 714
+	Batch 0
+epoch loss: 36.1098829905192
+
+
+
+Epoch 715
+	Batch 0
+epoch loss: 36.097582499186196
+
+
+
+Epoch 716
+	Batch 0
+epoch loss: 36.63037109375
+
+
+
+Epoch 717
+	Batch 0
+epoch loss: 35.249595642089844
+
+
+
+Epoch 718
+	Batch 0
+epoch loss: 34.737009048461914
+
+
+
+Epoch 719
+	Batch 0
+epoch loss: 35.24126116434733
+
+
+
+Epoch 720
+	Batch 0
+epoch loss: 34.95651308695475
+
+
+
+Epoch 721
+	Batch 0
+epoch loss: 34.53728103637695
+
+
+
+Epoch 722
+	Batch 0
+epoch loss: 35.40407943725586
+
+
+
+Epoch 723
+	Batch 0
+epoch loss: 34.770208994547524
+
+
+
+Epoch 724
+	Batch 0
+epoch loss: 34.230533599853516
+
+
+
+Epoch 725
+	Batch 0
+epoch loss: 33.99397850036621
+
+
+
+Epoch 726
+	Batch 0
+epoch loss: 34.7342103322347
+
+
+
+Epoch 727
+	Batch 0
+epoch loss: 36.57929929097494
+
+
+
+Epoch 728
+	Batch 0
+epoch loss: 37.133056640625
+
+
+
+Epoch 729
+	Batch 0
+epoch loss: 36.66111691792806
+
+
+
+Epoch 730
+	Batch 0
+epoch loss: 38.19598515828451
+
+
+
+Epoch 731
+	Batch 0
+epoch loss: 38.425994237264
+
+
+
+Epoch 732
+	Batch 0
+epoch loss: 39.36788813273112
+
+
+
+Epoch 733
+	Batch 0
+epoch loss: 36.89871724446615
+
+
+
+Epoch 734
+	Batch 0
+epoch loss: 37.09351030985514
+
+
+
+Epoch 735
+	Batch 0
+epoch loss: 35.77280616760254
+
+
+
+Epoch 736
+	Batch 0
+epoch loss: 35.67568397521973
+
+
+
+Epoch 737
+	Batch 0
+epoch loss: 34.35480054219564
+
+
+
+Epoch 738
+	Batch 0
+epoch loss: 34.379435221354164
+
+
+
+Epoch 739
+	Batch 0
+epoch loss: 33.7849973042806
+
+
+
+Epoch 740
+	Batch 0
+epoch loss: 34.374579747517906
+
+
+
+Epoch 741
+	Batch 0
+epoch loss: 33.8984260559082
+
+
+
+Epoch 742
+	Batch 0
+epoch loss: 33.69959513346354
+
+
+
+Epoch 743
+	Batch 0
+epoch loss: 33.092342376708984
+
+
+
+Epoch 744
+	Batch 0
+epoch loss: 34.198134104410805
+
+
+
+Epoch 745
+	Batch 0
+epoch loss: 33.46315828959147
+
+
+
+Epoch 746
+	Batch 0
+epoch loss: 34.685052235921226
+
+
+
+Epoch 747
+	Batch 0
+epoch loss: 33.287258783976235
+
+
+
+Epoch 748
+	Batch 0
+epoch loss: 34.54236030578613
+
+
+
+Epoch 749
+	Batch 0
+epoch loss: 35.36979866027832
+
+
+
+Epoch 750
+	Batch 0
+epoch loss: 34.685049057006836
+
+
+
+Epoch 751
+	Batch 0
+epoch loss: 34.203355153401695
+
+
+
+Epoch 752
+	Batch 0
+epoch loss: 34.562920252482094
+
+
+
+Epoch 753
+	Batch 0
+epoch loss: 34.85008939107259
+
+
+
+Epoch 754
+	Batch 0
+epoch loss: 34.71113967895508
+
+
+
+Epoch 755
+	Batch 0
+epoch loss: 35.089317321777344
+
+
+
+Epoch 756
+	Batch 0
+epoch loss: 34.04943021138509
+
+
+
+Epoch 757
+	Batch 0
+epoch loss: 33.451093673706055
+
+
+
+Epoch 758
+	Batch 0
+epoch loss: 33.07042249043783
+
+
+
+Epoch 759
+	Batch 0
+epoch loss: 34.701385498046875
+
+
+
+Epoch 760
+	Batch 0
+epoch loss: 33.55172348022461
+
+
+
+Epoch 761
+	Batch 0
+epoch loss: 33.76877085367838
+
+
+
+Epoch 762
+	Batch 0
+epoch loss: 34.20432662963867
+
+
+
+Epoch 763
+	Batch 0
+epoch loss: 35.480692545572914
+
+
+
+Epoch 764
+	Batch 0
+epoch loss: 35.54495747884115
+
+
+
+Epoch 765
+	Batch 0
+epoch loss: 37.543200174967446
+
+
+
+Epoch 766
+	Batch 0
+epoch loss: 36.870524088541664
+
+
+
+Epoch 767
+	Batch 0
+epoch loss: 37.91923395792643
+
+
+
+Epoch 768
+	Batch 0
+epoch loss: 35.34366925557455
+
+
+
+Epoch 769
+	Batch 0
+epoch loss: 36.30284563700358
+
+
+
+Epoch 770
+	Batch 0
+epoch loss: 34.62702433268229
+
+
+
+Epoch 771
+	Batch 0
+epoch loss: 35.663978576660156
+
+
+
+Epoch 772
+	Batch 0
+epoch loss: 34.60850524902344
+
+
+
+Epoch 773
+	Batch 0
+epoch loss: 34.21240043640137
+
+
+
+Epoch 774
+	Batch 0
+epoch loss: 34.64201736450195
+
+
+
+Epoch 775
+	Batch 0
+epoch loss: 34.68898137410482
+
+
+
+Epoch 776
+	Batch 0
+epoch loss: 34.72247759501139
+
+
+
+Epoch 777
+	Batch 0
+epoch loss: 34.5717970530192
+
+
+
+Epoch 778
+	Batch 0
+epoch loss: 34.926116943359375
+
+
+
+Epoch 779
+	Batch 0
+epoch loss: 34.991647720336914
+
+
+
+Epoch 780
+	Batch 0
+epoch loss: 34.525717417399086
+
+
+
+Epoch 781
+	Batch 0
+epoch loss: 34.28194236755371
+
+
+
+Epoch 782
+	Batch 0
+epoch loss: 33.853020985921226
+
+
+
+Epoch 783
+	Batch 0
+epoch loss: 34.445855458577476
+
+
+
+Epoch 784
+	Batch 0
+epoch loss: 35.80640474955241
+
+
+
+Epoch 785
+	Batch 0
+epoch loss: 35.0957883199056
+
+
+
+Epoch 786
+	Batch 0
+epoch loss: 33.55863507588705
+
+
+
+Epoch 787
+	Batch 0
+epoch loss: 35.3075008392334
+
+
+
+Epoch 788
+	Batch 0
+epoch loss: 34.865931828816734
+
+
+
+Epoch 789
+	Batch 0
+epoch loss: 35.38956069946289
+
+
+
+Epoch 790
+	Batch 0
+epoch loss: 34.29400507609049
+
+
+
+Epoch 791
+	Batch 0
+epoch loss: 33.99279975891113
+
+
+
+Epoch 792
+	Batch 0
+epoch loss: 33.63361930847168
+
+
+
+Epoch 793
+	Batch 0
+epoch loss: 32.42934926350912
+
+
+
+Epoch 794
+	Batch 0
+epoch loss: 32.34375317891439
+
+
+
+Epoch 795
+	Batch 0
+epoch loss: 33.927541732788086
+
+
+
+Epoch 796
+	Batch 0
+epoch loss: 33.18664232889811
+
+
+
+Epoch 797
+	Batch 0
+epoch loss: 32.19125175476074
+
+
+
+Epoch 798
+	Batch 0
+epoch loss: 33.16481908162435
+
+
+
+Epoch 799
+	Batch 0
+epoch loss: 33.30463155110677
+
+
+
+Epoch 800
+	Batch 0
+epoch loss: 32.73430887858073
+
+
+
+Epoch 801
+	Batch 0
+epoch loss: 33.80137825012207
+
+
+
+Epoch 802
+	Batch 0
+epoch loss: 34.04859415690104
+
+
+
+Epoch 803
+	Batch 0
+epoch loss: 33.028560638427734
+
+
+
+Epoch 804
+	Batch 0
+epoch loss: 33.65546480814616
+
+
+
+Epoch 805
+	Batch 0
+epoch loss: 33.24978446960449
+
+
+
+Epoch 806
+	Batch 0
+epoch loss: 35.266706466674805
+
+
+
+Epoch 807
+	Batch 0
+epoch loss: 34.44162559509277
+
+
+
+Epoch 808
+	Batch 0
+epoch loss: 36.2578550974528
+
+
+
+Epoch 809
+	Batch 0
+epoch loss: 34.47591781616211
+
+
+
+Epoch 810
+	Batch 0
+epoch loss: 34.84918403625488
+
+
+
+Epoch 811
+	Batch 0
+epoch loss: 34.16947491963705
+
+
+
+Epoch 812
+	Batch 0
+epoch loss: 35.13855234781901
+
+
+
+Epoch 813
+	Batch 0
+epoch loss: 34.962842305501304
+
+
+
+Epoch 814
+	Batch 0
+epoch loss: 33.170687993367515
+
+
+
+Epoch 815
+	Batch 0
+epoch loss: 33.984829584757485
+
+
+
+Epoch 816
+	Batch 0
+epoch loss: 32.83147048950195
+
+
+
+Epoch 817
+	Batch 0
+epoch loss: 34.49969800313314
+
+
+
+Epoch 818
+	Batch 0
+epoch loss: 35.32907740275065
+
+
+
+Epoch 819
+	Batch 0
+epoch loss: 34.18822352091471
+
+
+
+Epoch 820
+	Batch 0
+epoch loss: 35.39660517374674
+
+
+
+Epoch 821
+	Batch 0
+epoch loss: 35.55103047688802
+
+
+
+Epoch 822
+	Batch 0
+epoch loss: 33.97962951660156
+
+
+
+Epoch 823
+	Batch 0
+epoch loss: 33.29682286580404
+
+
+
+Epoch 824
+	Batch 0
+epoch loss: 32.84477615356445
+
+
+
+Epoch 825
+	Batch 0
+epoch loss: 32.458360036214195
+
+
+
+Epoch 826
+	Batch 0
+epoch loss: 32.62829907735189
+
+
+
+Epoch 827
+	Batch 0
+epoch loss: 32.04603068033854
+
+
+
+Epoch 828
+	Batch 0
+epoch loss: 33.39677429199219
+
+
+
+Epoch 829
+	Batch 0
+epoch loss: 32.03774197896322
+
+
+
+Epoch 830
+	Batch 0
+epoch loss: 33.378329594930015
+
+
+
+Epoch 831
+	Batch 0
+epoch loss: 34.38146082560221
+
+
+
+Epoch 832
+	Batch 0
+epoch loss: 33.19956843058268
+
+
+
+Epoch 833
+	Batch 0
+epoch loss: 33.99262936909994
+
+
+
+Epoch 834
+	Batch 0
+epoch loss: 33.91625086466471
+
+
+
+Epoch 835
+	Batch 0
+epoch loss: 32.69723765055338
+
+
+
+Epoch 836
+	Batch 0
+epoch loss: 34.5439084370931
+
+
+
+Epoch 837
+	Batch 0
+epoch loss: 33.995718002319336
+
+
+
+Epoch 838
+	Batch 0
+epoch loss: 34.65903917948405
+
+
+
+Epoch 839
+	Batch 0
+epoch loss: 33.69521141052246
+
+
+
+Epoch 840
+	Batch 0
+epoch loss: 33.612658182779946
+
+
+
+Epoch 841
+	Batch 0
+epoch loss: 32.15113957722982
+
+
+
+Epoch 842
+	Batch 0
+epoch loss: 32.40681584676107
+
+
+
+Epoch 843
+	Batch 0
+epoch loss: 32.02389017740885
+
+
+
+Epoch 844
+	Batch 0
+epoch loss: 31.83085759480794
+
+
+
+Epoch 845
+	Batch 0
+epoch loss: 32.46452267964681
+
+
+
+Epoch 846
+	Batch 0
+epoch loss: 32.80896186828613
+
+
+
+Epoch 847
+	Batch 0
+epoch loss: 32.021026611328125
+
+
+
+Epoch 848
+	Batch 0
+epoch loss: 32.310407638549805
+
+
+
+Epoch 849
+	Batch 0
+epoch loss: 32.834529876708984
+
+
+
+Epoch 850
+	Batch 0
+epoch loss: 32.12527402242025
+
+
+
+Epoch 851
+	Batch 0
+epoch loss: 32.288622538248696
+
+
+
+Epoch 852
+	Batch 0
+epoch loss: 33.394964853922524
+
+
+
+Epoch 853
+	Batch 0
+epoch loss: 34.69438680013021
+
+
+
+Epoch 854
+	Batch 0
+epoch loss: 34.09405835469564
+
+
+
+Epoch 855
+	Batch 0
+epoch loss: 34.92605209350586
+
+
+
+Epoch 856
+	Batch 0
+epoch loss: 35.129617055257164
+
+
+
+Epoch 857
+	Batch 0
+epoch loss: 35.691130956014
+
+
+
+Epoch 858
+	Batch 0
+epoch loss: 34.96329879760742
+
+
+
+Epoch 859
+	Batch 0
+epoch loss: 34.920281728108726
+
+
+
+Epoch 860
+	Batch 0
+epoch loss: 34.25717798868815
+
+
+
+Epoch 861
+	Batch 0
+epoch loss: 34.56853675842285
+
+
+
+Epoch 862
+	Batch 0
+epoch loss: 34.71278317769369
+
+
+
+Epoch 863
+	Batch 0
+epoch loss: 33.063564936319985
+
+
+
+Epoch 864
+	Batch 0
+epoch loss: 33.48643430074056
+
+
+
+Epoch 865
+	Batch 0
+epoch loss: 32.43483098347982
+
+
+
+Epoch 866
+	Batch 0
+epoch loss: 33.11348787943522
+
+
+
+Epoch 867
+	Batch 0
+epoch loss: 31.725365956624348
+
+
+
+Epoch 868
+	Batch 0
+epoch loss: 32.41594950358073
+
+
+
+Epoch 869
+	Batch 0
+epoch loss: 31.744447708129883
+
+
+
+Epoch 870
+	Batch 0
+epoch loss: 31.64929707845052
+
+
+
+Epoch 871
+	Batch 0
+epoch loss: 32.64676030476888
+
+
+
+Epoch 872
+	Batch 0
+epoch loss: 33.14977709452311
+
+
+
+Epoch 873
+	Batch 0
+epoch loss: 31.728923797607422
+
+
+
+Epoch 874
+	Batch 0
+epoch loss: 32.80024274190267
+
+
+
+Epoch 875
+	Batch 0
+epoch loss: 33.38852564493815
+
+
+
+Epoch 876
+	Batch 0
+epoch loss: 32.946434020996094
+
+
+
+Epoch 877
+	Batch 0
+epoch loss: 32.97535959879557
+
+
+
+Epoch 878
+	Batch 0
+epoch loss: 33.879639307657875
+
+
+
+Epoch 879
+	Batch 0
+epoch loss: 32.84881273905436
+
+
+
+Epoch 880
+	Batch 0
+epoch loss: 33.405598958333336
+
+
+
+Epoch 881
+	Batch 0
+epoch loss: 32.322022120157875
+
+
+
+Epoch 882
+	Batch 0
+epoch loss: 32.13719813028971
+
+
+
+Epoch 883
+	Batch 0
+epoch loss: 32.52987925211588
+
+
+
+Epoch 884
+	Batch 0
+epoch loss: 31.6930357615153
+
+
+
+Epoch 885
+	Batch 0
+epoch loss: 32.300174713134766
+
+
+
+Epoch 886
+	Batch 0
+epoch loss: 32.52513758341471
+
+
+
+Epoch 887
+	Batch 0
+epoch loss: 31.907482147216797
+
+
+
+Epoch 888
+	Batch 0
+epoch loss: 32.212226231892906
+
+
+
+Epoch 889
+	Batch 0
+epoch loss: 31.960428873697918
+
+
+
+Epoch 890
+	Batch 0
+epoch loss: 32.22595342000326
+
+
+
+Epoch 891
+	Batch 0
+epoch loss: 32.29041417439779
+
+
+
+Epoch 892
+	Batch 0
+epoch loss: 31.953206380208332
+
+
+
+Epoch 893
+	Batch 0
+epoch loss: 32.33830769856771
+
+
+
+Epoch 894
+	Batch 0
+epoch loss: 32.271214167277016
+
+
+
+Epoch 895
+	Batch 0
+epoch loss: 31.71919822692871
+
+
+
+Epoch 896
+	Batch 0
+epoch loss: 31.97388458251953
+
+
+
+Epoch 897
+	Batch 0
+epoch loss: 31.14790916442871
+
+
+
+Epoch 898
+	Batch 0
+epoch loss: 31.706403096516926
+
+
+
+Epoch 899
+	Batch 0
+epoch loss: 32.23224894205729
+
+
+
+Epoch 900
+	Batch 0
+epoch loss: 31.106887817382812
+
+
+
+Epoch 901
+	Batch 0
+epoch loss: 31.57655207316081
+
+
+
+Epoch 902
+	Batch 0
+epoch loss: 32.35396194458008
+
+
+
+Epoch 903
+	Batch 0
+epoch loss: 31.419058481852215
+
+
+
+Epoch 904
+	Batch 0
+epoch loss: 31.193822860717773
+
+
+
+Epoch 905
+	Batch 0
+epoch loss: 32.18198776245117
+
+
+
+Epoch 906
+	Batch 0
+epoch loss: 31.995508193969727
+
+
+
+Epoch 907
+	Batch 0
+epoch loss: 32.71002515157064
+
+
+
+Epoch 908
+	Batch 0
+epoch loss: 34.53834597269694
+
+
+
+Epoch 909
+	Batch 0
+epoch loss: 33.76818021138509
+
+
+
+Epoch 910
+	Batch 0
+epoch loss: 33.91819953918457
+
+
+
+Epoch 911
+	Batch 0
+epoch loss: 33.876075744628906
+
+
+
+Epoch 912
+	Batch 0
+epoch loss: 33.83639780680338
+
+
+
+Epoch 913
+	Batch 0
+epoch loss: 33.63159624735514
+
+
+
+Epoch 914
+	Batch 0
+epoch loss: 34.002488454182945
+
+
+
+Epoch 915
+	Batch 0
+epoch loss: 33.77907371520996
+
+
+
+Epoch 916
+	Batch 0
+epoch loss: 33.589569091796875
+
+
+
+Epoch 917
+	Batch 0
+epoch loss: 31.642825444539387
+
+
+
+Epoch 918
+	Batch 0
+epoch loss: 32.05918057759603
+
+
+
+Epoch 919
+	Batch 0
+epoch loss: 31.690892537434895
+
+
+
+Epoch 920
+	Batch 0
+epoch loss: 31.61798159281413
+
+
+
+Epoch 921
+	Batch 0
+epoch loss: 31.528202692667644
+
+
+
+Epoch 922
+	Batch 0
+epoch loss: 31.53985341389974
+
+
+
+Epoch 923
+	Batch 0
+epoch loss: 32.41808573404948
+
+
+
+Epoch 924
+	Batch 0
+epoch loss: 31.791302998860676
+
+
+
+Epoch 925
+	Batch 0
+epoch loss: 31.583296457926433
+
+
+
+Epoch 926
+	Batch 0
+epoch loss: 31.76660219828288
+
+
+
+Epoch 927
+	Batch 0
+epoch loss: 30.725927352905273
+
+
+
+Epoch 928
+	Batch 0
+epoch loss: 30.98635991414388
+
+
+
+Epoch 929
+	Batch 0
+epoch loss: 30.995403289794922
+
+
+
+Epoch 930
+	Batch 0
+epoch loss: 30.719289779663086
+
+
+
+Epoch 931
+	Batch 0
+epoch loss: 31.12093226114909
+
+
+
+Epoch 932
+	Batch 0
+epoch loss: 31.498470942179363
+
+
+
+Epoch 933
+	Batch 0
+epoch loss: 31.34695561726888
+
+
+
+Epoch 934
+	Batch 0
+epoch loss: 30.302056630452473
+
+
+
+Epoch 935
+	Batch 0
+epoch loss: 31.926366806030273
+
+
+
+Epoch 936
+	Batch 0
+epoch loss: 32.18464024861654
+
+
+
+Epoch 937
+	Batch 0
+epoch loss: 32.7090810139974
+
+
+
+Epoch 938
+	Batch 0
+epoch loss: 32.25210825602213
+
+
+
+Epoch 939
+	Batch 0
+epoch loss: 31.287322362263996
+
+
+
+Epoch 940
+	Batch 0
+epoch loss: 31.356481552124023
+
+
+
+Epoch 941
+	Batch 0
+epoch loss: 30.35545476277669
+
+
+
+Epoch 942
+	Batch 0
+epoch loss: 31.202056884765625
+
+
+
+Epoch 943
+	Batch 0
+epoch loss: 31.132640838623047
+
+
+
+Epoch 944
+	Batch 0
+epoch loss: 31.65633773803711
+
+
+
+Epoch 945
+	Batch 0
+epoch loss: 32.559837341308594
+
+
+
+Epoch 946
+	Batch 0
+epoch loss: 32.129360834757485
+
+
+
+Epoch 947
+	Batch 0
+epoch loss: 32.735652923583984
+
+
+
+Epoch 948
+	Batch 0
+epoch loss: 32.09113629659017
+
+
+
+Epoch 949
+	Batch 0
+epoch loss: 32.06178410847982
+
+
+
+Epoch 950
+	Batch 0
+epoch loss: 32.23266792297363
+
+
+
+Epoch 951
+	Batch 0
+epoch loss: 32.49062983194987
+
+
+
+Epoch 952
+	Batch 0
+epoch loss: 32.77289581298828
+
+
+
+Epoch 953
+	Batch 0
+epoch loss: 32.47208340962728
+
+
+
+Epoch 954
+	Batch 0
+epoch loss: 33.60108311971029
+
+
+
+Epoch 955
+	Batch 0
+epoch loss: 33.11515680948893
+
+
+
+Epoch 956
+	Batch 0
+epoch loss: 32.87935447692871
+
+
+
+Epoch 957
+	Batch 0
+epoch loss: 32.01505088806152
+
+
+
+Epoch 958
+	Batch 0
+epoch loss: 31.49628257751465
+
+
+
+Epoch 959
+	Batch 0
+epoch loss: 31.991451263427734
+
+
+
+Epoch 960
+	Batch 0
+epoch loss: 32.1948610941569
+
+
+
+Epoch 961
+	Batch 0
+epoch loss: 31.63677469889323
+
+
+
+Epoch 962
+	Batch 0
+epoch loss: 31.640254338582356
+
+
+
+Epoch 963
+	Batch 0
+epoch loss: 30.490183512369793
+
+
+
+Epoch 964
+	Batch 0
+epoch loss: 31.068901697794598
+
+
+
+Epoch 965
+	Batch 0
+epoch loss: 31.475621541341145
+
+
+
+Epoch 966
+	Batch 0
+epoch loss: 31.15455945332845
+
+
+
+Epoch 967
+	Batch 0
+epoch loss: 32.133087793986
+
+
+
+Epoch 968
+	Batch 0
+epoch loss: 31.59125328063965
+
+
+
+Epoch 969
+	Batch 0
+epoch loss: 31.94664192199707
+
+
+
+Epoch 970
+	Batch 0
+epoch loss: 32.056708653767906
+
+
+
+Epoch 971
+	Batch 0
+epoch loss: 30.611568450927734
+
+
+
+Epoch 972
+	Batch 0
+epoch loss: 31.906821568806965
+
+
+
+Epoch 973
+	Batch 0
+epoch loss: 32.10460599263509
+
+
+
+Epoch 974
+	Batch 0
+epoch loss: 30.307703653971355
+
+
+
+Epoch 975
+	Batch 0
+epoch loss: 30.63665262858073
+
+
+
+Epoch 976
+	Batch 0
+epoch loss: 30.556922912597656
+
+
+
+Epoch 977
+	Batch 0
+epoch loss: 30.617205301920574
+
+
+
+Epoch 978
+	Batch 0
+epoch loss: 31.430519739786785
+
+
+
+Epoch 979
+	Batch 0
+epoch loss: 29.40281041463216
+
+
+
+Epoch 980
+	Batch 0
+epoch loss: 31.043638229370117
+
+
+
+Epoch 981
+	Batch 0
+epoch loss: 30.217337290445965
+
+
+
+Epoch 982
+	Batch 0
+epoch loss: 31.026727040608723
+
+
+
+Epoch 983
+	Batch 0
+epoch loss: 30.71505610148112
+
+
+
+Epoch 984
+	Batch 0
+epoch loss: 31.65703773498535
+
+
+
+Epoch 985
+	Batch 0
+epoch loss: 31.47510019938151
+
+
+
+Epoch 986
+	Batch 0
+epoch loss: 32.80653444925944
+
+
+
+Epoch 987
+	Batch 0
+epoch loss: 33.032894134521484
+
+
+
+Epoch 988
+	Batch 0
+epoch loss: 33.0900764465332
+
+
+
+Epoch 989
+	Batch 0
+epoch loss: 32.17429796854655
+
+
+
+Epoch 990
+	Batch 0
+epoch loss: 32.67618942260742
+
+
+
+Epoch 991
+	Batch 0
+epoch loss: 31.091737747192383
+
+
+
+Epoch 992
+	Batch 0
+epoch loss: 31.327482223510742
+
+
+
+Epoch 993
+	Batch 0
+epoch loss: 30.85414759318034
+
+
+
+Epoch 994
+	Batch 0
+epoch loss: 29.724188486735027
+
+
+
+Epoch 995
+	Batch 0
+epoch loss: 30.762921651204426
+
+
+
+Epoch 996
+	Batch 0
+epoch loss: 29.911725362141926
+
+
+
+Epoch 997
+	Batch 0
+epoch loss: 32.14916547139486
+
+
+
+Epoch 998
+	Batch 0
+epoch loss: 32.263415018717446
+
+
+
+Epoch 999
+	Batch 0
+epoch loss: 31.11172612508138
+
+
+
+Epoch 1000
+	Batch 0
+epoch loss: 32.46177291870117
+
+
+
+Epoch 1001
+	Batch 0
+epoch loss: 32.27962748209635
+
+
+
+Epoch 1002
+	Batch 0
+epoch loss: 32.46896107991537
+
+
+
+Epoch 1003
+	Batch 0
+epoch loss: 32.83159891764323
+
+
+
+Epoch 1004
+	Batch 0
+epoch loss: 32.10683377583822
+
+
+
+Epoch 1005
+	Batch 0
+epoch loss: 31.623428344726562
+
+
+
+Epoch 1006
+	Batch 0
+epoch loss: 31.4677251180013
+
+
+
+Epoch 1007
+	Batch 0
+epoch loss: 32.21413612365723
+
+
+
+Epoch 1008
+	Batch 0
+epoch loss: 31.21748987833659
+
+
+
+Epoch 1009
+	Batch 0
+epoch loss: 31.716917037963867
+
+
+
+Epoch 1010
+	Batch 0
+epoch loss: 30.0510991414388
+
+
+
+Epoch 1011
+	Batch 0
+epoch loss: 29.840970357259113
+
+
+
+Epoch 1012
+	Batch 0
+epoch loss: 30.102598190307617
+
+
+
+Epoch 1013
+	Batch 0
+epoch loss: 28.857327779134113
+
+
+
+Epoch 1014
+	Batch 0
+epoch loss: 30.85342788696289
+
+
+
+Epoch 1015
+	Batch 0
+epoch loss: 29.244478225708008
+
+
+
+Epoch 1016
+	Batch 0
+epoch loss: 29.31141408284505
+
+
+
+Epoch 1017
+	Batch 0
+epoch loss: 29.443869908650715
+
+
+
+Epoch 1018
+	Batch 0
+epoch loss: 29.717906316121418
+
+
+
+Epoch 1019
+	Batch 0
+epoch loss: 29.88439687093099
+
+
+
+Epoch 1020
+	Batch 0
+epoch loss: 30.3313783009847
+
+
+
+Epoch 1021
+	Batch 0
+epoch loss: 30.102665583292644
+
+
+
+Epoch 1022
+	Batch 0
+epoch loss: 30.698867797851562
+
+
+
+Epoch 1023
+	Batch 0
+epoch loss: 30.500342051188152
+
+
+
+Epoch 1024
+	Batch 0
+epoch loss: 31.203317006429035
+
+
+
+Epoch 1025
+	Batch 0
+epoch loss: 31.06982421875
+
+
+
+Epoch 1026
+	Batch 0
+epoch loss: 32.857456843058266
+
+
+
+Epoch 1027
+	Batch 0
+epoch loss: 34.31779479980469
+
+
+
+Epoch 1028
+	Batch 0
+epoch loss: 34.06023979187012
+
+
+
+Epoch 1029
+	Batch 0
+epoch loss: 32.47239875793457
+
+
+
+Epoch 1030
+	Batch 0
+epoch loss: 33.56674893697103
+
+
+
+Epoch 1031
+	Batch 0
+epoch loss: 32.40127182006836
+
+
+
+Epoch 1032
+	Batch 0
+epoch loss: 32.17698605855306
+
+
+
+Epoch 1033
+	Batch 0
+epoch loss: 31.27634112040202
+
+
+
+Epoch 1034
+	Batch 0
+epoch loss: 31.615001678466797
+
+
+
+Epoch 1035
+	Batch 0
+epoch loss: 31.153053283691406
+
+
+
+Epoch 1036
+	Batch 0
+epoch loss: 30.750972747802734
+
+
+
+Epoch 1037
+	Batch 0
+epoch loss: 30.64733123779297
+
+
+
+Epoch 1038
+	Batch 0
+epoch loss: 29.144087473551433
+
+
+
+Epoch 1039
+	Batch 0
+epoch loss: 30.370157877604168
+
+
+
+Epoch 1040
+	Batch 0
+epoch loss: 31.634531021118164
+
+
+
+Epoch 1041
+	Batch 0
+epoch loss: 31.080272038777668
+
+
+
+Epoch 1042
+	Batch 0
+epoch loss: 31.46181805928548
+
+
+
+Epoch 1043
+	Batch 0
+epoch loss: 33.10615539550781
+
+
+
+Epoch 1044
+	Batch 0
+epoch loss: 33.19776725769043
+
+
+
+Epoch 1045
+	Batch 0
+epoch loss: 33.816351572672524
+
+
+
+Epoch 1046
+	Batch 0
+epoch loss: 32.7239678700765
+
+
+
+Epoch 1047
+	Batch 0
+epoch loss: 31.742623647054035
+
+
+
+Epoch 1048
+	Batch 0
+epoch loss: 30.889724731445312
+
+
+
+Epoch 1049
+	Batch 0
+epoch loss: 31.148062388102215
+
+
+
+Epoch 1050
+	Batch 0
+epoch loss: 30.21108118693034
+
+
+
+Epoch 1051
+	Batch 0
+epoch loss: 29.635857899983723
+
+
+
+Epoch 1052
+	Batch 0
+epoch loss: 29.602942784627277
+
+
+
+Epoch 1053
+	Batch 0
+epoch loss: 29.68385187784831
+
+
+
+Epoch 1054
+	Batch 0
+epoch loss: 30.08887481689453
+
+
+
+Epoch 1055
+	Batch 0
+epoch loss: 29.828128178914387
+
+
+
+Epoch 1056
+	Batch 0
+epoch loss: 30.135740915934246
+
+
+
+Epoch 1057
+	Batch 0
+epoch loss: 29.161593119303387
+
+
+
+Epoch 1058
+	Batch 0
+epoch loss: 29.85310236612956
+
+
+
+Epoch 1059
+	Batch 0
+epoch loss: 29.777043024698894
+
+
+
+Epoch 1060
+	Batch 0
+epoch loss: 29.24492009480794
+
+
+
+Epoch 1061
+	Batch 0
+epoch loss: 29.342418034871418
+
+
+
+Epoch 1062
+	Batch 0
+epoch loss: 29.209993362426758
+
+
+
+Epoch 1063
+	Batch 0
+epoch loss: 29.84286626180013
+
+
+
+Epoch 1064
+	Batch 0
+epoch loss: 29.035790125528973
+
+
+
+Epoch 1065
+	Batch 0
+epoch loss: 30.376492818196613
+
+
+
+Epoch 1066
+	Batch 0
+epoch loss: 29.96031125386556
+
+
+
+Epoch 1067
+	Batch 0
+epoch loss: 31.495174407958984
+
+
+
+Epoch 1068
+	Batch 0
+epoch loss: 31.244471232096355
+
+
+
+Epoch 1069
+	Batch 0
+epoch loss: 30.404255549112957
+
+
+
+Epoch 1070
+	Batch 0
+epoch loss: 29.23870340983073
+
+
+
+Epoch 1071
+	Batch 0
+epoch loss: 29.346364974975586
+
+
+
+Epoch 1072
+	Batch 0
+epoch loss: 30.148356755574543
+
+
+
+Epoch 1073
+	Batch 0
+epoch loss: 30.79133415222168
+
+
+
+Epoch 1074
+	Batch 0
+epoch loss: 31.199321746826172
+
+
+
+Epoch 1075
+	Batch 0
+epoch loss: 30.042444864908855
+
+
+
+Epoch 1076
+	Batch 0
+epoch loss: 31.81560770670573
+
+
+
+Epoch 1077
+	Batch 0
+epoch loss: 31.343942642211914
+
+
+
+Epoch 1078
+	Batch 0
+epoch loss: 30.704527537027996
+
+
+
+Epoch 1079
+	Batch 0
+epoch loss: 31.893245061238606
+
+
+
+Epoch 1080
+	Batch 0
+epoch loss: 31.609978357950848
+
+
+
+Epoch 1081
+	Batch 0
+epoch loss: 32.41069793701172
+
+
+
+Epoch 1082
+	Batch 0
+epoch loss: 32.38234647115072
+
+
+
+Epoch 1083
+	Batch 0
+epoch loss: 32.235036849975586
+
+
+
+Epoch 1084
+	Batch 0
+epoch loss: 31.994869232177734
+
+
+
+Epoch 1085
+	Batch 0
+epoch loss: 31.089130401611328
+
+
+
+Epoch 1086
+	Batch 0
+epoch loss: 30.09562047322591
+
+
+
+Epoch 1087
+	Batch 0
+epoch loss: 30.44373957316081
+
+
+
+Epoch 1088
+	Batch 0
+epoch loss: 32.32376035054525
+
+
+
+Epoch 1089
+	Batch 0
+epoch loss: 31.607247670491535
+
+
+
+Epoch 1090
+	Batch 0
+epoch loss: 31.662930170694988
+
+
+
+Epoch 1091
+	Batch 0
+epoch loss: 32.530055363972984
+
+
+
+Epoch 1092
+	Batch 0
+epoch loss: 32.41465632120768
+
+
+
+Epoch 1093
+	Batch 0
+epoch loss: 34.072095235188804
+
+
+
+Epoch 1094
+	Batch 0
+epoch loss: 31.947362263997395
+
+
+
+Epoch 1095
+	Batch 0
+epoch loss: 32.3974609375
+
+
+
+Epoch 1096
+	Batch 0
+epoch loss: 31.45712407430013
+
+
+
+Epoch 1097
+	Batch 0
+epoch loss: 30.738834381103516
+
+
+
+Epoch 1098
+	Batch 0
+epoch loss: 30.448747634887695
+
+
+
+Epoch 1099
+	Batch 0
+epoch loss: 30.724506378173828
+
+
+
+Epoch 1100
+	Batch 0
+epoch loss: 29.43219820658366
+
+
+
+Epoch 1101
+	Batch 0
+epoch loss: 29.292516708374023
+
+
+
+Epoch 1102
+	Batch 0
+epoch loss: 29.78266970316569
+
+
+
+Epoch 1103
+	Batch 0
+epoch loss: 28.510339101155598
+
+
+
+Epoch 1104
+	Batch 0
+epoch loss: 28.851355870564777
+
+
+
+Epoch 1105
+	Batch 0
+epoch loss: 29.529813766479492
+
+
+
+Epoch 1106
+	Batch 0
+epoch loss: 29.160666783650715
+
+
+
+Epoch 1107
+	Batch 0
+epoch loss: 28.71167055765788
+
+
+
+Epoch 1108
+	Batch 0
+epoch loss: 28.53009605407715
+
+
+
+Epoch 1109
+	Batch 0
+epoch loss: 29.170978546142578
+
+
+
+Epoch 1110
+	Batch 0
+epoch loss: 30.058630625406902
+
+
+
+Epoch 1111
+	Batch 0
+epoch loss: 28.49832598368327
+
+
+
+Epoch 1112
+	Batch 0
+epoch loss: 28.829822540283203
+
+
+
+Epoch 1113
+	Batch 0
+epoch loss: 29.40668551127116
+
+
+
+Epoch 1114
+	Batch 0
+epoch loss: 28.399595260620117
+
+
+
+Epoch 1115
+	Batch 0
+epoch loss: 29.226238250732422
+
+
+
+Epoch 1116
+	Batch 0
+epoch loss: 30.11301549275716
+
+
+
+Epoch 1117
+	Batch 0
+epoch loss: 29.54530906677246
+
+
+
+Epoch 1118
+	Batch 0
+epoch loss: 29.813844680786133
+
+
+
+Epoch 1119
+	Batch 0
+epoch loss: 29.73321596781413
+
+
+
+Epoch 1120
+	Batch 0
+epoch loss: 29.577891031901043
+
+
+
+Epoch 1121
+	Batch 0
+epoch loss: 29.947105407714844
+
+
+
+Epoch 1122
+	Batch 0
+epoch loss: 27.907320658365887
+
+
+
+Epoch 1123
+	Batch 0
+epoch loss: 28.98467445373535
+
+
+
+Epoch 1124
+	Batch 0
+epoch loss: 29.541915893554688
+
+
+
+Epoch 1125
+	Batch 0
+epoch loss: 29.065807978312176
+
+
+
+Epoch 1126
+	Batch 0
+epoch loss: 30.01144282023112
+
+
+
+Epoch 1127
+	Batch 0
+epoch loss: 31.310691833496094
+
+
+
+Epoch 1128
+	Batch 0
+epoch loss: 32.40842056274414
+
+
+
+Epoch 1129
+	Batch 0
+epoch loss: 32.661886850992836
+
+
+
+Epoch 1130
+	Batch 0
+epoch loss: 32.966090520222984
+
+
+
+Epoch 1131
+	Batch 0
+epoch loss: 33.405412673950195
+
+
+
+Epoch 1132
+	Batch 0
+epoch loss: 30.351571400960285
+
+
+
+Epoch 1133
+	Batch 0
+epoch loss: 30.749889373779297
+
+
+
+Epoch 1134
+	Batch 0
+epoch loss: 29.91240056355794
+
+
+
+Epoch 1135
+	Batch 0
+epoch loss: 29.2523193359375
+
+
+
+Epoch 1136
+	Batch 0
+epoch loss: 29.328449885050457
+
+
+
+Epoch 1137
+	Batch 0
+epoch loss: 27.5873540242513
+
+
+
+Epoch 1138
+	Batch 0
+epoch loss: 28.274499257405598
+
+
+
+Epoch 1139
+	Batch 0
+epoch loss: 27.985214233398438
+
+
+
+Epoch 1140
+	Batch 0
+epoch loss: 28.063955942789715
+
+
+
+Epoch 1141
+	Batch 0
+epoch loss: 28.360925038655598
+
+
+
+Epoch 1142
+	Batch 0
+epoch loss: 27.685903549194336
+
+
+
+Epoch 1143
+	Batch 0
+epoch loss: 28.101388295491535
+
+
+
+Epoch 1144
+	Batch 0
+epoch loss: 27.794310251871746
+
+
+
+Epoch 1145
+	Batch 0
+epoch loss: 27.811108271280926
+
+
+
+Epoch 1146
+	Batch 0
+epoch loss: 28.094024658203125
+
+
+
+Epoch 1147
+	Batch 0
+epoch loss: 28.78980763753255
+
+
+
+Epoch 1148
+	Batch 0
+epoch loss: 30.623560587565105
+
+
+
+Epoch 1149
+	Batch 0
+epoch loss: 29.443994522094727
+
+
+
+Epoch 1150
+	Batch 0
+epoch loss: 31.26049550374349
+
+
+
+Epoch 1151
+	Batch 0
+epoch loss: 31.574669520060223
+
+
+
+Epoch 1152
+	Batch 0
+epoch loss: 30.56883366902669
+
+
+
+Epoch 1153
+	Batch 0
+epoch loss: 32.12833595275879
+
+
+
+Epoch 1154
+	Batch 0
+epoch loss: 32.20152727762858
+
+
+
+Epoch 1155
+	Batch 0
+epoch loss: 30.291393915812176
+
+
+
+Epoch 1156
+	Batch 0
+epoch loss: 30.584196090698242
+
+
+
+Epoch 1157
+	Batch 0
+epoch loss: 29.687102635701496
+
+
+
+Epoch 1158
+	Batch 0
+epoch loss: 29.276397069295246
+
+
+
+Epoch 1159
+	Batch 0
+epoch loss: 29.472593307495117
+
+
+
+Epoch 1160
+	Batch 0
+epoch loss: 30.269603093465168
+
+
+
+Epoch 1161
+	Batch 0
+epoch loss: 29.489535013834637
+
+
+
+Epoch 1162
+	Batch 0
+epoch loss: 30.19858996073405
+
+
+
+Epoch 1163
+	Batch 0
+epoch loss: 29.520775477091473
+
+
+
+Epoch 1164
+	Batch 0
+epoch loss: 31.217288335164387
+
+
+
+Epoch 1165
+	Batch 0
+epoch loss: 29.35527165730794
+
+
+
+Epoch 1166
+	Batch 0
+epoch loss: 30.223134358723957
+
+
+
+Epoch 1167
+	Batch 0
+epoch loss: 29.889835357666016
+
+
+
+Epoch 1168
+	Batch 0
+epoch loss: 29.24022674560547
+
+
+
+Epoch 1169
+	Batch 0
+epoch loss: 28.467535654703777
+
+
+
+Epoch 1170
+	Batch 0
+epoch loss: 29.296560923258465
+
+
+
+Epoch 1171
+	Batch 0
+epoch loss: 28.62685203552246
+
+
+
+Epoch 1172
+	Batch 0
+epoch loss: 28.912399291992188
+
+
+
+Epoch 1173
+	Batch 0
+epoch loss: 28.957965850830078
+
+
+
+Epoch 1174
+	Batch 0
+epoch loss: 28.587735493977863
+
+
+
+Epoch 1175
+	Batch 0
+epoch loss: 30.44292386372884
+
+
+
+Epoch 1176
+	Batch 0
+epoch loss: 30.03234926859538
+
+
+
+Epoch 1177
+	Batch 0
+epoch loss: 30.004885991414387
+
+
+
+Epoch 1178
+	Batch 0
+epoch loss: 30.32636070251465
+
+
+
+Epoch 1179
+	Batch 0
+epoch loss: 29.945363362630207
+
+
+
+Epoch 1180
+	Batch 0
+epoch loss: 29.078222910563152
+
+
+
+Epoch 1181
+	Batch 0
+epoch loss: 27.918802897135418
+
+
+
+Epoch 1182
+	Batch 0
+epoch loss: 28.15062141418457
+
+
+
+Epoch 1183
+	Batch 0
+epoch loss: 28.995011647542317
+
+
+
+Epoch 1184
+	Batch 0
+epoch loss: 30.034958521525066
+
+
+
+Epoch 1185
+	Batch 0
+epoch loss: 29.126861572265625
+
+
+
+Epoch 1186
+	Batch 0
+epoch loss: 29.29023806254069
+
+
+
+Epoch 1187
+	Batch 0
+epoch loss: 29.290653228759766
+
+
+
+Epoch 1188
+	Batch 0
+epoch loss: 28.665491739908855
+
+
+
+Epoch 1189
+	Batch 0
+epoch loss: 28.953636169433594
+
+
+
+Epoch 1190
+	Batch 0
+epoch loss: 29.193230946858723
+
+
+
+Epoch 1191
+	Batch 0
+epoch loss: 28.632081349690754
+
+
+
+Epoch 1192
+	Batch 0
+epoch loss: 28.37440363566081
+
+
+
+Epoch 1193
+	Batch 0
+epoch loss: 28.18189875284831
+
+
+
+Epoch 1194
+	Batch 0
+epoch loss: 28.625614166259766
+
+
+
+Epoch 1195
+	Batch 0
+epoch loss: 29.866609573364258
+
+
+
+Epoch 1196
+	Batch 0
+epoch loss: 31.03114128112793
+
+
+
+Epoch 1197
+	Batch 0
+epoch loss: 31.512137095133465
+
+
+
+Epoch 1198
+	Batch 0
+epoch loss: 32.7357374827067
+
+
+
+Epoch 1199
+	Batch 0
+epoch loss: 31.518040974934895
+
+
+
+Epoch 1200
+	Batch 0
+epoch loss: 31.743532180786133
+
+
+
+Epoch 1201
+	Batch 0
+epoch loss: 31.81676419576009
+
+
+
+Epoch 1202
+	Batch 0
+epoch loss: 30.673575083414715
+
+
+
+Epoch 1203
+	Batch 0
+epoch loss: 29.689219156901043
+
+
+
+Epoch 1204
+	Batch 0
+epoch loss: 29.216379801432293
+
+
+
+Epoch 1205
+	Batch 0
+epoch loss: 29.948684692382812
+
+
+
+Epoch 1206
+	Batch 0
+epoch loss: 29.518861134847004
+
+
+
+Epoch 1207
+	Batch 0
+epoch loss: 28.56689516703288
+
+
+
+Epoch 1208
+	Batch 0
+epoch loss: 28.360632578531902
+
+
+
+Epoch 1209
+	Batch 0
+epoch loss: 27.728181838989258
+
+
+
+Epoch 1210
+	Batch 0
+epoch loss: 28.051875432332356
+
+
+
+Epoch 1211
+	Batch 0
+epoch loss: 26.915599187215168
+
+
+
+Epoch 1212
+	Batch 0
+epoch loss: 26.478235880533855
+
+
+
+Epoch 1213
+	Batch 0
+epoch loss: 27.342396418253582
+
+
+
+Epoch 1214
+	Batch 0
+epoch loss: 30.760348002115887
+
+
+
+Epoch 1215
+	Batch 0
+epoch loss: 28.045536677042644
+
+
+
+Epoch 1216
+	Batch 0
+epoch loss: 29.007757822672527
+
+
+
+Epoch 1217
+	Batch 0
+epoch loss: 28.2513427734375
+
+
+
+Epoch 1218
+	Batch 0
+epoch loss: 29.02111307779948
+
+
+
+Epoch 1219
+	Batch 0
+epoch loss: 29.023832321166992
+
+
+
+Epoch 1220
+	Batch 0
+epoch loss: 30.128482182820637
+
+
+
+Epoch 1221
+	Batch 0
+epoch loss: 29.574808756510418
+
+
+
+Epoch 1222
+	Batch 0
+epoch loss: 29.304582595825195
+
+
+
+Epoch 1223
+	Batch 0
+epoch loss: 29.46109135945638
+
+
+
+Epoch 1224
+	Batch 0
+epoch loss: 29.783602396647137
+
+
+
+Epoch 1225
+	Batch 0
+epoch loss: 29.12217140197754
+
+
+
+Epoch 1226
+	Batch 0
+epoch loss: 27.354736328125
+
+
+
+Epoch 1227
+	Batch 0
+epoch loss: 27.57107925415039
+
+
+
+Epoch 1228
+	Batch 0
+epoch loss: 29.77668571472168
+
+
+
+Epoch 1229
+	Batch 0
+epoch loss: 28.13140106201172
+
+
+
+Epoch 1230
+	Batch 0
+epoch loss: 28.33222198486328
+
+
+
+Epoch 1231
+	Batch 0
+epoch loss: 28.50849151611328
+
+
+
+Epoch 1232
+	Batch 0
+epoch loss: 27.670630772908527
+
+
+
+Epoch 1233
+	Batch 0
+epoch loss: 28.049185434977215
+
+
+
+Epoch 1234
+	Batch 0
+epoch loss: 27.47506841023763
+
+
+
+Epoch 1235
+	Batch 0
+epoch loss: 27.81256930033366
+
+
+
+Epoch 1236
+	Batch 0
+epoch loss: 27.13019625345866
+
+
+
+Epoch 1237
+	Batch 0
+epoch loss: 27.85374387105306
+
+
+
+Epoch 1238
+	Batch 0
+epoch loss: 29.1238276163737
+
+
+
+Epoch 1239
+	Batch 0
+epoch loss: 29.45095952351888
+
+
+
+Epoch 1240
+	Batch 0
+epoch loss: 29.65587870279948
+
+
+
+Epoch 1241
+	Batch 0
+epoch loss: 29.128678639729817
+
+
+
+Epoch 1242
+	Batch 0
+epoch loss: 30.032006581624348
+
+
+
+Epoch 1243
+	Batch 0
+epoch loss: 29.6812318166097
+
+
+
+Epoch 1244
+	Batch 0
+epoch loss: 29.94934844970703
+
+
+
+Epoch 1245
+	Batch 0
+epoch loss: 28.96906344095866
+
+
+
+Epoch 1246
+	Batch 0
+epoch loss: 28.062909444173176
+
+
+
+Epoch 1247
+	Batch 0
+epoch loss: 27.873381932576496
+
+
+
+Epoch 1248
+	Batch 0
+epoch loss: 28.468400319417317
+
+
+
+Epoch 1249
+	Batch 0
+epoch loss: 27.566965738932293
+
+
+
+Epoch 1250
+	Batch 0
+epoch loss: 27.691726684570312
+
+
+
+Epoch 1251
+	Batch 0
+epoch loss: 27.330401102701824
+
+
+
+Epoch 1252
+	Batch 0
+epoch loss: 27.02619997660319
+
+
+
+Epoch 1253
+	Batch 0
+epoch loss: 27.02086575826009
+
+
+
+Epoch 1254
+	Batch 0
+epoch loss: 27.70651117960612
+
+
+
+Epoch 1255
+	Batch 0
+epoch loss: 27.893339157104492
+
+
+
+Epoch 1256
+	Batch 0
+epoch loss: 27.757033665974934
+
+
+
+Epoch 1257
+	Batch 0
+epoch loss: 28.372780481974285
+
+
+
+Epoch 1258
+	Batch 0
+epoch loss: 27.94922701517741
+
+
+
+Epoch 1259
+	Batch 0
+epoch loss: 29.125411987304688
+
+
+
+Epoch 1260
+	Batch 0
+epoch loss: 29.7804749806722
+
+
+
+Epoch 1261
+	Batch 0
+epoch loss: 29.206636428833008
+
+
+
+Epoch 1262
+	Batch 0
+epoch loss: 29.470007578531902
+
+
+
+Epoch 1263
+	Batch 0
+epoch loss: 30.341177622477215
+
+
+
+Epoch 1264
+	Batch 0
+epoch loss: 29.019020716349285
+
+
+
+Epoch 1265
+	Batch 0
+epoch loss: 28.568653742472332
+
+
+
+Epoch 1266
+	Batch 0
+epoch loss: 28.156225840250652
+
+
+
+Epoch 1267
+	Batch 0
+epoch loss: 28.153065363566082
+
+
+
+Epoch 1268
+	Batch 0
+epoch loss: 30.03073247273763
+
+
+
+Epoch 1269
+	Batch 0
+epoch loss: 30.67312749226888
+
+
+
+Epoch 1270
+	Batch 0
+epoch loss: 29.93782679239909
+
+
+
+Epoch 1271
+	Batch 0
+epoch loss: 29.190637588500977
+
+
+
+Epoch 1272
+	Batch 0
+epoch loss: 28.053469975789387
+
+
+
+Epoch 1273
+	Batch 0
+epoch loss: 29.28110949198405
+
+
+
+Epoch 1274
+	Batch 0
+epoch loss: 28.862725575764973
+
+
+
+Epoch 1275
+	Batch 0
+epoch loss: 29.242157618204754
+
+
+
+Epoch 1276
+	Batch 0
+epoch loss: 29.705819447835285
+
+
+
+Epoch 1277
+	Batch 0
+epoch loss: 29.031317392985027
+
+
+
+Epoch 1278
+	Batch 0
+epoch loss: 27.842304229736328
+
+
+
+Epoch 1279
+	Batch 0
+epoch loss: 27.416505177815754
+
+
+
+Epoch 1280
+	Batch 0
+epoch loss: 28.9745299021403
+
+
+
+Epoch 1281
+	Batch 0
+epoch loss: 29.101295471191406
+
+
+
+Epoch 1282
+	Batch 0
+epoch loss: 27.717042922973633
+
+
+
+Epoch 1283
+	Batch 0
+epoch loss: 28.148967107137043
+
+
+
+Epoch 1284
+	Batch 0
+epoch loss: 28.731043497721355
+
+
+
+Epoch 1285
+	Batch 0
+epoch loss: 27.033148447672527
+
+
+
+Epoch 1286
+	Batch 0
+epoch loss: 27.92867088317871
+
+
+
+Epoch 1287
+	Batch 0
+epoch loss: 29.062776565551758
+
+
+
+Epoch 1288
+	Batch 0
+epoch loss: 27.393722534179688
+
+
+
+Epoch 1289
+	Batch 0
+epoch loss: 28.024407068888348
+
+
+
+Epoch 1290
+	Batch 0
+epoch loss: 26.56127675374349
+
+
+
+Epoch 1291
+	Batch 0
+epoch loss: 28.07873598734538
+
+
+
+Epoch 1292
+	Batch 0
+epoch loss: 27.942110697428387
+
+
+
+Epoch 1293
+	Batch 0
+epoch loss: 27.037829717000324
+
+
+
+Epoch 1294
+	Batch 0
+epoch loss: 27.237780888875324
+
+
+
+Epoch 1295
+	Batch 0
+epoch loss: 29.054777145385742
+
+
+
+Epoch 1296
+	Batch 0
+epoch loss: 29.16196886698405
+
+
+
+Epoch 1297
+	Batch 0
+epoch loss: 29.197949091593426
+
+
+
+Epoch 1298
+	Batch 0
+epoch loss: 29.263705571492512
+
+
+
+Epoch 1299
+	Batch 0
+epoch loss: 30.133710225423176
+
+
+
+Epoch 1300
+	Batch 0
+epoch loss: 29.704682032267254
+
+
+
+Epoch 1301
+	Batch 0
+epoch loss: 28.8002872467041
+
+
+
+Epoch 1302
+	Batch 0
+epoch loss: 29.24554506937663
+
+
+
+Epoch 1303
+	Batch 0
+epoch loss: 27.92766825358073
+
+
+
+Epoch 1304
+	Batch 0
+epoch loss: 27.951541264851887
+
+
+
+Epoch 1305
+	Batch 0
+epoch loss: 26.856081008911133
+
+
+
+Epoch 1306
+	Batch 0
+epoch loss: 26.940048217773438
+
+
+
+Epoch 1307
+	Batch 0
+epoch loss: 27.542680104573567
+
+
+
+Epoch 1308
+	Batch 0
+epoch loss: 26.643295288085938
+
+
+
+Epoch 1309
+	Batch 0
+epoch loss: 26.86448097229004
+
+
+
+Epoch 1310
+	Batch 0
+epoch loss: 26.863263448079426
+
+
+
+Epoch 1311
+	Batch 0
+epoch loss: 26.988598505655926
+
+
+
+Epoch 1312
+	Batch 0
+epoch loss: 27.164616266886394
+
+
+
+Epoch 1313
+	Batch 0
+epoch loss: 27.48932139078776
+
+
+
+Epoch 1314
+	Batch 0
+epoch loss: 26.535791397094727
+
+
+
+Epoch 1315
+	Batch 0
+epoch loss: 27.682147979736328
+
+
+
+Epoch 1316
+	Batch 0
+epoch loss: 26.5502872467041
+
+
+
+Epoch 1317
+	Batch 0
+epoch loss: 27.073659261067707
+
+
+
+Epoch 1318
+	Batch 0
+epoch loss: 27.849652608235676
+
+
+
+Epoch 1319
+	Batch 0
+epoch loss: 26.397673924763996
+
+
+
+Epoch 1320
+	Batch 0
+epoch loss: 27.48112678527832
+
+
+
+Epoch 1321
+	Batch 0
+epoch loss: 26.423014322916668
+
+
+
+Epoch 1322
+	Batch 0
+epoch loss: 27.123298009236652
+
+
+
+Epoch 1323
+	Batch 0
+epoch loss: 27.25608762105306
+
+
+
+Epoch 1324
+	Batch 0
+epoch loss: 25.77277119954427
+
+
+
+Epoch 1325
+	Batch 0
+epoch loss: 26.370669682820637
+
+
+
+Epoch 1326
+	Batch 0
+epoch loss: 26.316547393798828
+
+
+
+Epoch 1327
+	Batch 0
+epoch loss: 27.165253321329754
+
+
+
+Epoch 1328
+	Batch 0
+epoch loss: 29.67895571390788
+
+
+
+Epoch 1329
+	Batch 0
+epoch loss: 28.563182195027668
+
+
+
+Epoch 1330
+	Batch 0
+epoch loss: 29.282025655110676
+
+
+
+Epoch 1331
+	Batch 0
+epoch loss: 29.326358159383137
+
+
+
+Epoch 1332
+	Batch 0
+epoch loss: 31.912577946980793
+
+
+
+Epoch 1333
+	Batch 0
+epoch loss: 33.10751914978027
+
+
+
+Epoch 1334
+	Batch 0
+epoch loss: 33.02253214518229
+
+
+
+Epoch 1335
+	Batch 0
+epoch loss: 31.789093017578125
+
+
+
+Epoch 1336
+	Batch 0
+epoch loss: 30.59471893310547
+
+
+
+Epoch 1337
+	Batch 0
+epoch loss: 29.447102864583332
+
+
+
+Epoch 1338
+	Batch 0
+epoch loss: 29.395077387491863
+
+
+
+Epoch 1339
+	Batch 0
+epoch loss: 29.841045379638672
+
+
+
+Epoch 1340
+	Batch 0
+epoch loss: 28.486515045166016
+
+
+
+Epoch 1341
+	Batch 0
+epoch loss: 28.65181032816569
+
+
+
+Epoch 1342
+	Batch 0
+epoch loss: 29.860721588134766
+
+
+
+Epoch 1343
+	Batch 0
+epoch loss: 28.552527109781902
+
+
+
+Epoch 1344
+	Batch 0
+epoch loss: 27.77342987060547
+
+
+
+Epoch 1345
+	Batch 0
+epoch loss: 28.62224578857422
+
+
+
+Epoch 1346
+	Batch 0
+epoch loss: 28.065489451090496
+
+
+
+Epoch 1347
+	Batch 0
+epoch loss: 27.596659978230793
+
+
+
+Epoch 1348
+	Batch 0
+epoch loss: 28.59954261779785
+
+
+
+Epoch 1349
+	Batch 0
+epoch loss: 28.07222557067871
+
+
+
+Epoch 1350
+	Batch 0
+epoch loss: 28.156766255696613
+
+
+
+Epoch 1351
+	Batch 0
+epoch loss: 29.373343149820965
+
+
+
+Epoch 1352
+	Batch 0
+epoch loss: 31.006977081298828
+
+
+
+Epoch 1353
+	Batch 0
+epoch loss: 30.648985544840496
+
+
+
+Epoch 1354
+	Batch 0
+epoch loss: 31.07109006245931
+
+
+
+Epoch 1355
+	Batch 0
+epoch loss: 31.444361368815105
+
+
+
+Epoch 1356
+	Batch 0
+epoch loss: 31.715166091918945
+
+
+
+Epoch 1357
+	Batch 0
+epoch loss: 30.958635330200195
+
+
+
+Epoch 1358
+	Batch 0
+epoch loss: 30.167097091674805
+
+
+
+Epoch 1359
+	Batch 0
+epoch loss: 31.340147654215496
+
+
+
+Epoch 1360
+	Batch 0
+epoch loss: 31.57434145609538
+
+
+
+Epoch 1361
+	Batch 0
+epoch loss: 29.861108144124348
+
+
+
+Epoch 1362
+	Batch 0
+epoch loss: 27.660924275716145
+
+
+
+Epoch 1363
+	Batch 0
+epoch loss: 27.60778045654297
+
+
+
+Epoch 1364
+	Batch 0
+epoch loss: 28.60686683654785
+
+
+
+Epoch 1365
+	Batch 0
+epoch loss: 27.44574228922526
+
+
+
+Epoch 1366
+	Batch 0
+epoch loss: 27.007132212320965
+
+
+
+Epoch 1367
+	Batch 0
+epoch loss: 28.259703318277996
+
+
+
+Epoch 1368
+	Batch 0
+epoch loss: 28.905033111572266
+
+
+
+Epoch 1369
+	Batch 0
+epoch loss: 28.120062510172527
+
+
+
+Epoch 1370
+	Batch 0
+epoch loss: 26.990794499715168
+
+
+
+Epoch 1371
+	Batch 0
+epoch loss: 27.266032536824543
+
+
+
+Epoch 1372
+	Batch 0
+epoch loss: 27.649568557739258
+
+
+
+Epoch 1373
+	Batch 0
+epoch loss: 26.46555519104004
+
+
+
+Epoch 1374
+	Batch 0
+epoch loss: 27.588335037231445
+
+
+
+Epoch 1375
+	Batch 0
+epoch loss: 26.527633666992188
+
+
+
+Epoch 1376
+	Batch 0
+epoch loss: 27.2955379486084
+
+
+
+Epoch 1377
+	Batch 0
+epoch loss: 27.227011998494465
+
+
+
+Epoch 1378
+	Batch 0
+epoch loss: 26.003392537434895
+
+
+
+Epoch 1379
+	Batch 0
+epoch loss: 26.60804494222005
+
+
+
+Epoch 1380
+	Batch 0
+epoch loss: 26.69007682800293
+
+
+
+Epoch 1381
+	Batch 0
+epoch loss: 26.08818817138672
+
+
+
+Epoch 1382
+	Batch 0
+epoch loss: 28.22121810913086
+
+
+
+Epoch 1383
+	Batch 0
+epoch loss: 27.07813262939453
+
+
+
+Epoch 1384
+	Batch 0
+epoch loss: 27.031945546468098
+
+
+
+Epoch 1385
+	Batch 0
+epoch loss: 28.54833730061849
+
+
+
+Epoch 1386
+	Batch 0
+epoch loss: 27.433080037434895
+
+
+
+Epoch 1387
+	Batch 0
+epoch loss: 28.87984784444173
+
+
+
+Epoch 1388
+	Batch 0
+epoch loss: 29.316239674886067
+
+
+
+Epoch 1389
+	Batch 0
+epoch loss: 28.515106201171875
+
+
+
+Epoch 1390
+	Batch 0
+epoch loss: 27.928253173828125
+
+
+
+Epoch 1391
+	Batch 0
+epoch loss: 29.945851643880207
+
+
+
+Epoch 1392
+	Batch 0
+epoch loss: 28.19165293375651
+
+
+
+Epoch 1393
+	Batch 0
+epoch loss: 28.729366302490234
+
+
+
+Epoch 1394
+	Batch 0
+epoch loss: 27.912832260131836
+
+
+
+Epoch 1395
+	Batch 0
+epoch loss: 27.553895950317383
+
+
+
+Epoch 1396
+	Batch 0
+epoch loss: 28.524847666422527
+
+
+
+Epoch 1397
+	Batch 0
+epoch loss: 28.327783584594727
+
+
+
+Epoch 1398
+	Batch 0
+epoch loss: 26.190390904744465
+
+
+
+Epoch 1399
+	Batch 0
+epoch loss: 26.80164400736491
+
+
+
+Epoch 1400
+	Batch 0
+epoch loss: 27.340991338094074
+
+
+
+Epoch 1401
+	Batch 0
+epoch loss: 26.022865295410156
+
+
+
+Epoch 1402
+	Batch 0
+epoch loss: 27.682980219523113
+
+
+
+Epoch 1403
+	Batch 0
+epoch loss: 27.347867965698242
+
+
+
+Epoch 1404
+	Batch 0
+epoch loss: 27.626815795898438
+
+
+
+Epoch 1405
+	Batch 0
+epoch loss: 27.543869018554688
+
+
+
+Epoch 1406
+	Batch 0
+epoch loss: 27.576758702596027
+
+
+
+Epoch 1407
+	Batch 0
+epoch loss: 29.131785074869793
+
+
+
+Epoch 1408
+	Batch 0
+epoch loss: 29.2723445892334
+
+
+
+Epoch 1409
+	Batch 0
+epoch loss: 30.196088155110676
+
+
+
+Epoch 1410
+	Batch 0
+epoch loss: 28.72992197672526
+
+
+
+Epoch 1411
+	Batch 0
+epoch loss: 28.85284169514974
+
+
+
+Epoch 1412
+	Batch 0
+epoch loss: 27.542150497436523
+
+
+
+Epoch 1413
+	Batch 0
+epoch loss: 28.017454783121746
+
+
+
+Epoch 1414
+	Batch 0
+epoch loss: 27.029102325439453
+
+
+
+Epoch 1415
+	Batch 0
+epoch loss: 28.256765365600586
+
+
+
+Epoch 1416
+	Batch 0
+epoch loss: 26.38655153910319
+
+
+
+Epoch 1417
+	Batch 0
+epoch loss: 27.02120844523112
+
+
+
+Epoch 1418
+	Batch 0
+epoch loss: 26.941076278686523
+
+
+
+Epoch 1419
+	Batch 0
+epoch loss: 26.862234115600586
+
+
+
+Epoch 1420
+	Batch 0
+epoch loss: 27.36205991109212
+
+
+
+Epoch 1421
+	Batch 0
+epoch loss: 26.641124725341797
+
+
+
+Epoch 1422
+	Batch 0
+epoch loss: 26.38580067952474
+
+
+
+Epoch 1423
+	Batch 0
+epoch loss: 26.219380060831707
+
+
+
+Epoch 1424
+	Batch 0
+epoch loss: 26.1608403523763
+
+
+
+Epoch 1425
+	Batch 0
+epoch loss: 26.320377349853516
+
+
+
+Epoch 1426
+	Batch 0
+epoch loss: 26.08590253194173
+
+
+
+Epoch 1427
+	Batch 0
+epoch loss: 27.493148803710938
+
+
+
+Epoch 1428
+	Batch 0
+epoch loss: 26.398284276326496
+
+
+
+Epoch 1429
+	Batch 0
+epoch loss: 26.428006490071613
+
+
+
+Epoch 1430
+	Batch 0
+epoch loss: 26.646264394124348
+
+
+
+Epoch 1431
+	Batch 0
+epoch loss: 27.141988118489582
+
+
+
+Epoch 1432
+	Batch 0
+epoch loss: 26.76453145345052
+
+
+
+Epoch 1433
+	Batch 0
+epoch loss: 26.6729253133138
+
+
+
+Epoch 1434
+	Batch 0
+epoch loss: 27.45763905843099
+
+
+
+Epoch 1435
+	Batch 0
+epoch loss: 27.735976537068684
+
+
+
+Epoch 1436
+	Batch 0
+epoch loss: 28.346045176188152
+
+
+
+Epoch 1437
+	Batch 0
+epoch loss: 28.797056833902996
+
+
+
+Epoch 1438
+	Batch 0
+epoch loss: 28.868801752726238
+
+
+
+Epoch 1439
+	Batch 0
+epoch loss: 29.94922129313151
+
+
+
+Epoch 1440
+	Batch 0
+epoch loss: 28.548865000406902
+
+
+
+Epoch 1441
+	Batch 0
+epoch loss: 27.650967915852863
+
+
+
+Epoch 1442
+	Batch 0
+epoch loss: 28.308712641398113
+
+
+
+Epoch 1443
+	Batch 0
+epoch loss: 27.231921513875324
+
+
+
+Epoch 1444
+	Batch 0
+epoch loss: 26.603024164835613
+
+
+
+Epoch 1445
+	Batch 0
+epoch loss: 27.31875228881836
+
+
+
+Epoch 1446
+	Batch 0
+epoch loss: 26.802668889363606
+
+
+
+Epoch 1447
+	Batch 0
+epoch loss: 25.55255699157715
+
+
+
+Epoch 1448
+	Batch 0
+epoch loss: 25.644672393798828
+
+
+
+Epoch 1449
+	Batch 0
+epoch loss: 25.79905637105306
+
+
+
+Epoch 1450
+	Batch 0
+epoch loss: 26.068510055541992
+
+
+
+Epoch 1451
+	Batch 0
+epoch loss: 25.585891087849934
+
+
+
+Epoch 1452
+	Batch 0
+epoch loss: 26.386341094970703
+
+
+
+Epoch 1453
+	Batch 0
+epoch loss: 27.980939229329426
+
+
+
+Epoch 1454
+	Batch 0
+epoch loss: 26.372531255086262
+
+
+
+Epoch 1455
+	Batch 0
+epoch loss: 27.538562774658203
+
+
+
+Epoch 1456
+	Batch 0
+epoch loss: 26.431020736694336
+
+
+
+Epoch 1457
+	Batch 0
+epoch loss: 26.704516728719074
+
+
+
+Epoch 1458
+	Batch 0
+epoch loss: 26.243889490763348
+
+
+
+Epoch 1459
+	Batch 0
+epoch loss: 27.38641357421875
+
+
+
+Epoch 1460
+	Batch 0
+epoch loss: 30.51426378885905
+
+
+
+Epoch 1461
+	Batch 0
+epoch loss: 30.808055241902668
+
+
+
+Epoch 1462
+	Batch 0
+epoch loss: 30.320460001627605
+
+
+
+Epoch 1463
+	Batch 0
+epoch loss: 28.452255249023438
+
+
+
+Epoch 1464
+	Batch 0
+epoch loss: 29.10861078898112
+
+
+
+Epoch 1465
+	Batch 0
+epoch loss: 27.473660786946613
+
+
+
+Epoch 1466
+	Batch 0
+epoch loss: 26.0351136525472
+
+
+
+Epoch 1467
+	Batch 0
+epoch loss: 27.618151982625324
+
+
+
+Epoch 1468
+	Batch 0
+epoch loss: 27.10533841451009
+
+
+
+Epoch 1469
+	Batch 0
+epoch loss: 27.10890070597331
+
+
+
+Epoch 1470
+	Batch 0
+epoch loss: 26.107158660888672
+
+
+
+Epoch 1471
+	Batch 0
+epoch loss: 26.270950317382812
+
+
+
+Epoch 1472
+	Batch 0
+epoch loss: 26.50104586283366
+
+
+
+Epoch 1473
+	Batch 0
+epoch loss: 26.55726369222005
+
+
+
+Epoch 1474
+	Batch 0
+epoch loss: 26.33035723368327
+
+
+
+Epoch 1475
+	Batch 0
+epoch loss: 26.05748112996419
+
+
+
+Epoch 1476
+	Batch 0
+epoch loss: 26.630263646443684
+
+
+
+Epoch 1477
+	Batch 0
+epoch loss: 25.807706832885742
+
+
+
+Epoch 1478
+	Batch 0
+epoch loss: 26.223670323689777
+
+
+
+Epoch 1479
+	Batch 0
+epoch loss: 26.67297871907552
+
+
+
+Epoch 1480
+	Batch 0
+epoch loss: 25.869788487752277
+
+
+
+Epoch 1481
+	Batch 0
+epoch loss: 25.827385584513348
+
+
+
+Epoch 1482
+	Batch 0
+epoch loss: 27.28949228922526
+
+
+
+Epoch 1483
+	Batch 0
+epoch loss: 26.250603993733723
+
+
+
+Epoch 1484
+	Batch 0
+epoch loss: 27.153065363566082
+
+
+
+Epoch 1485
+	Batch 0
+epoch loss: 27.87130292256673
+
+
+
+Epoch 1486
+	Batch 0
+epoch loss: 29.05377133687337
+
+
+
+Epoch 1487
+	Batch 0
+epoch loss: 29.08632214864095
+
+
+
+Epoch 1488
+	Batch 0
+epoch loss: 28.66062291463216
+
+
+
+Epoch 1489
+	Batch 0
+epoch loss: 28.515071868896484
+
+
+
+Epoch 1490
+	Batch 0
+epoch loss: 27.41394106547038
+
+
+
+Epoch 1491
+	Batch 0
+epoch loss: 28.37264124552409
+
+
+
+Epoch 1492
+	Batch 0
+epoch loss: 27.136694590250652
+
+
+
+Epoch 1493
+	Batch 0
+epoch loss: 25.605979601542156
+
+
+
+Epoch 1494
+	Batch 0
+epoch loss: 27.607747395833332
+
+
+
+Epoch 1495
+	Batch 0
+epoch loss: 27.315311431884766
+
+
+
+Epoch 1496
+	Batch 0
+epoch loss: 27.25267791748047
+
+
+
+Epoch 1497
+	Batch 0
+epoch loss: 26.06407419840495
+
+
+
+Epoch 1498
+	Batch 0
+epoch loss: 27.534652709960938
+
+
+
+Epoch 1499
+	Batch 0
+epoch loss: 26.601247787475586
+
+
+
+Epoch 1500
+	Batch 0
+epoch loss: 26.451263427734375
+
+
+
+Epoch 1501
+	Batch 0
+epoch loss: 26.881811777750652
+
+
+
+Epoch 1502
+	Batch 0
+epoch loss: 26.423592885335285
+
+
+
+Epoch 1503
+	Batch 0
+epoch loss: 25.83432133992513
+
+
+
+Epoch 1504
+	Batch 0
+epoch loss: 27.28870391845703
+
+
+
+Epoch 1505
+	Batch 0
+epoch loss: 26.401681900024414
+
+
+
+Epoch 1506
+	Batch 0
+epoch loss: 25.92987569173177
+
+
+
+Epoch 1507
+	Batch 0
+epoch loss: 25.157697041829426
+
+
+
+Epoch 1508
+	Batch 0
+epoch loss: 25.751304626464844
+
+
+
+Epoch 1509
+	Batch 0
+epoch loss: 25.611024856567383
+
+
+
+Epoch 1510
+	Batch 0
+epoch loss: 27.103701909383137
+
+
+
+Epoch 1511
+	Batch 0
+epoch loss: 26.576231638590496
+
+
+
+Epoch 1512
+	Batch 0
+epoch loss: 26.50078582763672
+
+
+
+Epoch 1513
+	Batch 0
+epoch loss: 26.81576665242513
+
+
+
+Epoch 1514
+	Batch 0
+epoch loss: 28.57816441853841
+
+
+
+Epoch 1515
+	Batch 0
+epoch loss: 28.288143793741863
+
+
+
+Epoch 1516
+	Batch 0
+epoch loss: 29.651824951171875
+
+
+
+Epoch 1517
+	Batch 0
+epoch loss: 27.84827423095703
+
+
+
+Epoch 1518
+	Batch 0
+epoch loss: 27.195167541503906
+
+
+
+Epoch 1519
+	Batch 0
+epoch loss: 26.865785598754883
+
+
+
+Epoch 1520
+	Batch 0
+epoch loss: 26.475568135579426
+
+
+
+Epoch 1521
+	Batch 0
+epoch loss: 26.35761070251465
+
+
+
+Epoch 1522
+	Batch 0
+epoch loss: 26.68768056233724
+
+
+
+Epoch 1523
+	Batch 0
+epoch loss: 27.193846384684246
+
+
+
+Epoch 1524
+	Batch 0
+epoch loss: 27.255469640096027
+
+
+
+Epoch 1525
+	Batch 0
+epoch loss: 26.87984275817871
+
+
+
+Epoch 1526
+	Batch 0
+epoch loss: 27.81331507364909
+
+
+
+Epoch 1527
+	Batch 0
+epoch loss: 26.037926355997723
+
+
+
+Epoch 1528
+	Batch 0
+epoch loss: 26.179341634114582
+
+
+
+Epoch 1529
+	Batch 0
+epoch loss: 26.003538767496746
+
+
+
+Epoch 1530
+	Batch 0
+epoch loss: 26.453907648722332
+
+
+
+Epoch 1531
+	Batch 0
+epoch loss: 26.22562535603841
+
+
+
+Epoch 1532
+	Batch 0
+epoch loss: 27.510574340820312
+
+
+
+Epoch 1533
+	Batch 0
+epoch loss: 26.39781888326009
+
+
+
+Epoch 1534
+	Batch 0
+epoch loss: 25.64776039123535
+
+
+
+Epoch 1535
+	Batch 0
+epoch loss: 25.18397267659505
+
+
+
+Epoch 1536
+	Batch 0
+epoch loss: 26.144271850585938
+
+
+
+Epoch 1537
+	Batch 0
+epoch loss: 26.009377161661785
+
+
+
+Epoch 1538
+	Batch 0
+epoch loss: 25.075212478637695
+
+
+
+Epoch 1539
+	Batch 0
+epoch loss: 26.382715225219727
+
+
+
+Epoch 1540
+	Batch 0
+epoch loss: 26.484870274861652
+
+
+
+Epoch 1541
+	Batch 0
+epoch loss: 25.408032099405926
+
+
+
+Epoch 1542
+	Batch 0
+epoch loss: 25.597462972005207
+
+
+
+Epoch 1543
+	Batch 0
+epoch loss: 25.883202234903973
+
+
+
+Epoch 1544
+	Batch 0
+epoch loss: 26.224557876586914
+
+
+
+Epoch 1545
+	Batch 0
+epoch loss: 26.606099446614582
+
+
+
+Epoch 1546
+	Batch 0
+epoch loss: 26.134714762369793
+
+
+
+Epoch 1547
+	Batch 0
+epoch loss: 26.679460525512695
+
+
+
+Epoch 1548
+	Batch 0
+epoch loss: 27.309417724609375
+
+
+
+Epoch 1549
+	Batch 0
+epoch loss: 28.157485961914062
+
+
+
+Epoch 1550
+	Batch 0
+epoch loss: 28.598962783813477
+
+
+
+Epoch 1551
+	Batch 0
+epoch loss: 27.48572540283203
+
+
+
+Epoch 1552
+	Batch 0
+epoch loss: 27.930885314941406
+
+
+
+Epoch 1553
+	Batch 0
+epoch loss: 27.620267868041992
+
+
+
+Epoch 1554
+	Batch 0
+epoch loss: 26.338340123494465
+
+
+
+Epoch 1555
+	Batch 0
+epoch loss: 25.746130625406902
+
+
+
+Epoch 1556
+	Batch 0
+epoch loss: 26.354931513468426
+
+
+
+Epoch 1557
+	Batch 0
+epoch loss: 25.304349899291992
+
+
+
+Epoch 1558
+	Batch 0
+epoch loss: 25.547783533732098
+
+
+
+Epoch 1559
+	Batch 0
+epoch loss: 25.744126001993816
+
+
+
+Epoch 1560
+	Batch 0
+epoch loss: 25.805750528971355
+
+
+
+Epoch 1561
+	Batch 0
+epoch loss: 25.889964421590168
+
+
+
+Epoch 1562
+	Batch 0
+epoch loss: 25.802771886189777
+
+
+
+Epoch 1563
+	Batch 0
+epoch loss: 24.921645482381184
+
+
+
+Epoch 1564
+	Batch 0
+epoch loss: 25.377553939819336
+
+
+
+Epoch 1565
+	Batch 0
+epoch loss: 25.453269958496094
+
+
+
+Epoch 1566
+	Batch 0
+epoch loss: 26.51261329650879
+
+
+
+Epoch 1567
+	Batch 0
+epoch loss: 26.94858678181966
+
+
+
+Epoch 1568
+	Batch 0
+epoch loss: 27.04540761311849
+
+
+
+Epoch 1569
+	Batch 0
+epoch loss: 25.537983576456707
+
+
+
+Epoch 1570
+	Batch 0
+epoch loss: 25.939140955607098
+
+
+
+Epoch 1571
+	Batch 0
+epoch loss: 25.972702662150066
+
+
+
+Epoch 1572
+	Batch 0
+epoch loss: 25.370784123738606
+
+
+
+Epoch 1573
+	Batch 0
+epoch loss: 26.02694574991862
+
+
+
+Epoch 1574
+	Batch 0
+epoch loss: 26.602160771687824
+
+
+
+Epoch 1575
+	Batch 0
+epoch loss: 25.743549346923828
+
+
+
+Epoch 1576
+	Batch 0
+epoch loss: 25.713741302490234
+
+
+
+Epoch 1577
+	Batch 0
+epoch loss: 26.590391159057617
+
+
+
+Epoch 1578
+	Batch 0
+epoch loss: 25.848243077596027
+
+
+
+Epoch 1579
+	Batch 0
+epoch loss: 25.048934936523438
+
+
+
+Epoch 1580
+	Batch 0
+epoch loss: 26.691251118977863
+
+
+
+Epoch 1581
+	Batch 0
+epoch loss: 26.33660825093587
+
+
+
+Epoch 1582
+	Batch 0
+epoch loss: 24.986368815104168
+
+
+
+Epoch 1583
+	Batch 0
+epoch loss: 25.744740804036457
+
+
+
+Epoch 1584
+	Batch 0
+epoch loss: 25.2783260345459
+
+
+
+Epoch 1585
+	Batch 0
+epoch loss: 24.270207405090332
+
+
+
+Epoch 1586
+	Batch 0
+epoch loss: 25.84131685892741
+
+
+
+Epoch 1587
+	Batch 0
+epoch loss: 25.957413991292317
+
+
+
+Epoch 1588
+	Batch 0
+epoch loss: 25.86549186706543
+
+
+
+Epoch 1589
+	Batch 0
+epoch loss: 25.573541005452473
+
+
+
+Epoch 1590
+	Batch 0
+epoch loss: 25.787676493326824
+
+
+
+Epoch 1591
+	Batch 0
+epoch loss: 25.78445053100586
+
+
+
+Epoch 1592
+	Batch 0
+epoch loss: 26.784914016723633
+
+
+
+Epoch 1593
+	Batch 0
+epoch loss: 26.837678909301758
+
+
+
+Epoch 1594
+	Batch 0
+epoch loss: 26.078067143758137
+
+
+
+Epoch 1595
+	Batch 0
+epoch loss: 26.092121760050457
+
+
+
+Epoch 1596
+	Batch 0
+epoch loss: 26.385164260864258
+
+
+
+Epoch 1597
+	Batch 0
+epoch loss: 25.117516835530598
+
+
+
+Epoch 1598
+	Batch 0
+epoch loss: 25.241545995076496
+
+
+
+Epoch 1599
+	Batch 0
+epoch loss: 24.820682525634766
+
+
+
+Epoch 1600
+	Batch 0
+epoch loss: 26.0446351369222
+
+
+
+Epoch 1601
+	Batch 0
+epoch loss: 25.570606231689453
+
+
+
+Epoch 1602
+	Batch 0
+epoch loss: 24.85722287495931
+
+
+
+Epoch 1603
+	Batch 0
+epoch loss: 24.94513511657715
+
+
+
+Epoch 1604
+	Batch 0
+epoch loss: 24.390591939290363
+
+
+
+Epoch 1605
+	Batch 0
+epoch loss: 24.503447850545246
+
+
+
+Epoch 1606
+	Batch 0
+epoch loss: 25.79451052347819
+
+
+
+Epoch 1607
+	Batch 0
+epoch loss: 24.836076100667317
+
+
+
+Epoch 1608
+	Batch 0
+epoch loss: 24.625293731689453
+
+
+
+Epoch 1609
+	Batch 0
+epoch loss: 24.820894241333008
+
+
+
+Epoch 1610
+	Batch 0
+epoch loss: 24.370513280232746
+
+
+
+Epoch 1611
+	Batch 0
+epoch loss: 25.49350865681966
+
+
+
+Epoch 1612
+	Batch 0
+epoch loss: 24.913110097249348
+
+
+
+Epoch 1613
+	Batch 0
+epoch loss: 25.442066192626953
+
+
+
+Epoch 1614
+	Batch 0
+epoch loss: 26.1338628133138
+
+
+
+Epoch 1615
+	Batch 0
+epoch loss: 27.13401921590169
+
+
+
+Epoch 1616
+	Batch 0
+epoch loss: 26.611831029256184
+
+
+
+Epoch 1617
+	Batch 0
+epoch loss: 27.8059024810791
+
+
+
+Epoch 1618
+	Batch 0
+epoch loss: 26.708480834960938
+
+
+
+Epoch 1619
+	Batch 0
+epoch loss: 28.00971221923828
+
+
+
+Epoch 1620
+	Batch 0
+epoch loss: 26.924293518066406
+
+
+
+Epoch 1621
+	Batch 0
+epoch loss: 26.601573944091797
+
+
+
+Epoch 1622
+	Batch 0
+epoch loss: 27.34209696451823
+
+
+
+Epoch 1623
+	Batch 0
+epoch loss: 27.75927225748698
+
+
+
+Epoch 1624
+	Batch 0
+epoch loss: 25.65644645690918
+
+
+
+Epoch 1625
+	Batch 0
+epoch loss: 26.416514714558918
+
+
+
+Epoch 1626
+	Batch 0
+epoch loss: 25.950173060099285
+
+
+
+Epoch 1627
+	Batch 0
+epoch loss: 24.939332962036133
+
+
+
+Epoch 1628
+	Batch 0
+epoch loss: 24.859508514404297
+
+
+
+Epoch 1629
+	Batch 0
+epoch loss: 25.05059051513672
+
+
+
+Epoch 1630
+	Batch 0
+epoch loss: 25.059945424397785
+
+
+
+Epoch 1631
+	Batch 0
+epoch loss: 24.239490509033203
+
+
+
+Epoch 1632
+	Batch 0
+epoch loss: 24.726065317789715
+
+
+
+Epoch 1633
+	Batch 0
+epoch loss: 24.405303319295246
+
+
+
+Epoch 1634
+	Batch 0
+epoch loss: 25.20119349161784
+
+
+
+Epoch 1635
+	Batch 0
+epoch loss: 24.953097661336262
+
+
+
+Epoch 1636
+	Batch 0
+epoch loss: 24.429447809855144
+
+
+
+Epoch 1637
+	Batch 0
+epoch loss: 24.850505828857422
+
+
+
+Epoch 1638
+	Batch 0
+epoch loss: 24.529949188232422
+
+
+
+Epoch 1639
+	Batch 0
+epoch loss: 24.511154174804688
+
+
+
+Epoch 1640
+	Batch 0
+epoch loss: 24.595352172851562
+
+
+
+Epoch 1641
+	Batch 0
+epoch loss: 23.5680357615153
+
+
+
+Epoch 1642
+	Batch 0
+epoch loss: 23.642506917317707
+
+
+
+Epoch 1643
+	Batch 0
+epoch loss: 24.51796023050944
+
+
+
+Epoch 1644
+	Batch 0
+epoch loss: 25.2828369140625
+
+
+
+Epoch 1645
+	Batch 0
+epoch loss: 26.223459879557293
+
+
+
+Epoch 1646
+	Batch 0
+epoch loss: 27.128224690755207
+
+
+
+Epoch 1647
+	Batch 0
+epoch loss: 28.834354400634766
+
+
+
+Epoch 1648
+	Batch 0
+epoch loss: 28.355963389078777
+
+
+
+Epoch 1649
+	Batch 0
+epoch loss: 29.790149052937824
+
+
+
+Epoch 1650
+	Batch 0
+epoch loss: 29.271273295084637
+
+
+
+Epoch 1651
+	Batch 0
+epoch loss: 27.33496602376302
+
+
+
+Epoch 1652
+	Batch 0
+epoch loss: 26.577999750773113
+
+
+
+Epoch 1653
+	Batch 0
+epoch loss: 25.274099349975586
+
+
+
+Epoch 1654
+	Batch 0
+epoch loss: 25.857486089070637
+
+
+
+Epoch 1655
+	Batch 0
+epoch loss: 26.887518564860027
+
+
+
+Epoch 1656
+	Batch 0
+epoch loss: 25.942597071329754
+
+
+
+Epoch 1657
+	Batch 0
+epoch loss: 25.455111185709637
+
+
+
+Epoch 1658
+	Batch 0
+epoch loss: 24.84261703491211
+
+
+
+Epoch 1659
+	Batch 0
+epoch loss: 24.51325225830078
+
+
+
+Epoch 1660
+	Batch 0
+epoch loss: 26.77024777730306
+
+
+
+Epoch 1661
+	Batch 0
+epoch loss: 26.11678949991862
+
+
+
+Epoch 1662
+	Batch 0
+epoch loss: 25.591412862141926
+
+
+
+Epoch 1663
+	Batch 0
+epoch loss: 25.868218104044598
+
+
+
+Epoch 1664
+	Batch 0
+epoch loss: 26.22646967569987
+
+
+
+Epoch 1665
+	Batch 0
+epoch loss: 25.684423446655273
+
+
+
+Epoch 1666
+	Batch 0
+epoch loss: 24.499075571695965
+
+
+
+Epoch 1667
+	Batch 0
+epoch loss: 25.248565038045246
+
+
+
+Epoch 1668
+	Batch 0
+epoch loss: 26.15366808573405
+
+
+
+Epoch 1669
+	Batch 0
+epoch loss: 24.18159294128418
+
+
+
+Epoch 1670
+	Batch 0
+epoch loss: 24.473631540934246
+
+
+
+Epoch 1671
+	Batch 0
+epoch loss: 23.604686101277668
+
+
+
+Epoch 1672
+	Batch 0
+epoch loss: 24.649373372395832
+
+
+
+Epoch 1673
+	Batch 0
+epoch loss: 26.047518412272137
+
+
+
+Epoch 1674
+	Batch 0
+epoch loss: 25.20576349894206
+
+
+
+Epoch 1675
+	Batch 0
+epoch loss: 24.58154805501302
+
+
+
+Epoch 1676
+	Batch 0
+epoch loss: 24.726229349772137
+
+
+
+Epoch 1677
+	Batch 0
+epoch loss: 24.998462041219074
+
+
+
+Epoch 1678
+	Batch 0
+epoch loss: 25.261112213134766
+
+
+
+Epoch 1679
+	Batch 0
+epoch loss: 23.806785583496094
+
+
+
+Epoch 1680
+	Batch 0
+epoch loss: 22.899311065673828
+
+
+
+Epoch 1681
+	Batch 0
+epoch loss: 23.701674779256184
+
+
+
+Epoch 1682
+	Batch 0
+epoch loss: 28.38287925720215
+
+
+
+Epoch 1683
+	Batch 0
+epoch loss: 26.400248209635418
+
+
+
+Epoch 1684
+	Batch 0
+epoch loss: 26.205712000528973
+
+
+
+Epoch 1685
+	Batch 0
+epoch loss: 26.167147318522137
+
+
+
+Epoch 1686
+	Batch 0
+epoch loss: 26.035489400227863
+
+
+
+Epoch 1687
+	Batch 0
+epoch loss: 25.69166628519694
+
+
+
+Epoch 1688
+	Batch 0
+epoch loss: 26.45136833190918
+
+
+
+Epoch 1689
+	Batch 0
+epoch loss: 26.02286720275879
+
+
+
+Epoch 1690
+	Batch 0
+epoch loss: 25.459102630615234
+
+
+
+Epoch 1691
+	Batch 0
+epoch loss: 25.623345692952473
+
+
+
+Epoch 1692
+	Batch 0
+epoch loss: 24.897910435994465
+
+
+
+Epoch 1693
+	Batch 0
+epoch loss: 25.1533940633138
+
+
+
+Epoch 1694
+	Batch 0
+epoch loss: 25.246686299641926
+
+
+
+Epoch 1695
+	Batch 0
+epoch loss: 25.93893305460612
+
+
+
+Epoch 1696
+	Batch 0
+epoch loss: 25.860020955403645
+
+
+
+Epoch 1697
+	Batch 0
+epoch loss: 25.532588322957356
+
+
+
+Epoch 1698
+	Batch 0
+epoch loss: 24.863108952840168
+
+
+
+Epoch 1699
+	Batch 0
+epoch loss: 25.42901102701823
+
+
+
+Epoch 1700
+	Batch 0
+epoch loss: 25.77109146118164
+
+
+
+Epoch 1701
+	Batch 0
+epoch loss: 26.208424250284832
+
+
+
+Epoch 1702
+	Batch 0
+epoch loss: 24.701765060424805
+
+
+
+Epoch 1703
+	Batch 0
+epoch loss: 25.74546496073405
+
+
+
+Epoch 1704
+	Batch 0
+epoch loss: 24.5140380859375
+
+
+
+Epoch 1705
+	Batch 0
+epoch loss: 23.679311116536457
+
+
+
+Epoch 1706
+	Batch 0
+epoch loss: 24.997177124023438
+
+
+
+Epoch 1707
+	Batch 0
+epoch loss: 25.14433479309082
+
+
+
+Epoch 1708
+	Batch 0
+epoch loss: 25.67478624979655
+
+
+
+Epoch 1709
+	Batch 0
+epoch loss: 25.301830291748047
+
+
+
+Epoch 1710
+	Batch 0
+epoch loss: 26.61279360453288
+
+
+
+Epoch 1711
+	Batch 0
+epoch loss: 27.57364018758138
+
+
+
+Epoch 1712
+	Batch 0
+epoch loss: 28.109827677408855
+
+
+
+Epoch 1713
+	Batch 0
+epoch loss: 27.399588267008465
+
+
+
+Epoch 1714
+	Batch 0
+epoch loss: 25.567454020182293
+
+
+
+Epoch 1715
+	Batch 0
+epoch loss: 25.0832576751709
+
+
+
+Epoch 1716
+	Batch 0
+epoch loss: 24.909798940022785
+
+
+
+Epoch 1717
+	Batch 0
+epoch loss: 23.72378158569336
+
+
+
+Epoch 1718
+	Batch 0
+epoch loss: 24.901596705118816
+
+
+
+Epoch 1719
+	Batch 0
+epoch loss: 24.24876340230306
+
+
+
+Epoch 1720
+	Batch 0
+epoch loss: 23.461802800496418
+
+
+
+Epoch 1721
+	Batch 0
+epoch loss: 25.83326784769694
+
+
+
+Epoch 1722
+	Batch 0
+epoch loss: 24.038681666056316
+
+
+
+Epoch 1723
+	Batch 0
+epoch loss: 23.041954040527344
+
+
+
+Epoch 1724
+	Batch 0
+epoch loss: 23.287321090698242
+
+
+
+Epoch 1725
+	Batch 0
+epoch loss: 24.15311622619629
+
+
+
+Epoch 1726
+	Batch 0
+epoch loss: 24.736649831136067
+
+
+
+Epoch 1727
+	Batch 0
+epoch loss: 22.997329711914062
+
+
+
+Epoch 1728
+	Batch 0
+epoch loss: 22.821743647257488
+
+
+
+Epoch 1729
+	Batch 0
+epoch loss: 22.578947067260742
+
+
+
+Epoch 1730
+	Batch 0
+epoch loss: 26.355308532714844
+
+
+
+Epoch 1731
+	Batch 0
+epoch loss: 26.673920313517254
+
+
+
+Epoch 1732
+	Batch 0
+epoch loss: 25.689277013142902
+
+
+
+Epoch 1733
+	Batch 0
+epoch loss: 24.48653729756673
+
+
+
+Epoch 1734
+	Batch 0
+epoch loss: 24.591806411743164
+
+
+
+Epoch 1735
+	Batch 0
+epoch loss: 25.995391209920246
+
+
+
+Epoch 1736
+	Batch 0
+epoch loss: 25.05828857421875
+
+
+
+Epoch 1737
+	Batch 0
+epoch loss: 24.609370549519856
+
+
+
+Epoch 1738
+	Batch 0
+epoch loss: 26.338158289591473
+
+
+
+Epoch 1739
+	Batch 0
+epoch loss: 26.538217544555664
+
+
+
+Epoch 1740
+	Batch 0
+epoch loss: 26.724035898844402
+
+
+
+Epoch 1741
+	Batch 0
+epoch loss: 28.842070897420246
+
+
+
+Epoch 1742
+	Batch 0
+epoch loss: 28.997631072998047
+
+
+
+Epoch 1743
+	Batch 0
+epoch loss: 29.07487678527832
+
+
+
+Epoch 1744
+	Batch 0
+epoch loss: 28.253747940063477
+
+
+
+Epoch 1745
+	Batch 0
+epoch loss: 25.65990447998047
+
+
+
+Epoch 1746
+	Batch 0
+epoch loss: 25.816823959350586
+
+
+
+Epoch 1747
+	Batch 0
+epoch loss: 25.040765126546223
+
+
+
+Epoch 1748
+	Batch 0
+epoch loss: 26.224206924438477
+
+
+
+Epoch 1749
+	Batch 0
+epoch loss: 24.04283555348714
+
+
+
+Epoch 1750
+	Batch 0
+epoch loss: 23.948462804158527
+
+
+
+Epoch 1751
+	Batch 0
+epoch loss: 24.492525736490887
+
+
+
+Epoch 1752
+	Batch 0
+epoch loss: 25.629961013793945
+
+
+
+Epoch 1753
+	Batch 0
+epoch loss: 24.112224578857422
+
+
+
+Epoch 1754
+	Batch 0
+epoch loss: 23.753336588541668
+
+
+
+Epoch 1755
+	Batch 0
+epoch loss: 24.050275802612305
+
+
+
+Epoch 1756
+	Batch 0
+epoch loss: 23.34967295328776
+
+
+
+Epoch 1757
+	Batch 0
+epoch loss: 24.45444170633952
+
+
+
+Epoch 1758
+	Batch 0
+epoch loss: 23.95401446024577
+
+
+
+Epoch 1759
+	Batch 0
+epoch loss: 23.904191970825195
+
+
+
+Epoch 1760
+	Batch 0
+epoch loss: 24.735385258992512
+
+
+
+Epoch 1761
+	Batch 0
+epoch loss: 25.34037907918294
+
+
+
+Epoch 1762
+	Batch 0
+epoch loss: 25.17084503173828
+
+
+
+Epoch 1763
+	Batch 0
+epoch loss: 24.50665219624837
+
+
+
+Epoch 1764
+	Batch 0
+epoch loss: 24.372168858846027
+
+
+
+Epoch 1765
+	Batch 0
+epoch loss: 23.785711924235027
+
+
+
+Epoch 1766
+	Batch 0
+epoch loss: 23.331955273946125
+
+
+
+Epoch 1767
+	Batch 0
+epoch loss: 23.82598940531413
+
+
+
+Epoch 1768
+	Batch 0
+epoch loss: 23.040247599283855
+
+
+
+Epoch 1769
+	Batch 0
+epoch loss: 27.309136708577473
+
+
+
+Epoch 1770
+	Batch 0
+epoch loss: 27.51477114359538
+
+
+
+Epoch 1771
+	Batch 0
+epoch loss: 26.917898178100586
+
+
+
+Epoch 1772
+	Batch 0
+epoch loss: 26.166343688964844
+
+
+
+Epoch 1773
+	Batch 0
+epoch loss: 27.248090744018555
+
+
+
+Epoch 1774
+	Batch 0
+epoch loss: 26.118057250976562
+
+
+
+Epoch 1775
+	Batch 0
+epoch loss: 26.218228658040363
+
+
+
+Epoch 1776
+	Batch 0
+epoch loss: 25.65396245320638
+
+
+
+Epoch 1777
+	Batch 0
+epoch loss: 26.330703735351562
+
+
+
+Epoch 1778
+	Batch 0
+epoch loss: 26.112690607706707
+
+
+
+Epoch 1779
+	Batch 0
+epoch loss: 26.448355356852215
+
+
+
+Epoch 1780
+	Batch 0
+epoch loss: 25.926315307617188
+
+
+
+Epoch 1781
+	Batch 0
+epoch loss: 25.61204783121745
+
+
+
+Epoch 1782
+	Batch 0
+epoch loss: 24.89655303955078
+
+
+
+Epoch 1783
+	Batch 0
+epoch loss: 24.298507690429688
+
+
+
+Epoch 1784
+	Batch 0
+epoch loss: 24.549367268880207
+
+
+
+Epoch 1785
+	Batch 0
+epoch loss: 24.91631253560384
+
+
+
+Epoch 1786
+	Batch 0
+epoch loss: 24.43402608235677
+
+
+
+Epoch 1787
+	Batch 0
+epoch loss: 23.658037185668945
+
+
+
+Epoch 1788
+	Batch 0
+epoch loss: 24.199892044067383
+
+
+
+Epoch 1789
+	Batch 0
+epoch loss: 23.07076581319173
+
+
+
+Epoch 1790
+	Batch 0
+epoch loss: 24.696244557698567
+
+
+
+Epoch 1791
+	Batch 0
+epoch loss: 24.01467768351237
+
+
+
+Epoch 1792
+	Batch 0
+epoch loss: 24.547367731730144
+
+
+
+Epoch 1793
+	Batch 0
+epoch loss: 24.228338877360027
+
+
+
+Epoch 1794
+	Batch 0
+epoch loss: 25.346766153971355
+
+
+
+Epoch 1795
+	Batch 0
+epoch loss: 24.4509334564209
+
+
+
+Epoch 1796
+	Batch 0
+epoch loss: 25.14613215128581
+
+
+
+Epoch 1797
+	Batch 0
+epoch loss: 24.328271865844727
+
+
+
+Epoch 1798
+	Batch 0
+epoch loss: 24.4539368947347
+
+
+
+Epoch 1799
+	Batch 0
+epoch loss: 25.368621190388996
+
+
+
+Epoch 1800
+	Batch 0
+epoch loss: 25.149857838948567
+
+
+
+Epoch 1801
+	Batch 0
+epoch loss: 25.007925033569336
+
+
+
+Epoch 1802
+	Batch 0
+epoch loss: 25.45072301228841
+
+
+
+Epoch 1803
+	Batch 0
+epoch loss: 24.45708401997884
+
+
+
+Epoch 1804
+	Batch 0
+epoch loss: 25.614381790161133
+
+
+
+Epoch 1805
+	Batch 0
+epoch loss: 25.47784932454427
+
+
+
+Epoch 1806
+	Batch 0
+epoch loss: 23.95286814371745
+
+
+
+Epoch 1807
+	Batch 0
+epoch loss: 24.60727055867513
+
+
+
+Epoch 1808
+	Batch 0
+epoch loss: 25.99283727010091
+
+
+
+Epoch 1809
+	Batch 0
+epoch loss: 25.306360880533855
+
+
+
+Epoch 1810
+	Batch 0
+epoch loss: 25.121034622192383
+
+
+
+Epoch 1811
+	Batch 0
+epoch loss: 24.12935447692871
+
+
+
+Epoch 1812
+	Batch 0
+epoch loss: 24.527578353881836
+
+
+
+Epoch 1813
+	Batch 0
+epoch loss: 24.737247467041016
+
+
+
+Epoch 1814
+	Batch 0
+epoch loss: 25.530396779378254
+
+
+
+Epoch 1815
+	Batch 0
+epoch loss: 25.89175542195638
+
+
+
+Epoch 1816
+	Batch 0
+epoch loss: 25.742347717285156
+
+
+
+Epoch 1817
+	Batch 0
+epoch loss: 27.880703608194988
+
+
+
+Epoch 1818
+	Batch 0
+epoch loss: 28.272056579589844
+
+
+
+Epoch 1819
+	Batch 0
+epoch loss: 29.14942741394043
+
+
+
+Epoch 1820
+	Batch 0
+epoch loss: 28.577962239583332
+
+
+
+Epoch 1821
+	Batch 0
+epoch loss: 26.19467894236247
+
+
+
+Epoch 1822
+	Batch 0
+epoch loss: 25.967620213826496
+
+
+
+Epoch 1823
+	Batch 0
+epoch loss: 25.082157770792644
+
+
+
+Epoch 1824
+	Batch 0
+epoch loss: 24.746292114257812
+
+
+
+Epoch 1825
+	Batch 0
+epoch loss: 24.296384811401367
+
+
+
+Epoch 1826
+	Batch 0
+epoch loss: 25.268484115600586
+
+
+
+Epoch 1827
+	Batch 0
+epoch loss: 24.84723154703776
+
+
+
+Epoch 1828
+	Batch 0
+epoch loss: 24.861146926879883
+
+
+
+Epoch 1829
+	Batch 0
+epoch loss: 25.24321174621582
+
+
+
+Epoch 1830
+	Batch 0
+epoch loss: 24.365025838216145
+
+
+
+Epoch 1831
+	Batch 0
+epoch loss: 23.98264439900716
+
+
+
+Epoch 1832
+	Batch 0
+epoch loss: 24.21058527628581
+
+
+
+Epoch 1833
+	Batch 0
+epoch loss: 23.99542299906413
+
+
+
+Epoch 1834
+	Batch 0
+epoch loss: 24.6289545694987
+
+
+
+Epoch 1835
+	Batch 0
+epoch loss: 24.5069154103597
+
+
+
+Epoch 1836
+	Batch 0
+epoch loss: 24.76283327738444
+
+
+
+Epoch 1837
+	Batch 0
+epoch loss: 25.163894017537434
+
+
+
+Epoch 1838
+	Batch 0
+epoch loss: 24.78254572550456
+
+
+
+Epoch 1839
+	Batch 0
+epoch loss: 24.556910196940105
+
+
+
+Epoch 1840
+	Batch 0
+epoch loss: 24.836949666341145
+
+
+
+Epoch 1841
+	Batch 0
+epoch loss: 23.62143389383952
+
+
+
+Epoch 1842
+	Batch 0
+epoch loss: 24.40190060933431
+
+
+
+Epoch 1843
+	Batch 0
+epoch loss: 24.630512873331707
+
+
+
+Epoch 1844
+	Batch 0
+epoch loss: 24.65967305501302
+
+
+
+Epoch 1845
+	Batch 0
+epoch loss: 23.77425702412923
+
+
+
+Epoch 1846
+	Batch 0
+epoch loss: 24.127461751302082
+
+
+
+Epoch 1847
+	Batch 0
+epoch loss: 24.435421625773113
+
+
+
+Epoch 1848
+	Batch 0
+epoch loss: 24.839108149210613
+
+
+
+Epoch 1849
+	Batch 0
+epoch loss: 25.12533124287923
+
+
+
+Epoch 1850
+	Batch 0
+epoch loss: 24.46950085957845
+
+
+
+Epoch 1851
+	Batch 0
+epoch loss: 26.59016291300456
+
+
+
+Epoch 1852
+	Batch 0
+epoch loss: 26.59927241007487
+
+
+
+Epoch 1853
+	Batch 0
+epoch loss: 26.65613047281901
+
+
+
+Epoch 1854
+	Batch 0
+epoch loss: 27.737255096435547
+
+
+
+Epoch 1855
+	Batch 0
+epoch loss: 25.67089589436849
+
+
+
+Epoch 1856
+	Batch 0
+epoch loss: 26.618139902750652
+
+
+
+Epoch 1857
+	Batch 0
+epoch loss: 26.873750686645508
+
+
+
+Epoch 1858
+	Batch 0
+epoch loss: 25.54850196838379
+
+
+
+Epoch 1859
+	Batch 0
+epoch loss: 25.532729466756184
+
+
+
+Epoch 1860
+	Batch 0
+epoch loss: 27.505833943684895
+
+
+
+Epoch 1861
+	Batch 0
+epoch loss: 26.34246317545573
+
+
+
+Epoch 1862
+	Batch 0
+epoch loss: 26.017237345377605
+
+
+
+Epoch 1863
+	Batch 0
+epoch loss: 24.563475290934246
+
+
+
+Epoch 1864
+	Batch 0
+epoch loss: 24.76998011271159
+
+
+
+Epoch 1865
+	Batch 0
+epoch loss: 24.63414700826009
+
+
+
+Epoch 1866
+	Batch 0
+epoch loss: 24.736399968465168
+
+
+
+Epoch 1867
+	Batch 0
+epoch loss: 24.025789260864258
+
+
+
+Epoch 1868
+	Batch 0
+epoch loss: 23.11694876352946
+
+
+
+Epoch 1869
+	Batch 0
+epoch loss: 23.21389897664388
+
+
+
+Epoch 1870
+	Batch 0
+epoch loss: 24.442683537801106
+
+
+
+Epoch 1871
+	Batch 0
+epoch loss: 25.73831621805827
+
+
+
+Epoch 1872
+	Batch 0
+epoch loss: 24.973482131958008
+
+
+
+Epoch 1873
+	Batch 0
+epoch loss: 24.43834114074707
+
+
+
+Epoch 1874
+	Batch 0
+epoch loss: 24.015175501505535
+
+
+
+Epoch 1875
+	Batch 0
+epoch loss: 24.5457820892334
+
+
+
+Epoch 1876
+	Batch 0
+epoch loss: 23.70288340250651
+
+
+
+Epoch 1877
+	Batch 0
+epoch loss: 24.302372614542644
+
+
+
+Epoch 1878
+	Batch 0
+epoch loss: 24.582879384358723
+
+
+
+Epoch 1879
+	Batch 0
+epoch loss: 24.519962310791016
+
+
+
+Epoch 1880
+	Batch 0
+epoch loss: 24.418841044108074
+
+
+
+Epoch 1881
+	Batch 0
+epoch loss: 26.405091603597004
+
+
+
+Epoch 1882
+	Batch 0
+epoch loss: 26.637123107910156
+
+
+
+Epoch 1883
+	Batch 0
+epoch loss: 25.840227762858074
+
+
+
+Epoch 1884
+	Batch 0
+epoch loss: 26.76287778218587
+
+
+
+Epoch 1885
+	Batch 0
+epoch loss: 26.58360544840495
+
+
+
+Epoch 1886
+	Batch 0
+epoch loss: 25.070855140686035
+
+
+
+Epoch 1887
+	Batch 0
+epoch loss: 24.94171905517578
+
+
+
+Epoch 1888
+	Batch 0
+epoch loss: 26.489311854044598
+
+
+
+Epoch 1889
+	Batch 0
+epoch loss: 25.194305419921875
+
+
+
+Epoch 1890
+	Batch 0
+epoch loss: 24.414801915486652
+
+
+
+Epoch 1891
+	Batch 0
+epoch loss: 24.233402252197266
+
+
+
+Epoch 1892
+	Batch 0
+epoch loss: 24.339190165201824
+
+
+
+Epoch 1893
+	Batch 0
+epoch loss: 24.32307243347168
+
+
+
+Epoch 1894
+	Batch 0
+epoch loss: 24.44924036661784
+
+
+
+Epoch 1895
+	Batch 0
+epoch loss: 27.417898813883465
+
+
+
+Epoch 1896
+	Batch 0
+epoch loss: 26.986613591512043
+
+
+
+Epoch 1897
+	Batch 0
+epoch loss: 25.20670509338379
+
+
+
+Epoch 1898
+	Batch 0
+epoch loss: 25.92177454630534
+
+
+
+Epoch 1899
+	Batch 0
+epoch loss: 24.478271484375
+
+
+
+Epoch 1900
+	Batch 0
+epoch loss: 25.05376688639323
+
+
+
+Epoch 1901
+	Batch 0
+epoch loss: 23.980989456176758
+
+
+
+Epoch 1902
+	Batch 0
+epoch loss: 24.84361203511556
+
+
+
+Epoch 1903
+	Batch 0
+epoch loss: 23.64865557352702
+
+
+
+Epoch 1904
+	Batch 0
+epoch loss: 23.945597966512043
+
+
+
+Epoch 1905
+	Batch 0
+epoch loss: 23.797421137491863
+
+
+
+Epoch 1906
+	Batch 0
+epoch loss: 23.376360575358074
+
+
+
+Epoch 1907
+	Batch 0
+epoch loss: 23.027883529663086
+
+
+
+Epoch 1908
+	Batch 0
+epoch loss: 23.763050079345703
+
+
+
+Epoch 1909
+	Batch 0
+epoch loss: 24.618389129638672
+
+
+
+Epoch 1910
+	Batch 0
+epoch loss: 24.026016235351562
+
+
+
+Epoch 1911
+	Batch 0
+epoch loss: 22.844566980997723
+
+
+
+Epoch 1912
+	Batch 0
+epoch loss: 24.158175786336262
+
+
+
+Epoch 1913
+	Batch 0
+epoch loss: 23.899723688761394
+
+
+
+Epoch 1914
+	Batch 0
+epoch loss: 23.015373865763348
+
+
+
+Epoch 1915
+	Batch 0
+epoch loss: 23.322490056355793
+
+
+
+Epoch 1916
+	Batch 0
+epoch loss: 24.504582087198894
+
+
+
+Epoch 1917
+	Batch 0
+epoch loss: 23.860064188639324
+
+
+
+Epoch 1918
+	Batch 0
+epoch loss: 23.901233037312824
+
+
+
+Epoch 1919
+	Batch 0
+epoch loss: 24.514415105183918
+
+
+
+Epoch 1920
+	Batch 0
+epoch loss: 24.417747497558594
+
+
+
+Epoch 1921
+	Batch 0
+epoch loss: 23.36698849995931
+
+
+
+Epoch 1922
+	Batch 0
+epoch loss: 25.287787755330402
+
+
+
+Epoch 1923
+	Batch 0
+epoch loss: 26.398647944132488
+
+
+
+Epoch 1924
+	Batch 0
+epoch loss: 25.55604616800944
+
+
+
+Epoch 1925
+	Batch 0
+epoch loss: 26.05860964457194
+
+
+
+Epoch 1926
+	Batch 0
+epoch loss: 26.2890567779541
+
+
+
+Epoch 1927
+	Batch 0
+epoch loss: 25.170738855997723
+
+
+
+Epoch 1928
+	Batch 0
+epoch loss: 28.050923665364582
+
+
+
+Epoch 1929
+	Batch 0
+epoch loss: 25.74346669514974
+
+
+
+Epoch 1930
+	Batch 0
+epoch loss: 24.76711082458496
+
+
+
+Epoch 1931
+	Batch 0
+epoch loss: 25.15148099263509
+
+
+
+Epoch 1932
+	Batch 0
+epoch loss: 24.192493438720703
+
+
+
+Epoch 1933
+	Batch 0
+epoch loss: 23.93470001220703
+
+
+
+Epoch 1934
+	Batch 0
+epoch loss: 23.595162709554035
+
+
+
+Epoch 1935
+	Batch 0
+epoch loss: 23.90618960062663
+
+
+
+Epoch 1936
+	Batch 0
+epoch loss: 23.78101348876953
+
+
+
+Epoch 1937
+	Batch 0
+epoch loss: 23.87463633219401
+
+
+
+Epoch 1938
+	Batch 0
+epoch loss: 23.586669921875
+
+
+
+Epoch 1939
+	Batch 0
+epoch loss: 23.44372495015462
+
+
+
+Epoch 1940
+	Batch 0
+epoch loss: 23.093420664469402
+
+
+
+Epoch 1941
+	Batch 0
+epoch loss: 23.68450991312663
+
+
+
+Epoch 1942
+	Batch 0
+epoch loss: 23.94215265909831
+
+
+
+Epoch 1943
+	Batch 0
+epoch loss: 23.40198516845703
+
+
+
+Epoch 1944
+	Batch 0
+epoch loss: 24.1728998819987
+
+
+
+Epoch 1945
+	Batch 0
+epoch loss: 24.706597010294598
+
+
+
+Epoch 1946
+	Batch 0
+epoch loss: 23.2046635945638
+
+
+
+Epoch 1947
+	Batch 0
+epoch loss: 24.450576782226562
+
+
+
+Epoch 1948
+	Batch 0
+epoch loss: 23.933368682861328
+
+
+
+Epoch 1949
+	Batch 0
+epoch loss: 23.294113794962566
+
+
+
+Epoch 1950
+	Batch 0
+epoch loss: 24.185139973958332
+
+
+
+Epoch 1951
+	Batch 0
+epoch loss: 24.017094294230144
+
+
+
+Epoch 1952
+	Batch 0
+epoch loss: 23.529326756795246
+
+
+
+Epoch 1953
+	Batch 0
+epoch loss: 25.70660972595215
+
+
+
+Epoch 1954
+	Batch 0
+epoch loss: 24.652570724487305
+
+
+
+Epoch 1955
+	Batch 0
+epoch loss: 24.728515625
+
+
+
+Epoch 1956
+	Batch 0
+epoch loss: 24.761695861816406
+
+
+
+Epoch 1957
+	Batch 0
+epoch loss: 24.41132926940918
+
+
+
+Epoch 1958
+	Batch 0
+epoch loss: 25.212178548177082
+
+
+
+Epoch 1959
+	Batch 0
+epoch loss: 22.92085329691569
+
+
+
+Epoch 1960
+	Batch 0
+epoch loss: 22.407893498738606
+
+
+
+Epoch 1961
+	Batch 0
+epoch loss: 22.487010955810547
+
+
+
+Epoch 1962
+	Batch 0
+epoch loss: 22.224822362263996
+
+
+
+Epoch 1963
+	Batch 0
+epoch loss: 25.008752187093098
+
+
+
+Epoch 1964
+	Batch 0
+epoch loss: 25.99569574991862
+
+
+
+Epoch 1965
+	Batch 0
+epoch loss: 24.23565610249837
+
+
+
+Epoch 1966
+	Batch 0
+epoch loss: 25.773672739664715
+
+
+
+Epoch 1967
+	Batch 0
+epoch loss: 24.48973846435547
+
+
+
+Epoch 1968
+	Batch 0
+epoch loss: 24.712482452392578
+
+
+
+Epoch 1969
+	Batch 0
+epoch loss: 25.440623601277668
+
+
+
+Epoch 1970
+	Batch 0
+epoch loss: 24.414064407348633
+
+
+
+Epoch 1971
+	Batch 0
+epoch loss: 23.74413235982259
+
+
+
+Epoch 1972
+	Batch 0
+epoch loss: 23.830976486206055
+
+
+
+Epoch 1973
+	Batch 0
+epoch loss: 23.23719596862793
+
+
+
+Epoch 1974
+	Batch 0
+epoch loss: 24.40838686625163
+
+
+
+Epoch 1975
+	Batch 0
+epoch loss: 24.311959584554035
+
+
+
+Epoch 1976
+	Batch 0
+epoch loss: 23.751097361246746
+
+
+
+Epoch 1977
+	Batch 0
+epoch loss: 25.270967483520508
+
+
+
+Epoch 1978
+	Batch 0
+epoch loss: 25.89813232421875
+
+
+
+Epoch 1979
+	Batch 0
+epoch loss: 24.746551513671875
+
+
+
+Epoch 1980
+	Batch 0
+epoch loss: 25.437000910441082
+
+
+
+Epoch 1981
+	Batch 0
+epoch loss: 26.319767634073894
+
+
+
+Epoch 1982
+	Batch 0
+epoch loss: 25.711435317993164
+
+
+
+Epoch 1983
+	Batch 0
+epoch loss: 24.691491444905598
+
+
+
+Epoch 1984
+	Batch 0
+epoch loss: 26.16048304239909
+
+
+
+Epoch 1985
+	Batch 0
+epoch loss: 24.298913955688477
+
+
+
+Epoch 1986
+	Batch 0
+epoch loss: 25.225741068522137
+
+
+
+Epoch 1987
+	Batch 0
+epoch loss: 22.64653491973877
+
+
+
+Epoch 1988
+	Batch 0
+epoch loss: 23.723599751790363
+
+
+
+Epoch 1989
+	Batch 0
+epoch loss: 22.65471076965332
+
+
+
+Epoch 1990
+	Batch 0
+epoch loss: 23.435561498006184
+
+
+
+Epoch 1991
+	Batch 0
+epoch loss: 24.54687245686849
+
+
+
+Epoch 1992
+	Batch 0
+epoch loss: 21.810354232788086
+
+
+
+Epoch 1993
+	Batch 0
+epoch loss: 21.77606201171875
+
+
+
+Epoch 1994
+	Batch 0
+epoch loss: 22.60985056559245
+
+
+
+Epoch 1995
+	Batch 0
+epoch loss: 22.856672922770183
+
+
+
+Epoch 1996
+	Batch 0
+epoch loss: 22.805206298828125
+
+
+
+Epoch 1997
+	Batch 0
+epoch loss: 22.456186930338543
+
+
+
+Epoch 1998
+	Batch 0
+epoch loss: 23.324516932169598
+
+
+
+Epoch 1999
+	Batch 0
+epoch loss: 20.982831319173176
+
+
+
+Epoch 2000
+	Batch 0
+epoch loss: nan
+
+

@@ -52,7 +52,7 @@ experiment_id = 'SLTLAE_CL'
 batch_size = 256
 lambda_val = 0.01
 gamma_val = 1
-num_epochs = 2000
+num_epochs = 2000   # 2500
 learning_rate = 0.001
 
 
