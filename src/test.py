@@ -1,4 +1,5 @@
 '''
+
 Script to test model outputs
 '''
 
@@ -15,6 +16,7 @@ from sklearn.metrics import confusion_matrix, f1_score, accuracy_score, classifi
 
 '''####################################################### Testing Encoder + CNN #######################################################''' 
 
+<<<<<<< HEAD
 pred_array = np.load('pred_array.npy')
 label_array = np.load('label_array.npy')
 
@@ -65,3 +67,7 @@ plt.ylabel("True Label")
 plt.savefig("confusion_matrix.png", dpi=300)
 plt.close()
 print("Confusion matrix plot saved as 'confusion_matrix.png'.")
+=======
+
+print("hello")
+>>>>>>> 37587ba (Reconstruction visualization)

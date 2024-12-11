@@ -1,0 +1,714 @@
+2.5.1+cu124
+True
+Created Model
+Sent model to device
+Created optimizer
+Uploaded label array
+	filtered water body labels
+	created regions
+	Making lists
+0
+710
+LABEL COUNT: [  0 214   0 185  90 221]
+Getting training dataset
+Call data loaders
+
+Epoch 1
+	Batch 0
+epoch loss: 311.6603597005208
+
+
+Epoch 1 completed: Loss=311.6604, Spatial Loss=12754.9398, Temporal Loss=184.1110
+
+Epoch 2
+	Batch 0
+epoch loss: 195.4221954345703
+
+
+Epoch 2 completed: Loss=195.4222, Spatial Loss=12409.5671, Temporal Loss=71.3265
+
+Epoch 3
+	Batch 0
+epoch loss: 175.15490214029947
+
+
+Epoch 3 completed: Loss=175.1549, Spatial Loss=11512.8634, Temporal Loss=60.0263
+
+Epoch 4
+	Batch 0
+epoch loss: 175.05313110351562
+
+
+Epoch 4 completed: Loss=175.0531, Spatial Loss=11352.7851, Temporal Loss=61.5253
+
+Epoch 5
+	Batch 0
+epoch loss: 171.5478490193685
+
+
+Epoch 5 completed: Loss=171.5478, Spatial Loss=11442.1781, Temporal Loss=57.1261
+
+Epoch 6
+	Batch 0
+epoch loss: 170.00506337483725
+
+
+Epoch 6 completed: Loss=170.0051, Spatial Loss=11335.1709, Temporal Loss=56.6534
+
+Epoch 7
+	Batch 0
+epoch loss: 168.26964314778647
+
+
+Epoch 7 completed: Loss=168.2696, Spatial Loss=11251.7480, Temporal Loss=55.7522
+
+Epoch 8
+	Batch 0
+epoch loss: 168.53848520914713
+
+
+Epoch 8 completed: Loss=168.5385, Spatial Loss=11248.9946, Temporal Loss=56.0485
+
+Epoch 9
+	Batch 0
+epoch loss: 167.47246297200522
+
+
+Epoch 9 completed: Loss=167.4725, Spatial Loss=11174.9135, Temporal Loss=55.7233
+
+Epoch 10
+	Batch 0
+epoch loss: 164.5037587483724
+
+
+Epoch 10 completed: Loss=164.5038, Spatial Loss=10876.9050, Temporal Loss=55.7347
+
+Epoch 11
+	Batch 0
+epoch loss: 159.88985188802084
+
+
+Epoch 11 completed: Loss=159.8899, Spatial Loss=10178.3582, Temporal Loss=58.1063
+
+Epoch 12
+	Batch 0
+epoch loss: 148.24988301595053
+
+
+Epoch 12 completed: Loss=148.2499, Spatial Loss=9239.9269, Temporal Loss=55.8506
+
+Epoch 13
+	Batch 0
+epoch loss: 139.24672190348306
+
+
+Epoch 13 completed: Loss=139.2467, Spatial Loss=8460.3386, Temporal Loss=54.6433
+
+Epoch 14
+	Batch 0
+epoch loss: 137.8265609741211
+
+
+Epoch 14 completed: Loss=137.8266, Spatial Loss=8281.2124, Temporal Loss=55.0144
+
+Epoch 15
+	Batch 0
+epoch loss: 138.6147435506185
+
+
+Epoch 15 completed: Loss=138.6147, Spatial Loss=8205.1929, Temporal Loss=56.5628
+
+Epoch 16
+	Batch 0
+epoch loss: 137.8431879679362
+
+
+Epoch 16 completed: Loss=137.8432, Spatial Loss=8150.2354, Temporal Loss=56.3408
+
+Epoch 17
+	Batch 0
+epoch loss: 141.8487752278646
+
+
+Epoch 17 completed: Loss=141.8488, Spatial Loss=8562.5390, Temporal Loss=56.2234
+
+Epoch 18
+	Batch 0
+epoch loss: 135.19620259602866
+
+
+Epoch 18 completed: Loss=135.1962, Spatial Loss=7862.3534, Temporal Loss=56.5727
+
+Epoch 19
+	Batch 0
+epoch loss: 130.6938680013021
+
+
+Epoch 19 completed: Loss=130.6939, Spatial Loss=7467.9977, Temporal Loss=56.0139
+
+Epoch 20
+	Batch 0
+epoch loss: 130.50552876790366
+
+
+Epoch 20 completed: Loss=130.5055, Spatial Loss=7374.7212, Temporal Loss=56.7583
+
+Epoch 21
+	Batch 0
+epoch loss: 125.92590077718098
+
+
+Epoch 21 completed: Loss=125.9259, Spatial Loss=7256.3537, Temporal Loss=53.3624
+
+Epoch 22
+	Batch 0
+epoch loss: 129.62435658772787
+
+
+Epoch 22 completed: Loss=129.6244, Spatial Loss=7173.7399, Temporal Loss=57.8870
+
+Epoch 23
+	Batch 0
+epoch loss: 126.45057932535808
+
+
+Epoch 23 completed: Loss=126.4506, Spatial Loss=6872.8550, Temporal Loss=57.7220
+
+Epoch 24
+	Batch 0
+epoch loss: 124.13442993164062
+
+
+Epoch 24 completed: Loss=124.1344, Spatial Loss=6771.6478, Temporal Loss=56.4180
+
+Epoch 25
+	Batch 0
+epoch loss: 122.33683013916016
+
+
+Epoch 25 completed: Loss=122.3368, Spatial Loss=6717.4445, Temporal Loss=55.1624
+
+Epoch 26
+	Batch 0
+epoch loss: 124.2034912109375
+
+
+Epoch 26 completed: Loss=124.2035, Spatial Loss=6742.9915, Temporal Loss=56.7736
+
+Epoch 27
+	Batch 0
+epoch loss: 124.73660278320312
+
+
+Epoch 27 completed: Loss=124.7366, Spatial Loss=6841.7677, Temporal Loss=56.3189
+
+Epoch 28
+	Batch 0
+epoch loss: 127.76056416829427
+
+
+Epoch 28 completed: Loss=127.7606, Spatial Loss=7165.0038, Temporal Loss=56.1105
+
+Epoch 29
+	Batch 0
+epoch loss: 124.93547058105469
+
+
+Epoch 29 completed: Loss=124.9355, Spatial Loss=6753.0051, Temporal Loss=57.4054
+
+Epoch 30
+	Batch 0
+epoch loss: 121.5487798055013
+
+
+Epoch 30 completed: Loss=121.5488, Spatial Loss=6583.4484, Temporal Loss=55.7143
+
+Epoch 31
+	Batch 0
+epoch loss: 122.17813618977864
+
+
+Epoch 31 completed: Loss=122.1781, Spatial Loss=6553.9373, Temporal Loss=56.6388
+
+Epoch 32
+	Batch 0
+epoch loss: 121.66604359944661
+
+
+Epoch 32 completed: Loss=121.6660, Spatial Loss=6551.6208, Temporal Loss=56.1498
+
+Epoch 33
+	Batch 0
+epoch loss: 121.37468973795573
+
+
+Epoch 33 completed: Loss=121.3747, Spatial Loss=6573.7553, Temporal Loss=55.6371
+
+Epoch 34
+	Batch 0
+epoch loss: 125.43655904134114
+
+
+Epoch 34 completed: Loss=125.4366, Spatial Loss=6549.0483, Temporal Loss=59.9461
+
+Epoch 35
+	Batch 0
+epoch loss: 119.84314727783203
+
+
+Epoch 35 completed: Loss=119.8431, Spatial Loss=6573.1730, Temporal Loss=54.1114
+
+Epoch 36
+	Batch 0
+epoch loss: 122.16569010416667
+
+
+Epoch 36 completed: Loss=122.1657, Spatial Loss=6468.2313, Temporal Loss=57.4834
+
+Epoch 37
+	Batch 0
+epoch loss: 121.49537150065105
+
+
+Epoch 37 completed: Loss=121.4954, Spatial Loss=6415.8239, Temporal Loss=57.3371
+
+Epoch 38
+	Batch 0
+epoch loss: 119.41242218017578
+
+
+Epoch 38 completed: Loss=119.4124, Spatial Loss=6367.0138, Temporal Loss=55.7423
+
+Epoch 39
+	Batch 0
+epoch loss: 116.69185384114583
+
+
+Epoch 39 completed: Loss=116.6919, Spatial Loss=6339.9092, Temporal Loss=53.2928
+
+Epoch 40
+	Batch 0
+epoch loss: 117.98213958740234
+
+
+Epoch 40 completed: Loss=117.9821, Spatial Loss=6327.0516, Temporal Loss=54.7116
+
+Epoch 41
+	Batch 0
+epoch loss: 110.87398783365886
+
+
+Epoch 41 completed: Loss=110.8740, Spatial Loss=6313.6403, Temporal Loss=47.7376
+
+Epoch 42
+	Batch 0
+epoch loss: 127.59426371256511
+
+
+Epoch 42 completed: Loss=127.5943, Spatial Loss=6322.6308, Temporal Loss=64.3680
+
+Epoch 43
+	Batch 0
+epoch loss: 98.61119842529297
+
+
+Epoch 43 completed: Loss=98.6112, Spatial Loss=6367.6730, Temporal Loss=34.9345
+
+Epoch 44
+	Batch 0
+epoch loss: 111.25549825032552
+
+
+Epoch 44 completed: Loss=111.2555, Spatial Loss=6421.4871, Temporal Loss=47.0406
+
+Epoch 45
+	Batch 0
+epoch loss: 103.26108042399089
+
+
+Epoch 45 completed: Loss=103.2611, Spatial Loss=6571.1093, Temporal Loss=37.5500
+
+Epoch 46
+	Batch 0
+epoch loss: 107.99581146240234
+
+
+Epoch 46 completed: Loss=107.9958, Spatial Loss=6915.4554, Temporal Loss=38.8413
+
+Epoch 47
+	Batch 0
+epoch loss: 113.40118916829427
+
+
+Epoch 47 completed: Loss=113.4012, Spatial Loss=6527.3717, Temporal Loss=48.1275
+
+Epoch 48
+	Batch 0
+epoch loss: 105.63969167073567
+
+
+Epoch 48 completed: Loss=105.6397, Spatial Loss=6390.5429, Temporal Loss=41.7343
+
+Epoch 49
+	Batch 0
+epoch loss: 97.31285349527995
+
+
+Epoch 49 completed: Loss=97.3129, Spatial Loss=6350.1897, Temporal Loss=33.8110
+
+Epoch 50
+	Batch 0
+epoch loss: 98.84913126627605
+
+
+Epoch 50 completed: Loss=98.8491, Spatial Loss=6357.1403, Temporal Loss=35.2777
+
+Epoch 51
+	Batch 0
+epoch loss: 92.90365473429362
+
+
+Epoch 51 completed: Loss=92.9037, Spatial Loss=6298.6117, Temporal Loss=29.9175
+
+Epoch 52
+	Batch 0
+epoch loss: 93.34441248575847
+
+
+Epoch 52 completed: Loss=93.3444, Spatial Loss=6260.4193, Temporal Loss=30.7402
+
+Epoch 53
+	Batch 0
+epoch loss: 92.34084701538086
+
+
+Epoch 53 completed: Loss=92.3408, Spatial Loss=6210.0648, Temporal Loss=30.2402
+
+Epoch 54
+	Batch 0
+epoch loss: 95.11014811197917
+
+
+Epoch 54 completed: Loss=95.1101, Spatial Loss=6189.6956, Temporal Loss=33.2132
+
+Epoch 55
+	Batch 0
+epoch loss: 95.58424377441406
+
+
+Epoch 55 completed: Loss=95.5842, Spatial Loss=6166.2062, Temporal Loss=33.9222
+
+Epoch 56
+	Batch 0
+epoch loss: 111.61668650309245
+
+
+Epoch 56 completed: Loss=111.6167, Spatial Loss=6152.2882, Temporal Loss=50.0938
+
+Epoch 57
+	Batch 0
+epoch loss: 121.13496398925781
+
+
+Epoch 57 completed: Loss=121.1350, Spatial Loss=6139.4923, Temporal Loss=59.7400
+
+Epoch 58
+	Batch 0
+epoch loss: 123.95086669921875
+
+
+Epoch 58 completed: Loss=123.9509, Spatial Loss=6122.7899, Temporal Loss=62.7230
+
+Epoch 59
+	Batch 0
+epoch loss: 120.31482187906902
+
+
+Epoch 59 completed: Loss=120.3148, Spatial Loss=6126.0627, Temporal Loss=59.0542
+
+Epoch 60
+	Batch 0
+epoch loss: 106.66917928059895
+
+
+Epoch 60 completed: Loss=106.6692, Spatial Loss=6142.4538, Temporal Loss=45.2446
+
+Epoch 61
+	Batch 0
+epoch loss: 99.26589330037434
+
+
+Epoch 61 completed: Loss=99.2659, Spatial Loss=6215.0386, Temporal Loss=37.1155
+
+Epoch 62
+	Batch 0
+epoch loss: 94.90185419718425
+
+
+Epoch 62 completed: Loss=94.9019, Spatial Loss=6446.8090, Temporal Loss=30.4338
+
+Epoch 63
+	Batch 0
+epoch loss: 98.7350362141927
+
+
+Epoch 63 completed: Loss=98.7350, Spatial Loss=6345.3075, Temporal Loss=35.2820
+
+Epoch 64
+	Batch 0
+epoch loss: 100.0635986328125
+
+
+Epoch 64 completed: Loss=100.0636, Spatial Loss=6421.0715, Temporal Loss=35.8529
+
+Epoch 65
+	Batch 0
+epoch loss: 96.66245015462239
+
+
+Epoch 65 completed: Loss=96.6625, Spatial Loss=5936.0637, Temporal Loss=37.3018
+
+Epoch 66
+	Batch 0
+epoch loss: 110.8573710123698
+
+
+Epoch 66 completed: Loss=110.8574, Spatial Loss=5857.7389, Temporal Loss=52.2800
+
+Epoch 67
+	Batch 0
+epoch loss: 109.18512725830078
+
+
+Epoch 67 completed: Loss=109.1851, Spatial Loss=5932.1171, Temporal Loss=49.8640
+
+Epoch 68
+	Batch 0
+epoch loss: 116.80360158284505
+
+
+Epoch 68 completed: Loss=116.8036, Spatial Loss=5787.3826, Temporal Loss=58.9298
+
+Epoch 69
+	Batch 0
+epoch loss: 101.09819666544597
+
+
+Epoch 69 completed: Loss=101.0982, Spatial Loss=5724.8613, Temporal Loss=43.8496
+
+Epoch 70
+	Batch 0
+epoch loss: 86.93892415364583
+
+
+Epoch 70 completed: Loss=86.9389, Spatial Loss=5543.9822, Temporal Loss=31.4991
+
+Epoch 71
+	Batch 0
+epoch loss: 84.66201146443684
+
+
+Epoch 71 completed: Loss=84.6620, Spatial Loss=5425.9104, Temporal Loss=30.4029
+
+Epoch 72
+	Batch 0
+epoch loss: 87.91506958007812
+
+
+Epoch 72 completed: Loss=87.9151, Spatial Loss=5349.0798, Temporal Loss=34.4243
+
+Epoch 73
+	Batch 0
+epoch loss: 101.67942301432292
+
+
+Epoch 73 completed: Loss=101.6794, Spatial Loss=5296.9325, Temporal Loss=48.7101
+
+Epoch 74
+	Batch 0
+epoch loss: 107.55798848470052
+
+
+Epoch 74 completed: Loss=107.5580, Spatial Loss=5274.2845, Temporal Loss=54.8151
+
+Epoch 75
+	Batch 0
+epoch loss: 105.18686167399089
+
+
+Epoch 75 completed: Loss=105.1869, Spatial Loss=5305.2834, Temporal Loss=52.1340
+
+Epoch 76
+	Batch 0
+epoch loss: 93.57352828979492
+
+
+Epoch 76 completed: Loss=93.5735, Spatial Loss=5423.0656, Temporal Loss=39.3429
+
+Epoch 77
+	Batch 0
+epoch loss: 90.7637570699056
+
+
+Epoch 77 completed: Loss=90.7638, Spatial Loss=5679.2546, Temporal Loss=33.9712
+
+Epoch 78
+	Batch 0
+epoch loss: 105.4162966410319
+
+
+Epoch 78 completed: Loss=105.4163, Spatial Loss=5659.3665, Temporal Loss=48.8226
+
+Epoch 79
+	Batch 0
+epoch loss: 91.62965138753255
+
+
+Epoch 79 completed: Loss=91.6297, Spatial Loss=5571.2115, Temporal Loss=35.9175
+
+Epoch 80
+	Batch 0
+epoch loss: 99.07531229654948
+
+
+Epoch 80 completed: Loss=99.0753, Spatial Loss=6122.2495, Temporal Loss=37.8528
+
+Epoch 81
+	Batch 0
+epoch loss: 86.22727711995442
+
+
+Epoch 81 completed: Loss=86.2273, Spatial Loss=5367.5736, Temporal Loss=32.5515
+
+Epoch 82
+	Batch 0
+epoch loss: 89.87569046020508
+
+
+Epoch 82 completed: Loss=89.8757, Spatial Loss=5266.1316, Temporal Loss=37.2144
+
+Epoch 83
+	Batch 0
+epoch loss: 82.00830332438152
+
+
+Epoch 83 completed: Loss=82.0083, Spatial Loss=5021.9377, Temporal Loss=31.7889
+
+Epoch 84
+	Batch 0
+epoch loss: 82.6338628133138
+
+
+Epoch 84 completed: Loss=82.6339, Spatial Loss=5031.9432, Temporal Loss=32.3144
+
+Epoch 85
+	Batch 0
+epoch loss: 80.97420501708984
+
+
+Epoch 85 completed: Loss=80.9742, Spatial Loss=4940.1796, Temporal Loss=31.5724
+
+Epoch 86
+	Batch 0
+epoch loss: 77.24512990315755
+
+
+Epoch 86 completed: Loss=77.2451, Spatial Loss=4877.2025, Temporal Loss=28.4731
+
+Epoch 87
+	Batch 0
+epoch loss: 78.63953399658203
+
+
+Epoch 87 completed: Loss=78.6395, Spatial Loss=4893.6160, Temporal Loss=29.7034
+
+Epoch 88
+	Batch 0
+epoch loss: 77.40626017252605
+
+
+Epoch 88 completed: Loss=77.4063, Spatial Loss=4754.8005, Temporal Loss=29.8583
+
+Epoch 89
+	Batch 0
+epoch loss: 77.03223164876302
+
+
+Epoch 89 completed: Loss=77.0322, Spatial Loss=4803.6968, Temporal Loss=28.9953
+
+Epoch 90
+	Batch 0
+epoch loss: 81.3966573079427
+
+
+Epoch 90 completed: Loss=81.3967, Spatial Loss=4809.3783, Temporal Loss=33.3029
+
+Epoch 91
+	Batch 0
+epoch loss: 87.91038386027019
+
+
+Epoch 91 completed: Loss=87.9104, Spatial Loss=5136.8119, Temporal Loss=36.5423
+
+Epoch 92
+	Batch 0
+epoch loss: 79.30368677775066
+
+
+Epoch 92 completed: Loss=79.3037, Spatial Loss=4800.7118, Temporal Loss=31.2966
+
+Epoch 93
+	Batch 0
+epoch loss: 77.10804748535156
+
+
+Epoch 93 completed: Loss=77.1080, Spatial Loss=4716.2520, Temporal Loss=29.9455
+
+Epoch 94
+	Batch 0
+epoch loss: 73.09658559163411
+
+
+Epoch 94 completed: Loss=73.0966, Spatial Loss=4465.4676, Temporal Loss=28.4419
+
+Epoch 95
+	Batch 0
+epoch loss: 80.99465433756511
+
+
+Epoch 95 completed: Loss=80.9947, Spatial Loss=4273.8958, Temporal Loss=38.2557
+
+Epoch 96
+	Batch 0
+epoch loss: 72.42621612548828
+
+
+Epoch 96 completed: Loss=72.4262, Spatial Loss=4211.8267, Temporal Loss=30.3079
+
+Epoch 97
+	Batch 0
+epoch loss: 73.80152257283528
+
+
+Epoch 97 completed: Loss=73.8015, Spatial Loss=4222.5357, Temporal Loss=31.5762
+
+Epoch 98
+	Batch 0
+epoch loss: 71.73097737630208
+
+
+Epoch 98 completed: Loss=71.7310, Spatial Loss=4099.4567, Temporal Loss=30.7364
+
+Epoch 99
+	Batch 0
+epoch loss: 71.99020767211914
+
+
+Epoch 99 completed: Loss=71.9902, Spatial Loss=4030.4717, Temporal Loss=31.6855
+
+Epoch 100
+	Batch 0
+epoch loss: 70.0717035929362
+
+
+Epoch 100 completed: Loss=70.0717, Spatial Loss=4009.1135, Temporal Loss=29.9806
