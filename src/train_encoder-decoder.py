@@ -397,9 +397,9 @@ for epoch in range(1, config.num_epochs+1):
         # scale the spatial and temporal losses
         if get_magnitude(batch_loss_s) > get_magnitude(batch_loss_t):
             if get_magnitude(batch_loss_s) >= 4:
-                scaled_batch_loss_s = np.divide(batch_loss_s, 0.005)
+                scaled_batch_loss_s = batch_loss_s * 0.005
             if get_magnitude(batch_loss_s) >= 3:
-                scaled_batch_loss_s = np.divide(batch_loss_s, 0.05)
+                scaled_batch_loss_s = batch_loss_s * 0.05
         else:
             scaled_batch_loss_s = batch_loss_s
 
