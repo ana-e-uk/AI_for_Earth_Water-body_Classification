@@ -10,6 +10,7 @@ __pycache__/
 
 src/supervised_training_out/*
 src/supervised_training_out_1000_epochs/*
+src/supervised_training_out_2000_epochs_run_1/*
 out/*
 
 # C extensions

@@ -6,6 +6,7 @@ Script to run the training loop for the encoder-decoder
 import numpy as np
 import time
 import os
+import math
 
 import torch
 print(torch.__version__)  # Displays the PyTorch version
@@ -18,7 +19,11 @@ from model import EncoderDecoder, SpatialCNN, TemporalLSTM, EmbeddingSpace, Spat
 from load_data import get_training_dataset, SEGMENTATION_SLTL_PRED
 import config
 '''####################################################### Functions #######################################################''' 
-epoch_losses = np.array([])
+def get_magnitude(num):
+    if num == 0:
+        return 0  # Special case for zero
+    return int(math.log10(abs(num)))
+
 def spatial_mse_loss(orignial_images, reconstructed_images, num_images, image_dim):
     """
     Mean squared error function for spatial data.
@@ -142,6 +147,8 @@ all_reps = []
 valid_paths = []
 valid_outs_s = []
 valid_outs_t = []
+
+epoch_losses = np.array([])
 '''####################################################### Encoder-Decoder Training Loop #######################################################''' 
 
 train_loss = []
@@ -166,9 +173,9 @@ for epoch in range(1, config.num_epochs+1):
 
         optimizer.zero_grad()
         code_vec, out_s, out_t = model(image_patch_s.to(config.device).float(), image_patch_t.to(config.device).float())
-        if (epoch%500)==0:
-            np.save(f'out_s_{epoch}.npy', out_s)
-            np.save(f'out_t_{epoch}.npy', out_t)
+        if (epoch%1)==0:
+            np.save(f'out_s_{epoch}.npy', out_s.cpu().numpy())
+            np.save(f'out_t_{epoch}.npy', out_t.cpu().numpy())
             np.save(f'image_patch_s_{epoch}.npy', image_patch_s)
             np.save(f'image_patch_t_{epoch}.npy', image_patch_t)
 
@@ -210,13 +217,24 @@ for epoch in range(1, config.num_epochs+1):
         batch_loss_t = torch.mean(torch.sum(criterion(out_t, label_patch_t),dim=[1]))
         # print('\tEnded time loss')
 
+        # check scales of spatial and temporal losses are comparable
         if epoch ==20:        
             print(f'\tBatch loss_s: {batch_loss_s}')
             print(f'\tBatch loss_t: {batch_loss_t}')
-        if epoch < 1000:
-            batch_loss = batch_loss_s * 0.01 + batch_loss_t     # TODO: check they are of the same scale after epoch 10, change multiplier as needed
+        
+        # scale the spatial and temporal losses
+        if get_magnitude(batch_loss_s) > get_magnitude(batch_loss_t):
+            if get_magnitude(batch_loss_s) >= 4:
+                scaled_batch_loss_s = np.divide(batch_loss_s, 0.005)
+            if get_magnitude(batch_loss_s) >= 3:
+                scaled_batch_loss_s = np.divide(batch_loss_s, 0.05)
         else:
-            batch_loss = batch_loss_s * 0.01 + batch_loss_t + (river_batch_loss_log + farm_batch_loss_log + stable_lakes_batch_loss_log + mod_seas_lakes_batch_loss_log) * 0.25
+            scaled_batch_loss_s = batch_loss_s
+
+        if epoch < 1000:
+            batch_loss = scaled_batch_loss_s + batch_loss_t     # TODO: check they are of the same scale after epoch 10, change multiplier as needed
+        else:
+            batch_loss = scaled_batch_loss_s + batch_loss_t + (river_batch_loss_log + farm_batch_loss_log + stable_lakes_batch_loss_log + mod_seas_lakes_batch_loss_log) * 0.25
         # TODO: use else as batch loss after 1000 epochs (like paper pg 491) <-- play with number [500,1000,15000 etc.]
 
         batch_loss.backward()
