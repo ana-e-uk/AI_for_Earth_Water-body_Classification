@@ -13,6 +13,14 @@ src/supervised_training_out_1000_epochs/*
 src/supervised_training_out_2000_epochs_run_1/*
 out/*
 
+
+
+
+# images
+epoch_reconstructions/*
+epoch_reconstructions_run_1/*
+/users/6/uribe055/AI_for_Earth_Water-body_Classification/epoch_reconstructions/*
+
 # C extensions
 *.so
 

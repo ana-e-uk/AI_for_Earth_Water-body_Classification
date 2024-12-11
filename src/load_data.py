@@ -27,7 +27,7 @@ def get_data_spatial_temporal_label_ID_load_arrays(ID,label_array):
 # get training dataset
 def get_training_dataset():
 
-    ids_and_labels_full = pd.read_csv('/users/5/aghaa001/AI_for_Earth_Water-body_Classification/data/ShapeFiles/NorthAmericaWaterBodies_FirstPoints_WithLabels.csv')
+    ids_and_labels_full = pd.read_csv('/users/6/uribe055/AI_for_Earth_Water-body_Classification/data/ShapeFiles/NorthAmericaWaterBodies_FirstPoints_WithLabels.csv')
 
     ids_and_labels = ids_and_labels_full[ids_and_labels_full['LABEL'].isin([1, 3, 4, 5])]
     print('\tfiltered water body labels')
