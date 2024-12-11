@@ -28,7 +28,9 @@ data_test_baseline = ""
 data_train_new = ""
 data_test_new = ""
 
-
+# params for the Supervised learning model
+freeze_layers = 0
+load_MODEL_NAME = 'SLTLAE_CL_epoch_2000'
 '''####################################################### Constants #######################################################''' 
 # spatial CNN
 channels = 1

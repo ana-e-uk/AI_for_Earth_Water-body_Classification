@@ -18,7 +18,7 @@ from model import EncoderDecoder, SpatialCNN, TemporalLSTM, EmbeddingSpace, Spat
 from load_data import get_training_dataset, SEGMENTATION_SLTL_PRED
 import config
 '''####################################################### Functions #######################################################''' 
-
+epoch_losses = np.array([])
 def spatial_mse_loss(orignial_images, reconstructed_images, num_images, image_dim):
     """
     Mean squared error function for spatial data.
@@ -74,7 +74,6 @@ def constrained_loss(embeddings, labels):
         embeddings: Embeddings from spatial and temporal encoders.
         labels: Class labels for each embedding.
     """
-    # TODO: check if there are at least 2 labels per class
     unique_classes  = np.unique(labels)
     total_loss = 0.0
     count = 0
@@ -92,10 +91,12 @@ def constrained_loss(embeddings, labels):
 
                 # compute cosine similarity
                 cos = torch.div(torch.matmul(e1, e2), torch.norm(e1) * torch.norm(e2) + 1e-8)     # Add small number for stability
-
+                log1 = -torch.log(cos) 
                 # Compute log of the cosine similarity
                 if cos > 0:
-                    total_loss += torch.log(cos)    # TODO: check for when torch.log is nan
+                    if(torch.isnan(log1)):
+                        print(log1,e1,e2,cos)
+                    total_loss += (log1)    
             count += count
 
     avg_loss = torch.div(total_loss, count)
@@ -165,6 +166,12 @@ for epoch in range(1, config.num_epochs+1):
 
         optimizer.zero_grad()
         code_vec, out_s, out_t = model(image_patch_s.to(config.device).float(), image_patch_t.to(config.device).float())
+        if (epoch%500)==0:
+            np.save(f'out_s_{epoch}.npy', out_s)
+            np.save(f'out_t_{epoch}.npy', out_t)
+            np.save(f'image_patch_s_{epoch}.npy', image_patch_s)
+            np.save(f'image_patch_t_{epoch}.npy', image_patch_t)
+
         # print('\t1')
         label_patch_s = label_patch_s.to(config.device).float()
         label_patch_t = label_patch_t.to(config.device).float()
@@ -203,13 +210,13 @@ for epoch in range(1, config.num_epochs+1):
         batch_loss_t = torch.mean(torch.sum(criterion(out_t, label_patch_t),dim=[1]))
         # print('\tEnded time loss')
 
-        # print(f'\tBatch loss: {batch_loss_s}')
-        
-        if epoch < config.num_epochs :
+        if epoch ==20:        
+            print(f'\tBatch loss_s: {batch_loss_s}')
+            print(f'\tBatch loss_t: {batch_loss_t}')
+        if epoch < 1000:
             batch_loss = batch_loss_s * 0.01 + batch_loss_t     # TODO: check they are of the same scale after epoch 10, change multiplier as needed
         else:
             batch_loss = batch_loss_s * 0.01 + batch_loss_t + (river_batch_loss_log + farm_batch_loss_log + stable_lakes_batch_loss_log + mod_seas_lakes_batch_loss_log) * 0.25
-        # TODO: why epoch 2000 nan
         # TODO: use else as batch loss after 1000 epochs (like paper pg 491) <-- play with number [500,1000,15000 etc.]
 
         batch_loss.backward()
@@ -239,6 +246,7 @@ for epoch in range(1, config.num_epochs+1):
     if epoch % 100 == 0:
         model_weights = os.path.join(config.model_dir, str(config.experiment_id) + "_epoch_" + str(epoch) + ".pt")
         torch.save(model.state_dict(), model_weights)
+    epoch_losses = np.append(epoch_losses, epoch_loss)
+    
+np.save('epoch_losses.npy', epoch_losses)
 
-# TODO: if run again - save epoch loss to file
-# TODO: if run again - save and print several true and reconstructed time series and image patches

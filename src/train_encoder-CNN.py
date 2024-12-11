@@ -17,6 +17,7 @@ from sklearn.metrics import confusion_matrix, f1_score, accuracy_score, classifi
 from model import EncoderCNN
 from load_data import get_training_dataset, SEGMENTATION_SLTL_PRED
 import config
+
 '''####################################################### Functions #######################################################''' 
 
 def spatial_mse_loss(orignial_images, reconstructed_images, num_images, image_dim):
@@ -110,6 +111,23 @@ print('Created Model')
 model = model.to(config.device)
 print('Sent model to device')
 
+for name, param in model.named_parameters():
+    print(name,param.requires_grad)
+
+if(config.load_model == 1):
+    print("LOADING MODEL")
+    print(config.load_MODEL_NAME)
+    model.load_state_dict(torch.load(os.path.join(config.load_MODEL_DIR, config.load_MODEL_NAME+".pt")),strict = False)
+
+# if(config.freeze_layers == 1):
+#     for name, param in model.named_parameters():
+#         if(name not in config.not_freeze_list):
+#             param.requires_grad = False
+            
+for name, param in model.named_parameters():
+    print(name,param.requires_grad)
+    
+
 optimizer = torch.optim.Adam(model.parameters(), lr=config.learning_rate)
 print('Created optimizer')
 
@@ -143,8 +161,6 @@ valid_outs_t = []
 '''####################################################### Encoder-CNN Training Loop #######################################################''' 
 
 
-# TODO: load weights from encoder-decoder model (final weights)
-# TODO: make sure the layer names in the encoder-decoder model and encoder-CNN model are the same
 
 
 train_loss = []
@@ -189,7 +205,6 @@ for epoch in range(1, config.num_epochs+1):
 
 '''####################################################### Encoder-CNN Testing Loop #######################################################''' 
 
-# TODO: This loop tests the Encoder-CNN right?
 
 loss = 0
 preds = []
@@ -225,29 +240,8 @@ label_array = np.concatenate(labels, axis=0)
 
 print(pred_array.shape)
 print(label_array.shape)
-# TODO: save the pred array and label array to a file so we can look at it
+# Assuming pred_array and label_array are already defined
+np.save('pred_array.npy', pred_array)
+np.save('label_array.npy', label_array)
 
-# print(classification_report(label_array, pred_array, digits=4))
-# print(f1_score(y_true=label_array, y_pred=pred_array, average='macro'))
-
-print(classification_report(label_array, pred_array, digits=4))
-print("\nCONFUSION MATRIX:")
-confusion_matrix_set = confusion_matrix(label_array,pred_array)
-print(confusion_matrix_set)
-# TODO: save confusion matrix so we can use it
-f1_score_array = f1_score(label_array, pred_array, average = None)
-precision_score_array = precision_score(label_array, pred_array, average = None)
-recall_score_array = recall_score(label_array, pred_array, average = None)
-# f1_score_array = f1_score(label_array, pred_array, labels = config.labels_for_cl, average = None)
-# precision_score_array = precision_score(label_array, pred_array, labels = config.labels_for_cl, average = None)
-# recall_score_array = recall_score(label_array, pred_array, labels = config.labels_for_cl, average = None)
-for r in range(f1_score_array.shape[0]):
-    print(f1_score_array[r],end = ' ')
-print('')
-for r in range(precision_score_array.shape[0]):
-    print(precision_score_array[r],end = ' ')
-print('')
-for r in range(recall_score_array.shape[0]):
-    print(recall_score_array[r],end = ' ')
-print('')
-# TODO: save f1 score, precision score, recall score so we can use
+print("Arrays saved to 'pred_array.npy' and 'label_array.npy'.")
