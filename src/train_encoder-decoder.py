@@ -288,28 +288,12 @@ for epoch in range(1, config.num_epochs+1):
         code_vec_mod_seas_lakes = code_vec[label_batch == 5]
         # print('\t3')
         min_class_labels = np.amin([code_vec_farm.shape[0],code_vec_river.shape[0],code_vec_stable_lakes.shape[0],code_vec_mod_seas_lakes.shape[0]])
-        # print(min_class_labels)
-        # print('\t4')
-        if(code_vec_farm.shape[0] > 2):
-            farm_batch_loss_log = constrained_loss(code_vec_farm,min_class_labels)
-        else:
-            farm_batch_loss_log = torch.zeros(1, requires_grad=True)
-        # print('\t5')
-        if(code_vec_river.shape[0] > 2):
-            river_batch_loss_log = constrained_loss(code_vec_river,min_class_labels)
-        else:
-            river_batch_loss_log = torch.zeros(1, requires_grad=True)
-        # print('\t6')
-        if(code_vec_stable_lakes.shape[0] > 2):
-            stable_lakes_batch_loss_log = constrained_loss(code_vec_stable_lakes,min_class_labels)
-        else:
-            stable_lakes_batch_loss_log = torch.zeros(1, requires_grad=True)
-        # print('\t7')
-        if(code_vec_mod_seas_lakes.shape[0] > 2):
-            mod_seas_lakes_batch_loss_log = constrained_loss(code_vec_mod_seas_lakes,min_class_labels)
-        else:
-            mod_seas_lakes_batch_loss_log = torch.zeros(1, requires_grad=True)
-        # print('\tStarting spatial loss')
+
+        farm_batch_loss_log = torch.zeros(1, device=config.device, requires_grad=True) if code_vec_farm.shape[0] <= 2 else constrained_loss(code_vec_farm, min_class_labels)
+        river_batch_loss_log = torch.zeros(1, device=config.device, requires_grad=True) if code_vec_river.shape[0] <= 2 else constrained_loss(code_vec_river, min_class_labels)
+        stable_lakes_batch_loss_log = torch.zeros(1, device=config.device, requires_grad=True) if code_vec_stable_lakes.shape[0] <= 2 else constrained_loss(code_vec_stable_lakes, min_class_labels)
+        mod_seas_lakes_batch_loss_log = torch.zeros(1, device=config.device, requires_grad=True) if code_vec_mod_seas_lakes.shape[0] <= 2 else constrained_loss(code_vec_mod_seas_lakes, min_class_labels)
+
         batch_loss_s = torch.mean(torch.sum(mse_loss(input_image = out_s, target = label_patch_s,ignored_index = config.ignore_index,reduction = 'None')))
         # print('\tEnded spatial loss')
         # print('\tStarted time loss')
