@@ -36,9 +36,9 @@ def eval_results(l, p, data_name):
     np.savetxt(f"recall_score_{data_name}.csv", recall_score_array, delimiter=",", fmt="%.4f")
 
     # Save classification report
-    with open("classification_report.txt", "w") as f:
+    with open(f"classification_report_{data_name}.txt", "w") as f:
         f.write(classification_report(l,p, digits=4))
-    print("Classification report saved to 'classification_report.txt'.")
+    print(f"Classification report saved to 'classification_report_{data_name}.txt'.")
 
     # Plot confusion matrix
     plt.figure(figsize=(8, 6))

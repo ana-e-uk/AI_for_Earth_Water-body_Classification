@@ -237,7 +237,7 @@ np.save('label_array_e_CCNN.npy', label_array)
 
 '''####################################################### Encoder-CNN Testing Loop Region 2 data #######################################################''' 
 image_patches_spatial_list, label_patches_spatial_list, image_patches_temp_list, label_patches_temp_list, label_IDs_list, IDs_list = get_testing_dataset()
-print('Getting testing dataset')
+print('Getting testing dataset from unseen region')
 
 unseen_data = SEGMENTATION_SLTL_PRED(image_patches_spatial_list,label_patches_spatial_list,image_patches_temp_list,label_patches_temp_list,label_IDs_list,IDs_list)
 unseen_test_loader = torch.utils.data.DataLoader(dataset=unseen_data, batch_size=config.batch_size, shuffle=False, num_workers=0)
