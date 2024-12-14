@@ -10,8 +10,6 @@ import math
 import matplotlib.pyplot as plt
 
 import torch
-print(torch.__version__)  # Displays the PyTorch version
-print(torch.cuda.is_available())  # Should return False
 from torch.utils.data import random_split
 
 from sklearn.metrics import confusion_matrix, f1_score, accuracy_score, classification_report, precision_score, recall_score
@@ -378,5 +376,5 @@ for epoch in range(1, config.num_epochs+1):
         torch.save(model.state_dict(), model_weights)
     epoch_losses = np.append(epoch_losses, epoch_loss)
     
-np.save('epoch_losses.npy', epoch_losses)
+np.save('epoch_losses_e_d.npy', epoch_losses)
 

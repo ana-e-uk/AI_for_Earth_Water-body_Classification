@@ -21,6 +21,9 @@ label_info_filepath = os.path.join(data_dir, "all_IDs_labels_realsat.npy")
 model_dir = '/users/6/uribe055/AI_for_Earth_Water-body_Classification/src/supervised_training_out'
 model_dir_e_CNN = '/users/6/uribe055/AI_for_Earth_Water-body_Classification/src/classification_training_out'
 
+RESULTS = '/users/6/uribe055/AI_for_Earth_Water-body_Classification/figures'
+
+
 split_data_dir = "../data"
 
 data_train_baseline = ""    # .npy file with training data

@@ -8,14 +8,10 @@ import time
 import os
 
 import torch
-print(torch.__version__)  # Displays the PyTorch version
-print(torch.cuda.is_available())  # Should return False
 from torch.utils.data import random_split
 
-from sklearn.metrics import confusion_matrix, f1_score, accuracy_score, classification_report, precision_score, recall_score
-
 from model import EncoderCNN
-from load_data import get_training_dataset, SEGMENTATION_SLTL_PRED
+from load_data import get_training_dataset,get_testing_dataset, SEGMENTATION_SLTL_PRED
 import config
 
 '''####################################################### Functions #######################################################''' 
@@ -151,38 +147,28 @@ print('Call data loaders')
 train_loader = torch.utils.data.DataLoader(dataset=train_dataset, batch_size=config.batch_size, shuffle=True, num_workers=0)
 test_loader = torch.utils.data.DataLoader(dataset=test_dataset, batch_size=config.batch_size, shuffle=False, num_workers=0)
 
-# data loader for all the data
-# data_loader = torch.utils.data.DataLoader(dataset=data, batch_size=config.batch_size, shuffle=True, num_workers=0)
-
 all_reps = []
 valid_paths = []
 valid_outs_s = []
 valid_outs_t = []
 '''####################################################### Encoder-CNN Training Loop #######################################################''' 
-
-
-
-
+epoch_losses = np.array([])
 train_loss = []
 
 for epoch in range(1, config.num_epochs+1):
-    print("\nEpoch {}".format(epoch))
     model.train()
 
     train_timer = time.time()
     epoch_loss = 0
 
     for batch, [image_patch_s, label_patch_s,image_patch_t, label_patch_t, label_batch, ID_batch] in enumerate(train_loader):
-        if(batch % 10 == 0):
-            print(f'\tBatch {batch}')
-
+        
         optimizer.zero_grad()
         code_vec, out = model(image_patch_s.to(config.device).float(), image_patch_t.to(config.device).float())
-        # print('\t1')
+
         label_batch = label_batch.type(torch.long).to(config.device)
         
         batch_loss = criterion(out, label_batch)
-        # print(f'\tBatch loss: {batch_loss_s}')
  
         batch_loss.backward()
         optimizer.step()
@@ -191,55 +177,72 @@ for epoch in range(1, config.num_epochs+1):
 
     epoch_loss = epoch_loss/(batch+1)
 
-    print(f'epoch loss: {epoch_loss}')
-#     print(epoch_loss,epoch_loss_s,epoch_loss_t,epoch_loss_farm_log,epoch_loss_river_log,epoch_loss_stable_lakes_log,epoch_loss_mod_seas_lakes_log,epoch_loss_eph_lakes_log)
-    print('\n')
-
     model.eval()
     if epoch % 100 == 0:
+        print(f'\nEpoch {epoch} loss: {epoch_loss}')
         model_weights = os.path.join(config.model_dir_e_CNN, str(config.experiment_id_e_CNN) + "_epoch_" + str(epoch) + ".pt")
         torch.save(model.state_dict(), model_weights)
+    epoch_losses = np.append(epoch_losses, epoch_loss)
 
+np.save('epoch_losses_e_CNN.npy', epoch_losses)
 
-'''####################################################### Encoder-CNN Testing Loop #######################################################''' 
+'''####################################################### Encoder-CNN Testing Code  #######################################################''' 
 
+def testing_e_CNN(test_data_loader, optim):
+    loss = 0
+    preds = []
+    labels = []
+    IDs_all = []
 
-loss = 0
-preds = []
-labels = []
-IDs_all = []
-
-for batch, [image_patch_s, label_patch_s, image_patch_t, label_patch_t, label_batch, ID_batch] in enumerate(test_loader):
-    
-    optimizer.zero_grad()
-
-    code_vec, out = model(image_patch_s.to(config.device).float(), image_patch_t.to(config.device).float())
-
-    label_batch = label_batch.type(torch.long).to(config.device)
-    batch_loss = criterion(out, label_batch)
-    loss += batch_loss.item()
-
-    out_label_batch = torch.argmax(torch.nn.functional.softmax(out, dim=1), dim=1)
-    out_label_batch_cpu = out_label_batch.detach().cpu().numpy()
-    label_batch_cpu = label_batch.detach().cpu().numpy()
+    for batch, [image_patch_s, label_patch_s, image_patch_t, label_patch_t, label_batch, ID_batch] in enumerate(test_data_loader):
         
-    preds.append(out_label_batch_cpu)
-    labels.append(label_batch_cpu)
+        optim.zero_grad()
+        code_vec, out = model(image_patch_s.to(config.device).float(), image_patch_t.to(config.device).float())
 
-    del out
-    del code_vec
+        label_batch = label_batch.type(torch.long).to(config.device)
+        batch_loss = criterion(out, label_batch)
+        loss += batch_loss.item()
 
-loss = loss/(batch+1)
-print('Test Loss:{} '.format(loss), end="\n")
-print("\n")
+        out_label_batch = torch.argmax(torch.nn.functional.softmax(out, dim=1), dim=1)
+        out_label_batch_cpu = out_label_batch.detach().cpu().numpy()
+        label_batch_cpu = label_batch.detach().cpu().numpy()
+            
+        preds.append(out_label_batch_cpu)
+        labels.append(label_batch_cpu)
 
-pred_array = np.concatenate(preds, axis=0)
-label_array = np.concatenate(labels, axis=0)
+        del out
+        del code_vec
 
-print(pred_array.shape)
-print(label_array.shape)
-# Assuming pred_array and label_array are already defined
-np.save('pred_array.npy', pred_array)
-np.save('label_array.npy', label_array)
+    loss = loss/(batch+1)
+    print('Test Loss:{} '.format(loss), end="\n")
+    print("\n")
 
-print("Arrays saved to 'pred_array.npy' and 'label_array.npy'.")
+    pred_array = np.concatenate(preds, axis=0)
+    label_array = np.concatenate(labels, axis=0)
+
+    return pred_array, label_array
+
+
+'''####################################################### Encoder-CNN Testing Loop Region 1 data #######################################################''' 
+
+pred_array, label_array = testing_e_CNN(test_data_loader=test_loader, optim=optimizer)
+
+print('Pred array shape', pred_array.shape)
+print('Label array shape', label_array.shape)
+
+np.save('pred_array_e_CNN.npy', pred_array)
+np.save('label_array_e_CCNN.npy', label_array)
+
+
+
+'''####################################################### Encoder-CNN Testing Loop Region 2 data #######################################################''' 
+image_patches_spatial_list, label_patches_spatial_list, image_patches_temp_list, label_patches_temp_list, label_IDs_list, IDs_list = get_testing_dataset()
+print('Getting testing dataset')
+
+unseen_data = SEGMENTATION_SLTL_PRED(image_patches_spatial_list,label_patches_spatial_list,image_patches_temp_list,label_patches_temp_list,label_IDs_list,IDs_list)
+unseen_test_loader = torch.utils.data.DataLoader(dataset=unseen_data, batch_size=config.batch_size, shuffle=False, num_workers=0)
+
+u_pred_array, u_label_array = testing_e_CNN(test_data_loader=test_loader, optim=optimizer)
+
+np.save('pred_array_e_CNN_unseen_data.npy', u_pred_array)
+np.save('label_array_e_CCNN_unseen_data.npy', u_label_array)
