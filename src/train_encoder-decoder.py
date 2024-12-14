@@ -317,7 +317,7 @@ for epoch in range(1, config.num_epochs+1):
         if epoch%100==0:
             print(f'Scaled batch loss s: {scaled_batch_loss_s}\nBatch loss t: {batch_loss_t}')
 
-        if epoch < 1000:
+        if epoch < config.num_epochs:
             batch_loss = scaled_batch_loss_s + batch_loss_t     # TODO: check they are of the same scale after epoch 10, change multiplier as needed
         else:
             batch_loss = scaled_batch_loss_s + batch_loss_t + (river_batch_loss_log + farm_batch_loss_log + stable_lakes_batch_loss_log + mod_seas_lakes_batch_loss_log) * 0.25

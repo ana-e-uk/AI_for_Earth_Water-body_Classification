@@ -312,109 +312,15 @@ Epoch 99
 
 Epoch 100
 	Batch 0
-	Batch loss_s: 7075.134765625
-	Batch loss_t: 57.49776077270508
-Scaled batch loss s: 353.7567443847656
-Batch loss t: 57.49776077270508
-	Batch loss_s: 6467.03271484375
-	Batch loss_t: 56.20189666748047
-Scaled batch loss s: 323.3516540527344
-Batch loss t: 56.20189666748047
-	Batch loss_s: 1573.288818359375
-	Batch loss_t: 52.559303283691406
-Scaled batch loss s: 78.66444396972656
-Batch loss t: 52.559303283691406
-epoch loss: 307.3439432779948
-
-
-Epoch 100 completed: Loss=307.3439, Spatial Loss=78.6644, Temporal Loss=55.4197
-
-Epoch 101
-	Batch 0
-
-Epoch 102
-	Batch 0
-
-Epoch 103
-	Batch 0
-
-Epoch 104
-	Batch 0
-
-Epoch 105
-	Batch 0
-
-Epoch 106
-	Batch 0
-
-Epoch 107
-	Batch 0
-
-Epoch 108
-	Batch 0
-
-Epoch 109
-	Batch 0
-
-Epoch 110
-	Batch 0
-
-Epoch 111
-	Batch 0
-
-Epoch 112
-	Batch 0
-
-Epoch 113
-	Batch 0
-
-Epoch 114
-	Batch 0
-
-Epoch 115
-	Batch 0
-
-Epoch 116
-	Batch 0
-
-Epoch 117
-	Batch 0
-
-Epoch 118
-	Batch 0
-
-Epoch 119
-	Batch 0
-
-Epoch 120
-	Batch 0
-
-Epoch 121
-	Batch 0
-
-Epoch 122
-	Batch 0
-
-Epoch 123
-	Batch 0
-
-Epoch 124
-	Batch 0
-
-Epoch 125
-	Batch 0
-
-Epoch 126
-	Batch 0
-
-Epoch 127
-	Batch 0
-
-Epoch 128
-	Batch 0
-
-Epoch 129
-	Batch 0
-
-Epoch 130
-	Batch 0
+	Batch loss_s: 5678.9248046875
+	Batch loss_t: 31.989410400390625
+Scaled batch loss s: 283.9462585449219
+Batch loss t: 31.989410400390625
+	Batch loss_s: 5256.65380859375
+	Batch loss_t: 28.374876022338867
+Scaled batch loss s: 262.83270263671875
+Batch loss t: 28.374876022338867
+	Batch loss_s: 907.1268920898438
+	Batch loss_t: 31.979984283447266
+Scaled batch loss s: 262.83270263671875
+Batch loss t: 31.979984283447266

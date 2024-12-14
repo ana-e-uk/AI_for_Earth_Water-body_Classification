@@ -197,11 +197,9 @@ for epoch in range(1, config.num_epochs+1):
 
     model.eval()
     if epoch % 100 == 0:
-        model_weights = os.path.join(config.model_dir, str(config.experiment_id) + "_epoch_" + str(epoch) + ".pt")
+        model_weights = os.path.join(config.model_dir_e_CNN, str(config.experiment_id_e_CNN) + "_epoch_" + str(epoch) + ".pt")
         torch.save(model.state_dict(), model_weights)
 
-
-# TODO: save and print several true and reconstructed time series and image patches
 
 '''####################################################### Encoder-CNN Testing Loop #######################################################''' 
 

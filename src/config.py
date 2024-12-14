@@ -19,6 +19,7 @@ continent_info_filepath = os.path.join(data_dir, "continent_info.npy")
 label_info_filepath = os.path.join(data_dir, "all_IDs_labels_realsat.npy")
 
 model_dir = '/users/6/uribe055/AI_for_Earth_Water-body_Classification/src/supervised_training_out'
+model_dir_e_CNN = '/users/6/uribe055/AI_for_Earth_Water-body_Classification/src/classification_training_out'
 
 split_data_dir = "../data"
 
@@ -31,6 +32,11 @@ data_test_new = ""
 # params for the Supervised learning model
 freeze_layers = 0
 load_MODEL_NAME = 'SLTLAE_CL_epoch_2000'
+load_MODEL_DIR = '/users/6/uribe055/AI_for_Earth_Water-body_Classification/src/supervised_training_out_2000_epochs_run_1'
+
+# params for classifier
+load_model_name_e_CNN = 'Classifier_epoch_2000'
+
 '''####################################################### Constants #######################################################''' 
 # spatial CNN
 channels = 1
@@ -49,6 +55,7 @@ num_classes = 4 # 5 when doing reservoir
 device = 'cuda'
 ignore_index = 0
 experiment_id = 'SLTLAE_CL'
+experiment_id_e_CNN = 'Classifier'
 
 # training params
 batch_size = 256

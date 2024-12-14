@@ -24,4 +24,4 @@ source /users/6/uribe055/AI_for_Earth_Water-body_Classification/ai_venv_u/bin/ac
 # cd /users/5/aghaa001/AI_for_Earth_Water-body_Classification
 # source /users/5/aghaa001/AI_for_Earth_Water-body_Classification/ai_venv_ay/bin/activate
 
-python src/train_encoder-decoder.py
+python src/train_encoder-CNN.py
