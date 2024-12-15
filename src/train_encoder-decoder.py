@@ -251,10 +251,6 @@ def save_epoch_reconstructions(epoch, image_patch_s, image_patch_t, label_patch_
     """
     Save spatial and temporal reconstructions for specific batches and samples across epochs.
     """
-    import os
-    import numpy as np
-    import matplotlib.pyplot as plt
-
     os.makedirs(save_dir, exist_ok=True)
 
     # Define directories
@@ -278,12 +274,12 @@ def save_epoch_reconstructions(epoch, image_patch_s, image_patch_t, label_patch_
         plt.figure(figsize=(8, 4))
         plt.subplot(1, 2, 1)
         plt.title("True Patch")
-        plt.imshow(true_image, cmap="gray")
+        plt.imshow(true_image)
         plt.axis("off")
 
         plt.subplot(1, 2, 2)
         plt.title("Reconstructed Patch")
-        plt.imshow(reconstructed_image, cmap="gray")
+        plt.imshow(reconstructed_image)
         plt.axis("off")
         plt.savefig(os.path.join(spatial_save_dir, f"epoch_{epoch}_spatial_patch_{i}.png"))
         plt.close()
@@ -373,30 +369,63 @@ for epoch in range(1, config.num_epochs+1):
         batch_loss_t = torch.mean(torch.sum(criterion(out_t, label_patch_t),dim=[1]))
 
         # scale the spatial and temporal losses
-        scale_dif = get_magnitude(batch_loss_s) - get_magnitude(batch_loss_t)
-        if scale_dif > 0:
-            if scale_dif >= 3:
-                scaled_batch_loss_s = batch_loss_s * 0.0005
-            elif scale_dif >= 2:
-                scaled_batch_loss_s = batch_loss_s * 0.005
-            elif scale_dif >= 1:
-                scaled_batch_loss_s = batch_loss_s * 0.05
-            else:
-                print(f"\tLOSS SCALES OFF (epoch {epoch}): batch loss s {batch_loss_s}\t batch loss t {batch_loss_t}")
+        if epoch < 100:
+            scale_dif = get_magnitude(batch_loss_s) - get_magnitude(batch_loss_t)
+            if scale_dif > 0:
+                if scale_dif >= 3:
+                    scaled_batch_loss_s = batch_loss_s * 0.0005
+                elif scale_dif >= 2:
+                    scaled_batch_loss_s = batch_loss_s * 0.005
+                elif scale_dif >= 1:
+                    scaled_batch_loss_s = batch_loss_s * 0.05
+                else:
+                    print(f"\tLOSS SCALES OFF (epoch {epoch}): batch loss s {batch_loss_s}\t batch loss t {batch_loss_t}")
         else:
             scaled_batch_loss_s = batch_loss_s
 
         # calculate final batch loss
         batch_loss = scaled_batch_loss_s + batch_loss_t
+        # if epoch >= 1000:
+        #     min_class_labels = np.amin([code_vec_farm.shape[0],code_vec_river.shape[0],code_vec_stable_lakes.shape[0],code_vec_mod_seas_lakes.shape[0]])
+
+        #     farm_batch_loss_log = torch.zeros(1, device=config.device, requires_grad=True) if code_vec_farm.shape[0] <= 2 else constrained_loss(code_vec_farm, min_class_labels)
+        #     river_batch_loss_log = torch.zeros(1, device=config.device, requires_grad=True) if code_vec_river.shape[0] <= 2 else constrained_loss(code_vec_river, min_class_labels)
+        #     stable_lakes_batch_loss_log = torch.zeros(1, device=config.device, requires_grad=True) if code_vec_stable_lakes.shape[0] <= 2 else constrained_loss(code_vec_stable_lakes, min_class_labels)
+        #     mod_seas_lakes_batch_loss_log = torch.zeros(1, device=config.device, requires_grad=True) if code_vec_mod_seas_lakes.shape[0] <= 2 else constrained_loss(code_vec_mod_seas_lakes, min_class_labels)
+
+        #     batch_loss += (farm_batch_loss_log + river_batch_loss_log + stable_lakes_batch_loss_log + mod_seas_lakes_batch_loss_log) * 0.25
         if epoch >= 1000:
-            min_class_labels = np.amin([code_vec_farm.shape[0],code_vec_river.shape[0],code_vec_stable_lakes.shape[0],code_vec_mod_seas_lakes.shape[0]])
+            # Find the minimum number of class labels
+            min_class_labels = np.amin([
+                code_vec_farm.shape[0],
+                code_vec_river.shape[0],
+                code_vec_stable_lakes.shape[0],
+                code_vec_mod_seas_lakes.shape[0]
+            ])
 
-            farm_batch_loss_log = torch.zeros(1, device=config.device, requires_grad=True) if code_vec_farm.shape[0] <= 2 else constrained_loss(code_vec_farm, min_class_labels)
-            river_batch_loss_log = torch.zeros(1, device=config.device, requires_grad=True) if code_vec_river.shape[0] <= 2 else constrained_loss(code_vec_river, min_class_labels)
-            stable_lakes_batch_loss_log = torch.zeros(1, device=config.device, requires_grad=True) if code_vec_stable_lakes.shape[0] <= 2 else constrained_loss(code_vec_stable_lakes, min_class_labels)
-            mod_seas_lakes_batch_loss_log = torch.zeros(1, device=config.device, requires_grad=True) if code_vec_mod_seas_lakes.shape[0] <= 2 else constrained_loss(code_vec_mod_seas_lakes, min_class_labels)
+            # Compute class-specific losses or set to scalar zeros
+            farm_batch_loss_log = torch.tensor(0.0, device=config.device, requires_grad=True) \
+                if code_vec_farm.shape[0] <= 2 else constrained_loss(code_vec_farm, min_class_labels)
 
-            batch_loss += (farm_batch_loss_log + river_batch_loss_log + stable_lakes_batch_loss_log + mod_seas_lakes_batch_loss_log) * 0.25
+            river_batch_loss_log = torch.tensor(0.0, device=config.device, requires_grad=True) \
+                if code_vec_river.shape[0] <= 2 else constrained_loss(code_vec_river, min_class_labels)
+
+            stable_lakes_batch_loss_log = torch.tensor(0.0, device=config.device, requires_grad=True) \
+                if code_vec_stable_lakes.shape[0] <= 2 else constrained_loss(code_vec_stable_lakes, min_class_labels)
+
+            mod_seas_lakes_batch_loss_log = torch.tensor(0.0, device=config.device, requires_grad=True) \
+                if code_vec_mod_seas_lakes.shape[0] <= 2 else constrained_loss(code_vec_mod_seas_lakes, min_class_labels)
+
+            # Ensure all loss components are scalars
+            farm_batch_loss_log = farm_batch_loss_log.squeeze()
+            river_batch_loss_log = river_batch_loss_log.squeeze()
+            stable_lakes_batch_loss_log = stable_lakes_batch_loss_log.squeeze()
+            mod_seas_lakes_batch_loss_log = mod_seas_lakes_batch_loss_log.squeeze()
+
+            # Add the losses and scale
+            batch_loss += (farm_batch_loss_log + river_batch_loss_log +
+                        stable_lakes_batch_loss_log + mod_seas_lakes_batch_loss_log) * 0.25
+
 
         batch_loss.backward()
         optimizer.step()
