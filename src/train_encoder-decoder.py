@@ -209,44 +209,97 @@ def save_temporal_patches(true_ts, reconstructed_ts, epoch, batch_index, save_di
 #                 save_temporal_patches(selected_true_t, selected_recon_t, epoch, batch_idx, save_dir=temporal_save_dir)
 
 '''Ana code'''
-def save_epoch_reconstructions(epoch, image_patch_s, image_patch_t, label_patch_s, label_patch_t, save_dir="epoch_reconstructions"):    # Ana attempt
+# def save_epoch_reconstructions(epoch, image_patch_s, image_patch_t, label_patch_s, label_patch_t, save_dir="epoch_reconstructions"):    # Ana attempt
+#     """
+#     Save spatial and temporal reconstructions for specific batches and samples across epochs.
+#     """
+#     os.makedirs(save_dir, exist_ok=True)
+
+#     # Define directories
+#     spatial_save_dir = os.path.join(save_dir, f"epoch_{epoch}_spatial")
+#     temporal_save_dir = os.path.join(save_dir, f"epoch_{epoch}_temporal")
+
+#     image_patch_s = image_patch_s.detach().cpu().numpy()  # Convert to HWC
+#     label_patch_s = label_patch_s.detach().cpu().numpy() # Convert to HWC
+
+#     image_patch_t = image_patch_t.detach().cpu().numpy()
+#     label_patch_t = label_patch_t.detach().cpu().numpy()
+    
+#     # save spatial patches
+#     plt.figure(figsize=(8, 4))
+#     plt.subplot(1, 2, 1)
+#     plt.title("True Patch")
+#     plt.imshow(label_patch_s)
+#     plt.axis("off")
+
+#     plt.subplot(1, 2, 2)
+#     plt.title("Reconstructed Patch")
+#     plt.imshow(image_patch_s)
+#     plt.axis("off")
+#     plt.savefig(os.path.join(spatial_save_dir, f"epoch_{epoch}_s.png"))
+#     plt.close()
+
+#     # save temporal patches
+#     plt.figure(figsize=(8, 4))
+#     plt.plot(label_patch_t, label="True", linestyle="--", alpha=0.7)
+#     plt.plot(image_patch_t, label="Reconstructed", alpha=0.7)
+#     plt.title(f"Temporal Patch from Epoch {epoch}")
+#     plt.legend()
+#     plt.savefig(os.path.join(temporal_save_dir, f"epoch_{epoch}_t.png"))
+#     plt.close()
+def save_epoch_reconstructions(epoch, image_patch_s, image_patch_t, label_patch_s, label_patch_t, save_dir="epoch_reconstructions"):
     """
     Save spatial and temporal reconstructions for specific batches and samples across epochs.
     """
+    import os
+    import numpy as np
+    import matplotlib.pyplot as plt
+
     os.makedirs(save_dir, exist_ok=True)
 
     # Define directories
     spatial_save_dir = os.path.join(save_dir, f"epoch_{epoch}_spatial")
     temporal_save_dir = os.path.join(save_dir, f"epoch_{epoch}_temporal")
+    os.makedirs(spatial_save_dir, exist_ok=True)
+    os.makedirs(temporal_save_dir, exist_ok=True)
 
-    image_patch_s = image_patch_s.detach().cpu().numpy().transpose(1, 2, 0)  # Convert to HWC
-    label_patch_s = label_patch_s.detach().cpu().numpy().transpose(1, 2, 0)  # Convert to HWC
+    # Convert tensors to numpy arrays
+    image_patch_s = image_patch_s.detach().cpu().numpy()  # Shape: (batch_size, 1, height, width)
+    label_patch_s = label_patch_s.detach().cpu().numpy()  # Shape: (batch_size, 1, height, width)
 
-    image_patch_t = image_patch_t.detach().cpu().numpy()
-    label_patch_t = label_patch_t.detach().cpu().numpy()
-    
-    # save spatial patches
-    plt.figure(figsize=(8, 4))
-    plt.subplot(1, 2, 1)
-    plt.title("True Patch")
-    plt.imshow(label_patch_s)
-    plt.axis("off")
+    image_patch_t = image_patch_t.detach().cpu().numpy()  # Shape: (batch_size, sequence_length)
+    label_patch_t = label_patch_t.detach().cpu().numpy()  # Shape: (batch_size, sequence_length)
 
-    plt.subplot(1, 2, 2)
-    plt.title("Reconstructed Patch")
-    plt.imshow(image_patch_s)
-    plt.axis("off")
-    plt.savefig(os.path.join(spatial_save_dir, f"epoch_{epoch}_s.png"))
-    plt.close()
+    # Process spatial patches
+    for i in range(min(5, image_patch_s.shape[0])):  # Save up to 5 examples
+        true_image = np.squeeze(label_patch_s[i], axis=0)  # Remove the channel dimension
+        reconstructed_image = np.squeeze(image_patch_s[i], axis=0)
 
-    # save temporal patches
-    plt.figure(figsize=(8, 4))
-    plt.plot(label_patch_t, label="True", linestyle="--", alpha=0.7)
-    plt.plot(image_patch_t, label="Reconstructed", alpha=0.7)
-    plt.title(f"Temporal Patch from Epoch {epoch}")
-    plt.legend()
-    plt.savefig(os.path.join(temporal_save_dir, f"epoch_{epoch}_t.png"))
-    plt.close()
+        plt.figure(figsize=(8, 4))
+        plt.subplot(1, 2, 1)
+        plt.title("True Patch")
+        plt.imshow(true_image, cmap="gray")
+        plt.axis("off")
+
+        plt.subplot(1, 2, 2)
+        plt.title("Reconstructed Patch")
+        plt.imshow(reconstructed_image, cmap="gray")
+        plt.axis("off")
+        plt.savefig(os.path.join(spatial_save_dir, f"epoch_{epoch}_spatial_patch_{i}.png"))
+        plt.close()
+
+    # Process temporal patches
+    for i in range(min(5, image_patch_t.shape[0])):  # Save up to 5 examples
+        true_temporal = label_patch_t[i]
+        reconstructed_temporal = image_patch_t[i]
+
+        plt.figure(figsize=(8, 4))
+        plt.plot(true_temporal, label="True", linestyle="--", alpha=0.7)
+        plt.plot(reconstructed_temporal, label="Reconstructed", alpha=0.7)
+        plt.title(f"Temporal Patch {i} from Epoch {epoch}")
+        plt.legend()
+        plt.savefig(os.path.join(temporal_save_dir, f"epoch_{epoch}_temporal_patch_{i}.png"))
+        plt.close()
 
 
 criterion = torch.nn.MSELoss(reduction = 'none')
