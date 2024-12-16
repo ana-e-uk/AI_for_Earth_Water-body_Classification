@@ -40,6 +40,8 @@ load_MODEL_DIR = '/users/6/uribe055/AI_for_Earth_Water-body_Classification/src/s
 # params for classifier
 load_model_name_e_CNN = 'Classifier_epoch_2000'
 
+load_model = 1
+
 '''####################################################### Constants #######################################################''' 
 # spatial CNN
 channels = 1

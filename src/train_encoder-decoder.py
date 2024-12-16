@@ -107,6 +107,36 @@ def constrained_loss(embeddings, labels):
 
     return avg_loss
 
+def cl_criterion(reps,no_max_reps):
+    no_of_reps = reps.shape[0]
+    torch_arr = torch.randint(0, no_of_reps, (2*no_max_reps,))
+    torch_arr_2 = torch.randint(0, no_of_reps, (2*no_max_reps,))
+    total_log_sum = 0
+    count_rep = 0
+    
+    for i in range(torch_arr.shape[0]): 
+        if(torch_arr[i] == torch_arr_2[i]):
+            continue
+        mag1 = torch.sqrt(torch.sum(torch.square(reps[torch_arr[i]])))
+        mag2 = torch.sqrt(torch.sum(torch.square(reps[torch_arr_2[i]])))
+        prod12 = mag1*mag2
+        dot12 = torch.abs(torch.dot(reps[torch_arr[i]],reps[torch_arr_2[i]]))
+        cos12 = torch.div(dot12,prod12)
+        log12 = -torch.log(cos12)
+        if(torch.isnan(log12)):
+            print(log12,mag1,mag2,prod12,dot12,cos12)
+    
+        total_log_sum += log12
+        count_rep += 1
+
+    if(count_rep == 0):
+        count_rep = 1
+        
+    avg_log = torch.div(total_log_sum,count_rep)
+    print(f"\t\tCL_criterion returning {avg_log}")
+
+    return avg_log
+
 
 
 def save_spatial_patches(true_patches, reconstructed_patches, epoch, batch_index, save_dir="spatial_patches"):
@@ -405,16 +435,16 @@ for epoch in range(1, config.num_epochs+1):
 
             # Compute class-specific losses or set to scalar zeros
             farm_batch_loss_log = torch.tensor(0.0, device=config.device, requires_grad=True) \
-                if code_vec_farm.shape[0] <= 2 else constrained_loss(code_vec_farm, min_class_labels)
+                if code_vec_farm.shape[0] <= 2 else cl_criterion(code_vec_farm, min_class_labels)
 
             river_batch_loss_log = torch.tensor(0.0, device=config.device, requires_grad=True) \
-                if code_vec_river.shape[0] <= 2 else constrained_loss(code_vec_river, min_class_labels)
+                if code_vec_river.shape[0] <= 2 else cl_criterion(code_vec_river, min_class_labels)
 
             stable_lakes_batch_loss_log = torch.tensor(0.0, device=config.device, requires_grad=True) \
-                if code_vec_stable_lakes.shape[0] <= 2 else constrained_loss(code_vec_stable_lakes, min_class_labels)
+                if code_vec_stable_lakes.shape[0] <= 2 else cl_criterion(code_vec_stable_lakes, min_class_labels)
 
             mod_seas_lakes_batch_loss_log = torch.tensor(0.0, device=config.device, requires_grad=True) \
-                if code_vec_mod_seas_lakes.shape[0] <= 2 else constrained_loss(code_vec_mod_seas_lakes, min_class_labels)
+                if code_vec_mod_seas_lakes.shape[0] <= 2 else cl_criterion(code_vec_mod_seas_lakes, min_class_labels)
 
             # Ensure all loss components are scalars
             farm_batch_loss_log = farm_batch_loss_log.squeeze()
@@ -426,10 +456,11 @@ for epoch in range(1, config.num_epochs+1):
             batch_loss += (farm_batch_loss_log + river_batch_loss_log +
                         stable_lakes_batch_loss_log + mod_seas_lakes_batch_loss_log) * 0.25
 
-
+            print(f"\tbatch loss {batch_loss}")
         batch_loss.backward()
         optimizer.step()
 
+        print(f"epoch loss {epoch_loss}")
         epoch_loss += batch_loss.item()
         epoch_loss_s += scaled_batch_loss_s.item()
         epoch_loss_t += batch_loss_t.item()
