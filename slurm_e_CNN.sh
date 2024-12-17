@@ -1,7 +1,7 @@
 #!/bin/bash -l
 #SBATCH -o /users/6/uribe055/AI_for_Earth_Water-body_Classification/out/out_e_CNN.output
 #SBATCH -e /users/6/uribe055/AI_for_Earth_Water-body_Classification/out/out_e_CNN.error    
-#SBATCH --time=24:00:00
+#SBATCH --time=04:00:00
 #SBATCH -p msigpu
 #SBATCH --ntasks=64
 #SBATCH --mem=16g
