@@ -34,7 +34,7 @@ data_test_new = ""
 
 # params for the Supervised learning model
 freeze_layers = 0
-load_MODEL_NAME = 'SLTLAE_CL_epoch_2000'
+load_MODEL_NAME = 'SLTLAE_CL_epoch_1200'
 load_MODEL_DIR = '/users/6/uribe055/AI_for_Earth_Water-body_Classification/src/supervised_training_out'
 
 # params for classifier

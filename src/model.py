@@ -291,19 +291,20 @@ class EncoderCNN(torch.nn.Module):
 
         # Spatial encoder
         # print('\tspatial encoder')
-        enc_s = self.relu(self.fc_s(enc_s))
-        enc_s_norm = torch.nn.functional.normalize(enc_s, p=2.0, dim=1, eps=1e-12)
+        encoded_s = x_s.view(-1,4096)
+        encoded_s = self.relu(self.fc_s(encoded_s))
+        encoded_s_norm = torch.nn.functional.normalize(encoded_s, p=2.0, dim=1, eps=1e-12)
         
         # Temporal encoder
         # print('\ttemporal encoder')
         x_encoder = self.instance_encoder(x_t)
         _, x_encoder = self.temporal_encoder(x_encoder)
-        enc_t = x_encoder[0].squeeze()
-        enc_t = self.relu(self.fc_t(enc_t))
-        enc_t_norm = torch.nn.functional.normalize(enc_t, p=2.0, dim=1, eps=1e-12)
+        encoded_t = x_encoder[0].squeeze()
+        encoded_t = self.relu(self.fc_t(encoded_t))
+        encoded_t_norm = torch.nn.functional.normalize(encoded_t, p=2.0, dim=1, eps=1e-12)
         
         # Combined embeddings
-        combined_emb = (enc_s_norm + enc_t_norm)
+        combined_emb = (encoded_s_norm + encoded_t_norm)
         
         out_labels_1 = self.relu((self.out1(combined_emb.view(-1,256))))
         out_labels_2 = self.out_2(out_labels_1.view(-1,256))
