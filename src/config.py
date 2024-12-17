@@ -35,7 +35,7 @@ data_test_new = ""
 # params for the Supervised learning model
 freeze_layers = 0
 load_MODEL_NAME = 'SLTLAE_CL_epoch_2000'
-load_MODEL_DIR = '/users/6/uribe055/AI_for_Earth_Water-body_Classification/src/supervised_training_out_2000_epochs_run_1'
+load_MODEL_DIR = '/users/6/uribe055/AI_for_Earth_Water-body_Classification/src/supervised_training_out'
 
 # params for classifier
 load_model_name_e_CNN = 'Classifier_epoch_2000'
@@ -66,7 +66,7 @@ experiment_id_e_CNN = 'Classifier'
 batch_size = 256
 lambda_val = 0.01
 gamma_val = 1
-num_epochs = 2000   # 2500
+num_epochs = 3000   # 2500
 learning_rate = 0.001
 
 

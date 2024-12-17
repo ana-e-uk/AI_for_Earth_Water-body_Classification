@@ -113,7 +113,7 @@ def cl_criterion(reps,no_max_reps):
     torch_arr_2 = torch.randint(0, no_of_reps, (2*no_max_reps,))
     total_log_sum = np.array([])
     count_rep = 0
-    print(f"no_of_reps: {no_of_reps}")
+    # print(f"no_of_reps: {no_of_reps}")
     
     for i in range(torch_arr.shape[0]): 
         if(torch_arr[i] == torch_arr_2[i]):
@@ -130,14 +130,14 @@ def cl_criterion(reps,no_max_reps):
         log12 = -torch.log(cos12)
         log12_np = log12.detach().cpu().numpy()
         if(torch.isnan(log12)):
-            print(f"log12 is NAN")
+            print(f"\t\tlog12 is NAN")
         
-        if i == 1:
-            print(f'mag1\t{mag1}')
-            print(f'mag2\t{mag2}')
-            print(f'dot12\t{dot12}')
-            print(f'cos12\t{cos12}')
-            print(f'log12\t{log12}')
+        # if i == 1:
+        #     print(f'mag1\t{mag1}')
+        #     print(f'mag2\t{mag2}')
+        #     print(f'dot12\t{dot12}')
+        #     print(f'cos12\t{cos12}')
+        #     print(f'log12\t{log12}')
     
         # total_log_sum += log12  # log sum exp (rescale number)
         total_log_sum = np.append(total_log_sum, log12_np)
@@ -150,7 +150,7 @@ def cl_criterion(reps,no_max_reps):
     total_log_sum_calculated = logsumexp(total_log_sum)
 
     avg_log = torch.div(total_log_sum_calculated,count_rep)
-    print(f"\t\tCL_criterion returning {avg_log}")
+    # print(f"\t\tCL_criterion returning {avg_log}")
 
     return avg_log
 
@@ -256,44 +256,6 @@ def save_temporal_patches(true_ts, reconstructed_ts, epoch, batch_index, save_di
 #                 save_temporal_patches(selected_true_t, selected_recon_t, epoch, batch_idx, save_dir=temporal_save_dir)
 
 '''Ana code'''
-# def save_epoch_reconstructions(epoch, image_patch_s, image_patch_t, label_patch_s, label_patch_t, save_dir="epoch_reconstructions"):    # Ana attempt
-#     """
-#     Save spatial and temporal reconstructions for specific batches and samples across epochs.
-#     """
-#     os.makedirs(save_dir, exist_ok=True)
-
-#     # Define directories
-#     spatial_save_dir = os.path.join(save_dir, f"epoch_{epoch}_spatial")
-#     temporal_save_dir = os.path.join(save_dir, f"epoch_{epoch}_temporal")
-
-#     image_patch_s = image_patch_s.detach().cpu().numpy()  # Convert to HWC
-#     label_patch_s = label_patch_s.detach().cpu().numpy() # Convert to HWC
-
-#     image_patch_t = image_patch_t.detach().cpu().numpy()
-#     label_patch_t = label_patch_t.detach().cpu().numpy()
-    
-#     # save spatial patches
-#     plt.figure(figsize=(8, 4))
-#     plt.subplot(1, 2, 1)
-#     plt.title("True Patch")
-#     plt.imshow(label_patch_s)
-#     plt.axis("off")
-
-#     plt.subplot(1, 2, 2)
-#     plt.title("Reconstructed Patch")
-#     plt.imshow(image_patch_s)
-#     plt.axis("off")
-#     plt.savefig(os.path.join(spatial_save_dir, f"epoch_{epoch}_s.png"))
-#     plt.close()
-
-#     # save temporal patches
-#     plt.figure(figsize=(8, 4))
-#     plt.plot(label_patch_t, label="True", linestyle="--", alpha=0.7)
-#     plt.plot(image_patch_t, label="Reconstructed", alpha=0.7)
-#     plt.title(f"Temporal Patch from Epoch {epoch}")
-#     plt.legend()
-#     plt.savefig(os.path.join(temporal_save_dir, f"epoch_{epoch}_t.png"))
-#     plt.close()
 def save_epoch_reconstructions(epoch, image_patch_s, image_patch_t, label_patch_s, label_patch_t, save_dir="epoch_reconstructions"):
     """
     Save spatial and temporal reconstructions for specific batches and samples across epochs.
@@ -416,20 +378,35 @@ for epoch in range(1, config.num_epochs+1):
         batch_loss_t = torch.mean(torch.sum(criterion(out_t, label_patch_t),dim=[1]))
 
         # scale the spatial and temporal losses
+        min_loss = min(batch_loss_s, batch_loss_t)
+        max_loss = min(batch_loss_s, batch_loss_t)
 
-        scale_dif = get_magnitude(batch_loss_s) - get_magnitude(batch_loss_t)
+        scale_dif = get_magnitude(max_loss) - get_magnitude(min_loss)
         if scale_dif > 0:
             if scale_dif >= 3:
-                scaled_batch_loss_s = batch_loss_s * 0.0005
+                scaled_max_loss = max_loss * 0.0005
             elif scale_dif >= 2:
-                scaled_batch_loss_s = batch_loss_s * 0.005
+                scaled_max_loss = max_loss * 0.005
             elif scale_dif >= 1:
-                scaled_batch_loss_s = batch_loss_s * 0.05
+                scaled_max_loss = max_loss * 0.05
             else:
-                print(f"\tLOSS SCALES OFF (epoch {epoch}): batch loss s {batch_loss_s}\t batch loss t {batch_loss_t}")
+                print(f"\tLOSS SCALES OFF (epoch {epoch}):max {scaled_max_loss}\t min {min_loss}")
+        batch_loss = scaled_max_loss + min_loss
+
+        # scale_dif = get_magnitude(batch_loss_s) - get_magnitude(batch_loss_t)
+        # if scale_dif > 0:
+        #     if scale_dif >= 3:
+        #         scaled_batch_loss_s = batch_loss_s * 0.0005
+        #     elif scale_dif >= 2:
+        #         scaled_batch_loss_s = batch_loss_s * 0.005
+        #     elif scale_dif >= 1:
+        #         scaled_batch_loss_s = batch_loss_s * 0.05
+        #     else:
+        #         print(f"\tLOSS SCALES OFF (epoch {epoch}): batch loss s {batch_loss_s}\t batch loss t {batch_loss_t}")
 
         # calculate final batch loss
-        batch_loss = scaled_batch_loss_s + batch_loss_t
+        # batch_loss = scaled_batch_loss_s + batch_loss_t
+
         # if epoch >= 1000:
         #     min_class_labels = np.amin([code_vec_farm.shape[0],code_vec_river.shape[0],code_vec_stable_lakes.shape[0],code_vec_mod_seas_lakes.shape[0]])
 
@@ -471,31 +448,31 @@ for epoch in range(1, config.num_epochs+1):
             batch_loss += (farm_batch_loss_log + river_batch_loss_log +
                         stable_lakes_batch_loss_log + mod_seas_lakes_batch_loss_log) * 0.25
 
-        print(f"\tbatch loss {batch_loss}")
+        # print(f"\tbatch loss {batch_loss}")
         batch_loss.backward()
         optimizer.step()
 
         epoch_loss += batch_loss.item()
-        epoch_loss_s += scaled_batch_loss_s.item()
-        epoch_loss_t += batch_loss_t.item()
+        # epoch_loss_s += scaled_batch_loss_s.item()
+        # epoch_loss_t += batch_loss_t.item()
         # epoch_loss_farm_log += farm_batch_loss_log.item()
         # epoch_loss_river_log += river_batch_loss_log.item()
         # epoch_loss_stable_log += stable_lakes_batch_loss_log.item()
         # epoch_loss_seasonal_log += mod_seas_lakes_batch_loss_log.item()
 
     epoch_loss = epoch_loss/(batch+1)
-    epoch_loss_s = epoch_loss_s/(batch+1)
-    epoch_loss_t = epoch_loss_t/(batch+1)
+    # epoch_loss_s = epoch_loss_s/(batch+1)
+    # epoch_loss_t = epoch_loss_t/(batch+1)
     # epoch_loss_farm_log = epoch_loss_farm_log/(batch+1)
     # epoch_loss_river_log = epoch_loss_river_log/(batch+1)
     # epoch_loss_stable_log = epoch_loss_stable_log/(batch+1)
     # epoch_loss_seasonal_log = epoch_loss_seasonal_log/(batch+1)
 
-    print(f"epoch loss {epoch_loss}")
+    print(f"EPOCH {epoch}\t {epoch_loss}")
     model.eval()
-    if epoch%100==0:
-        print(f'EPOCH {epoch}: Scaled batch loss s: {scaled_batch_loss_s:.4f}\nBatch loss t: {batch_loss_t:.4f}')
-        print('\n')
+    if epoch%500==0:
+        # print(f'\tScaled s: {scaled_batch_loss_s:.4f}\t t: {batch_loss_t:.4f}')
+        print(f'\tScaled max: {scaled_max_loss:.4f}\t min: {min_loss:.4f}')
         # Save reconstructions for selected batches and patches
         # save_epoch_reconstructions(model, test_loader, epoch, save_dir="epoch_reconstructions", selected_batches=[0, 5, 10, 20, 40], num_patches=10)  # Aylar code
         save_epoch_reconstructions(epoch, image_patch_s=out_s, image_patch_t=out_t, label_patch_s=label_patch_s, label_patch_t=label_patch_t, save_dir="epoch_reconstructions") # Ana attempt
@@ -505,4 +482,4 @@ for epoch in range(1, config.num_epochs+1):
     epoch_losses = np.append(epoch_losses, epoch_loss)
     
 np.save('epoch_losses_e_d.npy', epoch_losses)
-
+print(f'saved epoch losses to epoch_losses_e_d.npy')
