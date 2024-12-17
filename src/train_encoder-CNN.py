@@ -73,8 +73,9 @@ valid_outs_t = []
 '''####################################################### Encoder-CNN Training Loop #######################################################''' 
 epoch_losses = np.array([])
 train_loss = []
+label_map = {1: 0, 3: 1, 4: 2, 5: 3}
 
-for epoch in range(1, config.num_epochs+1):
+for epoch in range(1, config.num_epochs_CNN+1):
     model.train()
 
     train_timer = time.time()
@@ -85,6 +86,7 @@ for epoch in range(1, config.num_epochs+1):
         optimizer.zero_grad()
         code_vec, out = model(image_patch_s.to(config.device).float(), image_patch_t.to(config.device).float())
 
+        label_batch = torch.tensor([label_map[label.item()] for label in label_batch], device=config.device)
         label_batch = label_batch.type(torch.long).to(config.device)
         
         batch_loss = criterion(out, label_batch)
@@ -116,7 +118,8 @@ def testing_e_CNN(test_data_loader, optim):
         
         optim.zero_grad()
         code_vec, out = model(image_patch_s.to(config.device).float(), image_patch_t.to(config.device).float())
-
+        
+        label_batch = torch.tensor([label_map[label.item()] for label in label_batch], device=config.device)
         label_batch = label_batch.type(torch.long).to(config.device)
         batch_loss = criterion(out, label_batch)
         loss += batch_loss.item()
@@ -149,7 +152,7 @@ print('Pred array shape', pred_array.shape)
 print('Label array shape', label_array.shape)
 
 np.save('pred_array_e_CNN.npy', pred_array)
-np.save('label_array_e_CCNN.npy', label_array)
+np.save('label_array_e_CNN.npy', label_array)
 
 
 
@@ -160,7 +163,7 @@ print('Getting testing dataset from unseen region')
 unseen_data = SEGMENTATION_SLTL_PRED(image_patches_spatial_list,label_patches_spatial_list,image_patches_temp_list,label_patches_temp_list,label_IDs_list,IDs_list)
 unseen_test_loader = torch.utils.data.DataLoader(dataset=unseen_data, batch_size=config.batch_size, shuffle=False, num_workers=0)
 
-u_pred_array, u_label_array = testing_e_CNN(test_data_loader=test_loader, optim=optimizer)
+u_pred_array, u_label_array = testing_e_CNN(test_data_loader=unseen_test_loader, optim=optimizer)
 
 np.save('pred_array_e_CNN_unseen_data.npy', u_pred_array)
-np.save('label_array_e_CCNN_unseen_data.npy', u_label_array)
+np.save('label_array_e_CNN_unseen_data.npy', u_label_array)

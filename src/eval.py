@@ -30,10 +30,6 @@ def eval_results(l, p, data_name):
     for r in range(recall_score_array.shape[0]):
         print(recall_score_array[r],end = ' ')
     print('')
-    # Save f1 score, precision, and recall arrays
-    np.savetxt(f"f1_score_{data_name}.csv", f1_score_array, delimiter=",", fmt="%.4f")
-    np.savetxt(f"precision_score_{data_name}.csv", precision_score_array, delimiter=",", fmt="%.4f")
-    np.savetxt(f"recall_score_{data_name}.csv", recall_score_array, delimiter=",", fmt="%.4f")
 
     # Save classification report
     with open(f"classification_report_{data_name}.txt", "w") as f:

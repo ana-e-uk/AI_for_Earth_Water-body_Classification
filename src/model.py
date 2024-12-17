@@ -292,6 +292,7 @@ class EncoderCNN(torch.nn.Module):
         # Spatial encoder
         # print('\tspatial encoder')
         encoded_s = x_s.view(-1,4096)
+        encoded_s = self.relu(self.fc(encoded_s))
         encoded_s = self.relu(self.fc_s(encoded_s))
         encoded_s_norm = torch.nn.functional.normalize(encoded_s, p=2.0, dim=1, eps=1e-12)
         
@@ -306,7 +307,7 @@ class EncoderCNN(torch.nn.Module):
         # Combined embeddings
         combined_emb = (encoded_s_norm + encoded_t_norm)
         
-        out_labels_1 = self.relu((self.out1(combined_emb.view(-1,256))))
+        out_labels_1 = self.relu((self.out_1(combined_emb.view(-1,256))))
         out_labels_2 = self.out_2(out_labels_1.view(-1,256))
 
         return combined_emb, out_labels_2

@@ -3,6 +3,7 @@ data/realSAT/
 /ai_venv_yo/*
 /ai_venv_ay/*
 /ai_venv_u/*
+/ai_venv_u2/*
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -12,7 +13,8 @@ src/supervised_training_out/*
 src/supervised_training_out_1000_epochs/*
 src/supervised_training_out_2000_epochs_run_1/*
 out/*
-
+src/classification_training_out
+*.pt
 
 
 
