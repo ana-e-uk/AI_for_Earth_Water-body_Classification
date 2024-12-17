@@ -471,8 +471,8 @@ for epoch in range(1, config.num_epochs+1):
     print(f"EPOCH {epoch}\t {epoch_loss}")
     model.eval()
     if epoch%500==0:
-        # print(f'\tScaled s: {scaled_batch_loss_s:.4f}\t t: {batch_loss_t:.4f}')
-        print(f'\tScaled max: {scaled_max_loss:.4f}\t min: {min_loss:.4f}')
+        print(f'\tScaled s: {scaled_batch_loss_s:.4f}\t t: {batch_loss_t:.4f}')
+        # print(f'\tScaled max: {scaled_max_loss:.4f}\t min: {min_loss:.4f}')
         # Save reconstructions for selected batches and patches
         # save_epoch_reconstructions(model, test_loader, epoch, save_dir="epoch_reconstructions", selected_batches=[0, 5, 10, 20, 40], num_patches=10)  # Aylar code
         save_epoch_reconstructions(epoch, image_patch_s=out_s, image_patch_t=out_t, label_patch_s=label_patch_s, label_patch_t=label_patch_t, save_dir="epoch_reconstructions") # Ana attempt
