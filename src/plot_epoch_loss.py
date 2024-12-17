@@ -11,8 +11,8 @@ import matplotlib.pyplot as plt
 model = '_e_d'
 # model = '_e_CNN'
 
-# losses_file = f'epoch_losses{model}.npy'
-losses_file = 'old_loss_epoch_losses_e_d.npy'
+losses_file = f'epoch_losses{model}.npy'
+# losses_file = 'old_loss_epoch_losses_e_d.npy'
 
 try:
     epoch_losses = np.load(losses_file)

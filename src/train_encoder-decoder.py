@@ -128,7 +128,7 @@ def cl_criterion(reps,no_max_reps):
         cos12 = torch.div(dot12,prod12)
         # print(f'cos12\t{cos12}')
         log12 = -torch.log(cos12)
-        log12_np = log12.cpu().numpy()
+        log12_np = log12.detach().cpu().numpy()
         if(torch.isnan(log12)):
             print(f"log12 is NAN")
         
@@ -416,19 +416,17 @@ for epoch in range(1, config.num_epochs+1):
         batch_loss_t = torch.mean(torch.sum(criterion(out_t, label_patch_t),dim=[1]))
 
         # scale the spatial and temporal losses
-        if epoch < 2000:
-            scale_dif = get_magnitude(batch_loss_s) - get_magnitude(batch_loss_t)
-            if scale_dif > 0:
-                if scale_dif >= 3:
-                    scaled_batch_loss_s = batch_loss_s * 0.0005
-                elif scale_dif >= 2:
-                    scaled_batch_loss_s = batch_loss_s * 0.005
-                elif scale_dif >= 1:
-                    scaled_batch_loss_s = batch_loss_s * 0.05
-                else:
-                    print(f"\tLOSS SCALES OFF (epoch {epoch}): batch loss s {batch_loss_s}\t batch loss t {batch_loss_t}")
-        else:
-            scaled_batch_loss_s = batch_loss_s
+
+        scale_dif = get_magnitude(batch_loss_s) - get_magnitude(batch_loss_t)
+        if scale_dif > 0:
+            if scale_dif >= 3:
+                scaled_batch_loss_s = batch_loss_s * 0.0005
+            elif scale_dif >= 2:
+                scaled_batch_loss_s = batch_loss_s * 0.005
+            elif scale_dif >= 1:
+                scaled_batch_loss_s = batch_loss_s * 0.05
+            else:
+                print(f"\tLOSS SCALES OFF (epoch {epoch}): batch loss s {batch_loss_s}\t batch loss t {batch_loss_t}")
 
         # calculate final batch loss
         batch_loss = scaled_batch_loss_s + batch_loss_t
@@ -441,7 +439,7 @@ for epoch in range(1, config.num_epochs+1):
         #     mod_seas_lakes_batch_loss_log = torch.zeros(1, device=config.device, requires_grad=True) if code_vec_mod_seas_lakes.shape[0] <= 2 else constrained_loss(code_vec_mod_seas_lakes, min_class_labels)
 
         #     batch_loss += (farm_batch_loss_log + river_batch_loss_log + stable_lakes_batch_loss_log + mod_seas_lakes_batch_loss_log) * 0.25
-        if epoch >= 100:#1000:
+        if epoch >= 1000:#1000:
             # Find the minimum number of class labels
             min_class_labels = np.amin([
                 code_vec_farm.shape[0],
