@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 import torch
 from torch.utils.data import random_split
-
+from scipy.special import logsumexp
 from sklearn.metrics import confusion_matrix, f1_score, accuracy_score, classification_report, precision_score, recall_score
 
 from model import EncoderDecoder, SpatialCNN, TemporalLSTM, EmbeddingSpace, SpatialDecoder
@@ -95,7 +95,7 @@ def constrained_loss(embeddings, labels):
 
                 # compute cosine similarity
                 cos = torch.div(torch.matmul(e1, e2), torch.norm(e1) * torch.norm(e2) + 1e-8)     # Add small number for stability
-                log1 = -torch.log(cos) 
+                log1 = -torch.log(np.abs(cos)) 
                 # Compute log of the cosine similarity
                 if cos > 0:
                     if(torch.isnan(log1)):
@@ -111,28 +111,45 @@ def cl_criterion(reps,no_max_reps):
     no_of_reps = reps.shape[0]
     torch_arr = torch.randint(0, no_of_reps, (2*no_max_reps,))
     torch_arr_2 = torch.randint(0, no_of_reps, (2*no_max_reps,))
-    total_log_sum = 0
+    total_log_sum = np.array([])
     count_rep = 0
+    print(f"no_of_reps: {no_of_reps}")
     
     for i in range(torch_arr.shape[0]): 
         if(torch_arr[i] == torch_arr_2[i]):
             continue
         mag1 = torch.sqrt(torch.sum(torch.square(reps[torch_arr[i]])))
+        # print(f'mag1\t{mag1}')
         mag2 = torch.sqrt(torch.sum(torch.square(reps[torch_arr_2[i]])))
+        # print(f'mag2\t{mag2}')
         prod12 = mag1*mag2
         dot12 = torch.abs(torch.dot(reps[torch_arr[i]],reps[torch_arr_2[i]]))
+        # print(f'dot12\t{dot12}')
         cos12 = torch.div(dot12,prod12)
+        # print(f'cos12\t{cos12}')
         log12 = -torch.log(cos12)
+        log12_np = log12.cpu().numpy()
         if(torch.isnan(log12)):
-            print(log12,mag1,mag2,prod12,dot12,cos12)
+            print(f"log12 is NAN")
+        
+        if i == 1:
+            print(f'mag1\t{mag1}')
+            print(f'mag2\t{mag2}')
+            print(f'dot12\t{dot12}')
+            print(f'cos12\t{cos12}')
+            print(f'log12\t{log12}')
     
-        total_log_sum += log12
+        # total_log_sum += log12  # log sum exp (rescale number)
+        total_log_sum = np.append(total_log_sum, log12_np)
+        # print(f"\nTOTAL_LOG_SUM: \t{total_log_sum}")
         count_rep += 1
 
     if(count_rep == 0):
         count_rep = 1
-        
-    avg_log = torch.div(total_log_sum,count_rep)
+    
+    total_log_sum_calculated = logsumexp(total_log_sum)
+
+    avg_log = torch.div(total_log_sum_calculated,count_rep)
     print(f"\t\tCL_criterion returning {avg_log}")
 
     return avg_log
@@ -399,7 +416,7 @@ for epoch in range(1, config.num_epochs+1):
         batch_loss_t = torch.mean(torch.sum(criterion(out_t, label_patch_t),dim=[1]))
 
         # scale the spatial and temporal losses
-        if epoch < 100:
+        if epoch < 2000:
             scale_dif = get_magnitude(batch_loss_s) - get_magnitude(batch_loss_t)
             if scale_dif > 0:
                 if scale_dif >= 3:
@@ -424,7 +441,7 @@ for epoch in range(1, config.num_epochs+1):
         #     mod_seas_lakes_batch_loss_log = torch.zeros(1, device=config.device, requires_grad=True) if code_vec_mod_seas_lakes.shape[0] <= 2 else constrained_loss(code_vec_mod_seas_lakes, min_class_labels)
 
         #     batch_loss += (farm_batch_loss_log + river_batch_loss_log + stable_lakes_batch_loss_log + mod_seas_lakes_batch_loss_log) * 0.25
-        if epoch >= 1000:
+        if epoch >= 100:#1000:
             # Find the minimum number of class labels
             min_class_labels = np.amin([
                 code_vec_farm.shape[0],
@@ -456,11 +473,10 @@ for epoch in range(1, config.num_epochs+1):
             batch_loss += (farm_batch_loss_log + river_batch_loss_log +
                         stable_lakes_batch_loss_log + mod_seas_lakes_batch_loss_log) * 0.25
 
-            print(f"\tbatch loss {batch_loss}")
+        print(f"\tbatch loss {batch_loss}")
         batch_loss.backward()
         optimizer.step()
 
-        print(f"epoch loss {epoch_loss}")
         epoch_loss += batch_loss.item()
         epoch_loss_s += scaled_batch_loss_s.item()
         epoch_loss_t += batch_loss_t.item()
@@ -477,6 +493,7 @@ for epoch in range(1, config.num_epochs+1):
     # epoch_loss_stable_log = epoch_loss_stable_log/(batch+1)
     # epoch_loss_seasonal_log = epoch_loss_seasonal_log/(batch+1)
 
+    print(f"epoch loss {epoch_loss}")
     model.eval()
     if epoch%100==0:
         print(f'EPOCH {epoch}: Scaled batch loss s: {scaled_batch_loss_s:.4f}\nBatch loss t: {batch_loss_t:.4f}')
