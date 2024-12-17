@@ -377,35 +377,35 @@ for epoch in range(1, config.num_epochs+1):
         batch_loss_s = torch.mean(torch.sum(mse_loss(input_image = out_s, target = label_patch_s,ignored_index = config.ignore_index,reduction = 'None')))
         batch_loss_t = torch.mean(torch.sum(criterion(out_t, label_patch_t),dim=[1]))
 
-        # scale the spatial and temporal losses
-        min_loss = min(batch_loss_s, batch_loss_t)
-        max_loss = min(batch_loss_s, batch_loss_t)
+        # # scale the spatial and temporal losses
+        # min_loss = min(batch_loss_s, batch_loss_t)
+        # max_loss = min(batch_loss_s, batch_loss_t)
 
-        scale_dif = get_magnitude(max_loss) - get_magnitude(min_loss)
-        if scale_dif > 0:
-            if scale_dif >= 3:
-                scaled_max_loss = max_loss * 0.0005
-            elif scale_dif >= 2:
-                scaled_max_loss = max_loss * 0.005
-            elif scale_dif >= 1:
-                scaled_max_loss = max_loss * 0.05
-            else:
-                print(f"\tLOSS SCALES OFF (epoch {epoch}):max {scaled_max_loss}\t min {min_loss}")
-        batch_loss = scaled_max_loss + min_loss
-
-        # scale_dif = get_magnitude(batch_loss_s) - get_magnitude(batch_loss_t)
+        # scale_dif = get_magnitude(max_loss) - get_magnitude(min_loss)
         # if scale_dif > 0:
         #     if scale_dif >= 3:
-        #         scaled_batch_loss_s = batch_loss_s * 0.0005
+        #         scaled_max_loss = max_loss * 0.0005
         #     elif scale_dif >= 2:
-        #         scaled_batch_loss_s = batch_loss_s * 0.005
+        #         scaled_max_loss = max_loss * 0.005
         #     elif scale_dif >= 1:
-        #         scaled_batch_loss_s = batch_loss_s * 0.05
+        #         scaled_max_loss = max_loss * 0.05
         #     else:
-        #         print(f"\tLOSS SCALES OFF (epoch {epoch}): batch loss s {batch_loss_s}\t batch loss t {batch_loss_t}")
+        #         print(f"\tLOSS SCALES OFF (epoch {epoch}):max {max_loss}\t min {min_loss}")
+        # batch_loss = scaled_max_loss + min_loss
+
+        scale_dif = get_magnitude(batch_loss_s) - get_magnitude(batch_loss_t)
+        if scale_dif > 0:
+            if scale_dif >= 3:
+                scaled_batch_loss_s = batch_loss_s * 0.0005
+            elif scale_dif >= 2:
+                scaled_batch_loss_s = batch_loss_s * 0.005
+            elif scale_dif >= 1:
+                scaled_batch_loss_s = batch_loss_s * 0.05
+            else:
+                print(f"\tLOSS SCALES OFF (epoch {epoch}): batch loss s {batch_loss_s}\t batch loss t {batch_loss_t}")
 
         # calculate final batch loss
-        # batch_loss = scaled_batch_loss_s + batch_loss_t
+        batch_loss = scaled_batch_loss_s + batch_loss_t
 
         # if epoch >= 1000:
         #     min_class_labels = np.amin([code_vec_farm.shape[0],code_vec_river.shape[0],code_vec_stable_lakes.shape[0],code_vec_mod_seas_lakes.shape[0]])
